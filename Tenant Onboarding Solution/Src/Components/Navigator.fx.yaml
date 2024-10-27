@@ -1,0 +1,221 @@
+Navigator As CanvasComponent:
+    OnSelect():
+        ThisProperty:
+            Default: ="Text"
+    currentItem: =1
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =App.Height
+    LogOutScreen: =App.ActiveScreen
+    MenuItem: |-
+        =Table(
+            {
+                MenuID: 1,
+                MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+          <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+        </svg>",
+                MenuName: "Dashboard",
+                PageNavigation: App.ActiveScreen
+            },
+            {
+                MenuID: 2,
+                MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+          <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+        </svg>",
+                MenuName: "Policies",
+                PageNavigation: App.ActiveScreen
+            },
+            {
+                MenuID: 3,
+                MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+          <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+        </svg>",
+                MenuName: "Renewal Requests",
+                PageNavigation: App.ActiveScreen
+            }
+        )
+    Width: =150
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    Container2_3 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =20
+        PaddingLeft: =10
+        PaddingRight: =10
+        PaddingTop: =20
+        Width: =Parent.Width
+        X: =0.00
+        ZIndex: =1
+
+        logo_container As groupContainer.manualLayoutContainer:
+            FillPortions: =0
+            Height: =40
+            LayoutMinHeight: =100
+            LayoutMinWidth: =0
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =0.00
+            Width: =245.62
+            X: =0.00
+            ZIndex: =1
+
+            Image2_1 As image:
+                BorderColor: =RGBA(0, 18, 107, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =Parent.Height
+                Image: ='logo black'
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                X: =Parent.Width/2 - Self.Width/2
+                ZIndex: =1
+
+        Container16 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            PaddingTop: =30
+            Width: =Parent.Width
+            ZIndex: =2
+
+            "Gallery1_2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(0, 18, 107, 1)
+                DelayItemLoading: =true
+                Height: =Parent.Height - Parent.PaddingTop - Parent.PaddingBottom
+                Items: =Navigator.MenuItem
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =10
+                TemplateSize: =40
+                Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
+                X: =26.99
+                ZIndex: =1
+
+                Container12_2 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =If(Navigator.currentItem = ThisItem.MenuID, DropShadow.Light)
+                    Fill: =If(Navigator.currentItem = ThisItem.MenuID, RGBA(170, 163, 217, 0.2),Container2_3.Fill)
+                    Height: =Parent.TemplateHeight
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =5
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    PaddingRight: =5
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =2
+
+                    cont_Icon_2 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        FillPortions: =0
+                        Height: =25
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        RadiusBottomLeft: =5
+                        RadiusBottomRight: =5
+                        RadiusTopLeft: =5
+                        RadiusTopRight: =5
+                        Width: =25
+                        X: =9.00
+                        Y: =Parent.Height/2 - Self.Height/2
+                        ZIndex: =1
+
+                        img_Color_2 As image:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =RGBA(181, 181, 181, 0.19)
+                            Height: =30
+                            Image: |-
+                                =If(Navigator.currentItem = ThisItem.MenuID,"data:image/svg+xml,"& EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 16 16'>
+                                  <rect width='100%' height='100%' fill='#5545BF'/> 
+                                </svg>"))
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Width: =Parent.Width
+                            X: =0.00
+                            Y: =Parent.Height/2 - Self.Height/2
+                            ZIndex: =1
+
+                        img_Icon_2 As image:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Height: =img_Color_2.Height/2
+                            Image: |-
+                                ="data:image/svg+xml,"&EncodeUrl(Substitute(ThisItem.MenuIcon,"currentColor",If(ThisItem.IsSelected,"RGBA(255,255,255,1)","RGBA(0, 0, 0, 1)")))
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =img_Color_2.Width/2
+                            X: =Parent.Width/2 - Self.Width/2
+                            Y: =Parent.Height/2 - Self.Height/2
+                            ZIndex: =2
+
+                        Button1_3 As button:
+                            BorderColor: =App.Theme.Colors.Primary
+                            BorderStyle: =BorderStyle.None
+                            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =Color.Transparent
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            HoverBorderColor: =App.Theme.Colors.Darker10
+                            HoverColor: =Self.Fill
+                            HoverFill: =Self.Fill
+                            OnSelect: =Navigate(ThisItem.PageNavigation)
+                            PaddingRight: =4.50
+                            PaddingTop: =4.50
+                            PressedBorderColor: =App.Theme.Colors.Darker40
+                            PressedFill: =Self.Fill
+                            RadiusBottomLeft: =5
+                            RadiusBottomRight: =5
+                            RadiusTopLeft: =5
+                            RadiusTopRight: =5
+                            Size: =13.50
+                            Text: =
+                            Width: =Parent.Width
+                            X: =0.00
+                            ZIndex: =3
+
+                    Button1_2 As button:
+                        Align: =Align.Left
+                        BorderColor: =App.Theme.Colors.Primary
+                        BorderStyle: =BorderStyle.None
+                        Color: |+
+                            =If(Navigator.currentItem = ThisItem.MenuID,RGBA(17, 65, 133, 1),RGBA(181, 181, 181, 1))
+                            
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =Color.Transparent
+                        FillPortions: =1
+                        Font: =Font.Arial
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold,FontWeight.Normal)
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(17, 65, 133, 1)
+                        HoverFill: =Self.Fill
+                        LayoutMinWidth: =0
+                        OnSelect: =Navigate(ThisItem.PageNavigation)
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =Self.Fill
+                        Size: =8
+                        Text: =ThisItem.MenuName
+                        ZIndex: =4
+

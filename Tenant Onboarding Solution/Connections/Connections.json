@@ -1,0 +1,113 @@
+{
+  "06614241-272d-4d64-80e8-0c9a4749ece6": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://legacypoise.sharepoint.com/sites/PropertyManagement_legacypo_DatabaseSite": {
+        "datasetOverride": {
+          "environmentVariableName": "legacypo_DatabaseSite",
+          "name": "https://legacypoise.sharepoint.com/sites/PropertyManagement"
+        },
+        "dataSources": {
+          "Tenant Onboarding Documents": {
+            "tableName": "e4d47601-52ce-4014-b980-4e439bce1851",
+            "tableNameOverride": {
+              "environmentVariableName": "legacypo_TenantOnboardingDocuments",
+              "name": "e4d47601-52ce-4014-b980-4e439bce1851"
+            }
+          },
+          "Tenant Onboarding List": {
+            "tableName": "5c55e99d-7104-4ecd-85d8-76c6cbd89260",
+            "tableNameOverride": {
+              "environmentVariableName": "legacypo_TenantOnboardingList",
+              "name": "5c55e99d-7104-4ecd-85d8-76c6cbd89260"
+            }
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Tenant Onboarding List",
+      "Tenant Onboarding Documents"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "06614241-272d-4d64-80e8-0c9a4749ece6"
+  },
+  "14f48360-4db6-4712-a0bf-8919cfe5b7a9": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "ad26ed19-e8ef-4e44-9802-e0492170bd28": {
+          "value": "shared_office365_1"
+        },
+        "workflowDisplayName": {
+          "value": "Send Mail"
+        },
+        "workflowEntityId": {
+          "value": "b91acead-36e8-ee11-904c-002248995f95"
+        },
+        "workflowName": {
+          "value": "b55738b3-c4bf-4d9d-249b-b0933b19b804"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365_1": {
+          "value": "ad26ed19-e8ef-4e44-9802-e0492170bd28"
+        },
+        "workflowDisplayName": {
+          "value": "Send Mail"
+        },
+        "workflowEntityId": {
+          "value": "b91acead-36e8-ee11-904c-002248995f95"
+        },
+        "workflowName": {
+          "value": "b55738b3-c4bf-4d9d-249b-b0933b19b804"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SendMail"
+    ],
+    "dependencies": {
+      "shared_office365_1": "ad26ed19-e8ef-4e44-9802-e0492170bd28"
+    },
+    "dependents": [],
+    "id": "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
+  },
+  "ad26ed19-e8ef-4e44-9802-e0492170bd28": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
+    ],
+    "id": "ad26ed19-e8ef-4e44-9802-e0492170bd28"
+  }
+}

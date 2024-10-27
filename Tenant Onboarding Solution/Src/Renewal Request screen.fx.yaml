@@ -1,0 +1,1623 @@
+"'Renewal Request screen' As screen":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =
+
+    Container13_3 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: |
+            =RGBA(248, 248, 248, 1)
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Navigator_3 As Navigator:
+            currentItem: =3
+            Height: =Parent.Height * 90/100
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            MenuItem: |-
+                =Table(
+                    {
+                        MenuID: 1,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Dashboard",
+                        PageNavigation: 'Home Screen'
+                    },
+                    {
+                        MenuID: 2,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Policies",
+                        PageNavigation: 'Policies Screen'
+                    },
+                    {
+                        MenuID: 3,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Renewal Requests",
+                        PageNavigation:'Renewal Request screen'
+                    }
+                )
+            OnSelect: ="Text"
+            ZIndex: =1
+
+        Container17_2 As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            component_Header_3 As component_Header:
+                AlignInContainer: =AlignInContainer.Stretch
+                LayoutMinHeight: =640
+                LayoutMinWidth: =0
+                NoficationBellOnSelect: =
+                NotificationCircleVisibility: =CountIf('POLICY APPROVALS','Approval Status'=2)>0
+                Width: =
+
+            Container32_2 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =0
+                LayoutMinWidth: =0
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =25
+                PaddingTop: =20
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Container34_2 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =100
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =1
+
+                    Container38_2 As groupContainer.horizontalAutoLayoutContainer:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1.5
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =40
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        PaddingRight: =10
+                        ZIndex: =1
+
+                        Label15_2 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FillPortions: =1
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Bold
+                            LayoutMinWidth: =0
+                            Size: =13
+                            Text: ="Renewal Requests"
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        Container47_1 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height - 25
+                            LayoutGap: =10
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =0
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =3
+
+                            Icon5_1 As icon.Reload:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(214,221,224,1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =30
+                                Icon: =Icon.Reload
+                                OnSelect: |+
+                                    =Refresh('POLICY APPROVALS');
+                                    
+                                Tooltip: ="Refresh Requests"
+                                Width: =30
+                                X: =
+                                Y: =
+                                ZIndex: =1
+
+                            Container40_2 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderColor: =RGBA(214, 221, 224, 1)
+                                BorderThickness: =2
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =0
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =5
+                                PaddingRight: =5
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Width: =300
+                                ZIndex: =2
+
+                                Icon7_2 As icon.Search:
+                                    BorderColor: =
+                                    Color: =RGBA(214,221,224,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =30
+                                    Icon: =Icon.Search
+                                    Width: =30
+                                    ZIndex: =1
+
+                                TextInput3_2 As text:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    Default: =
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    FillPortions: =1
+                                    FocusedBorderThickness: =4
+                                    Font: =App.Theme.Font
+                                    Height: =Parent.Height
+                                    HintText: ="Search by ID"
+                                    HoverBorderColor: =App.Theme.Colors.Darker40
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =Color.Transparent
+                                    LayoutMinWidth: =0
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Size: =8
+                                    ZIndex: =2
+
+                                Icon9_1 As icon.Cancel:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(214,221,224,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =25
+                                    Icon: =Icon.Cancel
+                                    OnSelect: =Reset(TextInput3_2)
+                                    Visible: =!IsBlank(TextInput3_2.Text)
+                                    Width: =25
+                                    ZIndex: =3
+
+                            DataCardValue49_1 As combobox:
+                                BorderColor: =RGBA(214, 221, 224, 1)
+                                ChevronBackground: =RGBA(214, 221, 224, 1)
+                                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                ChevronHoverBackground: =ColorFade(RGBA(214, 221, 224, 1),-20%)
+                                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                Color: =RGBA(4, 4, 4, 1)
+                                DefaultSelectedItems: =
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayFields: =["Value"]
+                                DisplayMode: =Parent.DisplayMode
+                                FillPortions: =1
+                                Font: =App.Theme.Font
+                                Height: =32
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
+                                InputTextPlaceholder: ="Approval Status"
+                                Items: =Choices('POLICY APPROVALS'.'Approval Status')
+                                LayoutMinWidth: =100
+                                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                                PressedColor: =RGBA(255, 255, 255, 1)
+                                PressedFill: =RGBA(214, 221, 224, 1)
+                                SearchFields: =["Value"]
+                                SearchItems: =Choices('POLICY APPROVALS'.'Approval Status',DataCardValue49_1.SearchText)
+                                SelectionFill: =RGBA(214, 221, 224, 1)
+                                SelectMultiple: =false
+                                Size: =13
+                                Tooltip: =
+                                Width: =
+                                X: =30
+                                ZIndex: =3
+
+                    Container36_2 As groupContainer.horizontalAutoLayoutContainer:
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        PaddingRight: =10
+                        ZIndex: =3
+
+                        Label16_20 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="ID"
+                            ZIndex: =1
+
+                        Label16_21 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="GROUP"
+                            ZIndex: =2
+
+                        Label16_22 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="INITIATOR NAME"
+                            ZIndex: =3
+
+                        Label16_23 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Status"
+                            ZIndex: =4
+
+                        Label16_25 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Action"
+                            Width: =70
+                            ZIndex: =6
+
+                Container37_2 As groupContainer.verticalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
+
+                    Gallery2_3 As gallery.galleryVertical:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DelayItemLoading: =true
+                        Items: =Sort(Search(Filter('POLICY APPROVALS','Approval Status' = DataCardValue49_1.Selected.Value || DataCardValue49_1.Selected.Value = Blank() ),TextInput3_2.Text,ID),'Approval Status',SortOrder.Ascending)
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Container42_2 As groupContainer.horizontalAutoLayoutContainer:
+                            DropShadow: =DropShadow.Light
+                            Height: =Parent.TemplateHeight
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =18
+                            PaddingRight: =10
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.TemplateWidth
+                            ZIndex: =1
+
+                            Label16_26 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.ID
+                                ZIndex: =1
+
+                            Label16_27 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.Group
+                                ZIndex: =2
+
+                            Label16_28 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.'Initiator Name'
+                                ZIndex: =3
+
+                            Container39_2 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                Fill: |-
+                                    =Switch(
+                                        ThisItem.'Approval Status',
+                                        'Approval Status'.Approved,
+                                        RGBA(
+                                            1,
+                                            167,
+                                            37,
+                                            0.1
+                                        ),
+                                        'Approval Status'.Rejected,
+                                        RGBA(
+                                            201,
+                                            5,
+                                            5,
+                                            0.1
+                                        ),
+                                        'Approval Status'.Pending,
+                                        RGBA(
+                                            186,
+                                            114,
+                                            5,
+                                            0.1
+                                        ),
+                                        RGBA(
+                                            255,
+                                            255,
+                                            255,
+                                            1
+                                        )
+                                    )
+                                FillPortions: =0
+                                Height: =30
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                RadiusBottomLeft: =50
+                                RadiusBottomRight: =50
+                                RadiusTopLeft: =50
+                                RadiusTopRight: =50
+                                Width: =150
+                                X: =40
+                                ZIndex: =5
+
+                                Circle1_2 As circle:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Fill: |-
+                                        =Switch(ThisItem.'Approval Status','Approval Status'.Approved,RGBA(1, 167, 37, 1),'Approval Status'.Rejected,RGBA(201, 5, 5, 1),'Approval Status'.Pending,RGBA(186,114,5,1),RGBA(0,0,0,0.5)
+                                        )
+                                    Height: =10
+                                    Width: =10
+                                    ZIndex: =1
+
+                                Label17_2 As label:
+                                    AutoHeight: =true
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =Switch(ThisItem.'Approval Status','Approval Status'.Approved,RGBA(1,167,37,1),'Approval Status'.Rejected,RGBA(201,5,5,1),'Approval Status'.Pending,RGBA(186,114,5,1),RGBA(0,0,0,0.5))
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    Font: =Font.Arial
+                                    FontWeight: =FontWeight.Semibold
+                                    LayoutMinWidth: =0
+                                    Size: =8
+                                    Text: =Switch(ThisItem.'Approval Status','Approval Status'.Approved,"Approved",'Approval Status'.Rejected,"Rejected",'Approval Status'.Pending,"Pending","New")
+                                    ZIndex: =3
+
+                            Container44_1 As groupContainer.manualLayoutContainer:
+                                FillPortions: =0
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =0
+                                Width: =70
+                                ZIndex: =8
+
+                                Icon8_1 As icon.View:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(214,221,224,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =30
+                                    Icon: =Icon.View
+                                    OnSelect: |-
+                                        =UpdateContext({policyItem: ThisItem});
+                                        UpdateContext({openForm: true});
+                                        Switch(
+                                            Gallery2_3.Selected.'Approval Status',
+                                            'Approval Status'.Approved,
+                                            ViewForm(Form4_1),
+                                            'Approval Status'.Rejected,
+                                            ViewForm(Form4_1),
+                                            'Approval Status'.Pending,
+                                            EditForm(Form4_1)
+                                        );
+                                    Width: =30
+                                    X: =Parent.Width/2 - Self.Width/2
+                                    Y: =Parent.Height/2 - Self.Height/2
+                                    ZIndex: =1
+
+    "'POP UP_2' As 'POP UP'":
+        ActionText: =action
+        Height: =Parent.Height
+        NoAction: |-
+            =UpdateContext({showPopUp:false});
+        Visible: =showPopUp
+        Width: =Parent.Width
+        YesAction: |-
+            =//UpdateContext({showLoading: false});
+            Switch(
+                action,
+                "Approve",
+                UpdateContext({showPopUp: false});
+                UpdateContext({showLoading: true});
+                UpdateContext(
+                    {
+                        policyItems: Filter(
+                            'POLICY DOCUMENTS',
+                            'Item IDs' = Value(Gallery2_3.Selected.ID)
+                        )
+                    }
+                );
+                //Update comment if any
+            If(
+                    Trim(DataCardValue62.Value) <> "",
+                    'UpdateCommentlogandCasestatus'.Run(//update comments
+                        Gallery2_3.Selected.'POLICY APPROVALS',
+                        Now(),
+                        currentUser.displayName,
+                        DataCardValue62.Value
+                    )
+                );
+                //update approval status to approved
+            Patch(
+                    'POLICY APPROVALS',
+                    LookUp(
+                        'POLICY APPROVALS',
+                        ID = Gallery2_3.Selected.ID
+                    ),
+                    {
+                        'Approval Status': 'Approval Status'.Approved,
+                        'Approver Name': currentUser.displayName,
+                        'Approver Email Address': currentUser.mail
+                    }
+                );
+                
+            //If patch was successful, notify initiator and update policy compedium
+            If(
+                    IsEmpty(Errors('POLICY APPROVALS')),
+                    SendMail.Run(
+                        "POLICY RENEWAL REQUEST STATUS - ID " & Gallery2_3.Selected.ID,
+                        "<p>Dear " & Gallery2_3.Selected.'Initiator Name' & ", <br>Please note that your policy renewal request has been APPROVED by " & currentUser.displayName & ". <br>Regards.</p>",
+                        Gallery2_3.Selected.'Initiator Email Address'
+                    );
+                    If(
+                        !IsEmpty(policyItems),
+                        ForAll(
+                            policyItems,
+                            Patch(
+                                'POLICY COMPEDIUMS',
+                                LookUp(
+                                    'POLICY COMPEDIUMS',
+                                    'NAME OF POLICY' = 'POLICY NAME'
+                                ),
+                                {'DATE OF LAST UPDATED': Today()}
+                            )
+                        )
+                    );
+                    UpdateContext({openForm: false});
+                    ,
+                    Notify(
+                        First(Errors('POLICY APPROVALS')).Message,
+                        NotificationType.Error
+                    )
+                );
+                UpdateContext({showLoading: false}),
+                /*Update item approval status with Approved and the approver name with the name and email address. Send a notification to the initiator on the status*/
+                "Reject",
+                UpdateContext({showPopUp: false});
+                If(
+                    Trim(DataCardValue62.Value) = "",
+                    Notify(
+                        "Please input your comments before rejecting!",
+                        NotificationType.Information
+                    );
+                    ,
+                    UpdateContext({showLoading: true});
+                    If(
+                        'UpdateCommentlogandCasestatus'.Run(//update comments
+                            Gallery2_3.Selected.'POLICY APPROVALS',
+                            Now(),
+                            currentUser.displayName,
+                            DataCardValue62.Value
+                        ).status = "00",
+                        Patch(//update policy approval if comment update is successful
+                            'POLICY APPROVALS',
+                            LookUp(
+                                'POLICY APPROVALS',
+                                ID = Gallery2_3.Selected.ID
+                            ),
+                            {
+                                'Approval Status': 'Approval Status'.Rejected,
+                                'Approver Name': currentUser.displayName,
+                                'Approver Email Address': currentUser.mail
+                            }
+                        );
+                        If(//If datasource update was successful
+                            IsEmpty(Errors('POLICY APPROVALS')),
+                            Notify(
+                                "Case has been rejected successfully",
+                                NotificationType.Success
+                            );
+                            SendMail.Run(
+                                "POLICY RENEWAL STATUS FOR ID " & Gallery2_3.Selected.ID,
+                                "<p>Dear " & Gallery2_3.Selected.'Initiator Name' & ",<br> Please note that your request for Policy Renewal has been rejected by " & currentUser.displayName & ". Please <a href='https://apps.powerapps.com/play/e/44d579ff-3f11-e3fa-adea-4961bbd02a59/a/e6f54512-e336-4f0a-8276-d45b3034b0ea?tenantId=cd6683a6-aa85-46cf-aeea-92d4a1477009&hint=281339f6-56ee-40b0-9032-e5f160876e78&sourcetime=1721410965240&hideNavBar=true&status=rejected'>click here</a> to see the details. <br> Regards</p>",
+                                Gallery2_3.Selected.'Initiator Email Address'
+                            );
+                            UpdateContext({showLoading: false}),
+                            Notify(
+                                First(Errors('POLICY APPROVALS')).Message,
+                                NotificationType.Error
+                            )
+                        ),
+                        Notify(
+                            "An error occured updating the comments",
+                            NotificationType.Error
+                        )
+                    );
+                /*Update item approval status with Rejected and the approver name with the name and email address. Send a notification to the initiator on the status*/
+            UpdateContext({openForm: false});
+                );
+                
+            )
+        ZIndex: =4
+
+    Group1_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        rect_shadow_1 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(0, 0, 0, 0.3)
+            Height: =Parent.Height
+            Visible: =openForm
+            Width: =Parent.Width
+            ZIndex: =2
+
+        Container46_1 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =25
+            PaddingLeft: =25
+            PaddingRight: =25
+            PaddingTop: =25
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =openForm
+            Width: =Parent.Width * 40%
+            X: =Parent.Width - Self.Width
+            ZIndex: =3
+
+            form_header_1 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =50
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Label18_1 As label:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(4, 4, 4, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FillPortions: =1
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    LayoutMinWidth: =0
+                    Size: =11
+                    Text: ="Renewal Requests"
+                    ZIndex: =1
+
+                Icon11 As icon.CancelBadge:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =App.Theme.Colors.Darker30
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =20
+                    Icon: =Icon.CancelBadge
+                    OnSelect: |-
+                        =UpdateContext({openForm:false})
+                    Visible: =And(Gallery2_3.Selected.'Approval Status' <> 'Approval Status'.Approved,Gallery2_3.Selected.'Approval Status' <> 'Approval Status'.Rejected)
+                    Width: =20
+                    ZIndex: =2
+
+            rect_horizontalLine_1 As rectangle:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                Fill: =RGBA(217,217,217,1)
+                Height: =2
+                Width: =Parent.Width
+                ZIndex: =2
+
+            Container50_1 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =5
+                ZIndex: =3
+
+                Label19_1 As label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    AutoHeight: =true
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(4, 4, 4, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Size: =10
+                    Text: ="Renewal Details"
+                    ZIndex: =1
+
+                Form4_1 As form.PowerApps_CoreControls_Form:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DataSource: ='POLICY APPROVALS'
+                    DefaultMode: =FormMode.View
+                    Item: =Gallery2_3.Selected
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    NumberOfColumns: =2
+                    OnFailure: |-
+                        =UpdateContext({showLoading:false});Notify(First(Errors('POLICY COMPEDIUMS')).Record.'OWNER NAME'.'Full Name',NotificationType.Error);
+                    OnSuccess: |-
+                        =Notify("Policy has been updated successfully",NotificationType.Success); ViewForm(Form4_1);UpdateContext({showLoading:false});UpdateContext({openForm:false});
+                    UseFluentV9Cards: =true
+                    ZIndex: =2
+
+                    ID_DataCard3 As typedDataCard.fluentV9TextualViewCard:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_id"
+                        Default: =ThisItem.ID
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_id)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                        DataCardKey70 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue65 As 'Text input'":
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey70.Y + DataCardKey70.Height + 4
+                            ZIndex: =2
+
+                    "'Initiator Name_DataCard5' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_initiatorname"
+                        Default: =ThisItem.'Initiator Name'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_initiatorname)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY APPROVALS'], DataSourceInfo.MaxLength, owolabi_initiatorname)
+                        Required: =true
+                        Update: =DataCardValue67.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =0
+                        ZIndex: =3
+
+                        DataCardKey72 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue67 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey72.Y + DataCardKey72.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage63 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue67.Y + DataCardValue67.Height
+                            ZIndex: =3
+
+                        StarVisible63 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey72.Y
+                            ZIndex: =4
+
+                    "'Initiator Email Address_DataCard3' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_initiatoremailaddress"
+                        Default: =ThisItem.'Initiator Email Address'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_initiatoremailaddress)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY APPROVALS'], DataSourceInfo.MaxLength, owolabi_initiatoremailaddress)
+                        Required: =true
+                        Update: =DataCardValue66.Value
+                        Visible: =false
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =1
+                        ZIndex: =3
+
+                        DataCardKey71 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue66 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey71.Y + DataCardKey71.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage62 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue66.Y + DataCardValue66.Height
+                            ZIndex: =3
+
+                        StarVisible62 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey71.Y
+                            ZIndex: =4
+
+                    Group_DataCard5 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_group"
+                        Default: =ThisItem.Group
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_group)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =DataCardValue64.Selected.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =1
+                        ZIndex: =3
+
+                        DataCardKey69 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue64 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =DisplayMode.View
+                            Height: =32
+                            Items: =Choices('Risk Management Groups')
+                            Required: =false
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey69.Y + DataCardKey69.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage61 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue64.Y + DataCardValue64.Height
+                            ZIndex: =3
+
+                        StarVisible61 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey69.Y
+                            ZIndex: =4
+
+                    "'Approval Status_DataCard5' As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_approvalstatus"
+                        Default: =ThisItem.'Approval Status'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_approvalstatus)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =79
+                        Required: =false
+                        Update: =DataCardValue59.Selected.Value
+                        Visible: =If(Gallery2_3.Selected.'Approval Status' <> 'Approval Status'.Pending,true, false)
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =2
+                        ZIndex: =3
+
+                        DataCardKey64 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue59 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices('Approval Status')
+                            Required: =false
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey64.Y + DataCardKey64.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage56 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue59.Y + DataCardValue59.Height
+                            ZIndex: =3
+
+                        StarVisible56 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey64.Y
+                            ZIndex: =4
+
+                    "'Approver Name_DataCard2' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_approvername"
+                        Default: =ThisItem.'Approver Name'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_approvername)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY APPROVALS'], DataSourceInfo.MaxLength, owolabi_approvername)
+                        Required: =false
+                        Update: =DataCardValue61.Value
+                        Visible: =If(Gallery2_3.Selected.'Approval Status' <> 'Approval Status'.Pending,true, false)
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =2
+                        ZIndex: =3
+
+                        DataCardKey66 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue61 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey66.Y + DataCardKey66.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage58 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue61.Y + DataCardValue61.Height
+                            ZIndex: =3
+
+                        StarVisible58 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey66.Y
+                            ZIndex: =4
+
+                    CommentLog_DataCard5 As typedDataCard.fluentV9TextualMultiLineEditCard:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_commentlog"
+                        Default: =ThisItem.CommentLog
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_commentlog)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =166
+                        Required: =false
+                        Update: =DataCardValue63.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =3
+                        ZIndex: =3
+
+                        DataCardKey68 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: ="Comments"
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue63 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =144
+                            Mode: ='TextInputCanvas.Mode'.Multiline
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey68.Y + DataCardKey68.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage60 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue63.Y + DataCardValue63.Height
+                            ZIndex: =3
+
+                        StarVisible60 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey68.Y
+                            ZIndex: =4
+
+                    "'Approver Email Address_DataCard2' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_approveremailaddress"
+                        Default: =ThisItem.'Approver Email Address'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_approveremailaddress)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY APPROVALS'], DataSourceInfo.MaxLength, owolabi_approveremailaddress)
+                        Required: =false
+                        Update: =DataCardValue60.Value
+                        Visible: =false
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =3
+                        ZIndex: =3
+
+                        DataCardKey65 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue60 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey65.Y + DataCardKey65.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage57 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue60.Y + DataCardValue60.Height
+                            ZIndex: =3
+
+                        StarVisible57 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey65.Y
+                            ZIndex: =4
+
+                    Comment_DataCard5 As typedDataCard.fluentV9TextualMultiLineEditCard:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_comment"
+                        Default: =ThisItem.Comment
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY APPROVALS'],DataSourceInfo.DisplayName,owolabi_comment)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =166
+                        Required: =false
+                        Update: =DataCardValue62.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =4
+                        ZIndex: =3
+
+                        DataCardKey67 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: ="Your Comments"
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue62 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            BorderStyle: =""
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =144
+                            Mode: ='TextInputCanvas.Mode'.Multiline
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey67.Y + DataCardKey67.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage59 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue62.Y + DataCardValue62.Height
+                            ZIndex: =3
+
+                        StarVisible59 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey67.Y
+                            ZIndex: =4
+
+                rect_horizontalLine_2 As rectangle:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =RGBA(217,217,217,1)
+                    Height: =2
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                Label19_2 As label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    AutoHeight: =true
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(4, 4, 4, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Size: =10
+                    Text: ="Documents"
+                    ZIndex: =4
+
+                "Gallery6 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DelayItemLoading: =true
+                    FillPortions: =0.5
+                    Items: =Filter('POLICY DOCUMENTS','Item IDs' = Value(Gallery2_3.Selected.ID))
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =320
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =50
+                    ZIndex: =5
+
+                    Container25 As groupContainer.horizontalAutoLayoutContainer:
+                        Height: =Parent.TemplateHeight
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =3
+                        PaddingLeft: =3
+                        PaddingRight: =10
+                        PaddingTop: =3
+                        Width: =Parent.TemplateWidth
+                        ZIndex: =1
+
+                        Image14 As image:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Height: =30
+                            Image: |-
+                                =Switch(
+                                    Lower(
+                                        Last(
+                                            Split(
+                                                ThisItem.'Document Name',
+                                                "."
+                                            )
+                                        ).Value
+                                    ),
+                                    "pdf",
+                                    "data:image/svg+xml;utf8, " & EncodeUrl(
+                                        Substitute(
+                                            pdfIcon,
+                                            "currentColor",
+                                            pdfColorText
+                                        )
+                                    ),
+                                    "xlsx",
+                                    "data:image/svg+xml;utf8, " & EncodeUrl(
+                                        Substitute(
+                                            excelDocIcon,
+                                            "currentColor",
+                                            excelColorText
+                                        )
+                                    ),
+                                    "pptx",
+                                    "data:image/svg+xml;utf8, " & EncodeUrl(
+                                        Substitute(
+                                            powerPointIcon,
+                                            "currentColor",
+                                            pptColorText
+                                        )
+                                    ),
+                                    "docx",
+                                    "data:image/svg+xml;utf8, " & EncodeUrl(
+                                        Substitute(
+                                            wordDocIcon,
+                                            "currentColor",
+                                            wordColorText
+                                        )
+                                    ),
+                                    "doc",
+                                    "data:image/svg+xml;utf8, " & EncodeUrl(
+                                        Substitute(
+                                            wordDocIcon,
+                                            "currentColor",
+                                            wordColorText
+                                        )
+                                    )
+                                )
+                            Width: =30
+                            ZIndex: =1
+
+                        Label14 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FillPortions: =1
+                            Font: =App.Theme.Font
+                            Size: =13
+                            Text: =ThisItem.'POLICY NAME'
+                            ZIndex: =2
+
+                        Icon10 As icon.Download:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =30
+                            Icon: =Icon.Download
+                            OnSelect: |-
+                                =Download("https://orge85073f1.crm4.dynamics.com/api/data/v9.0/owolabi_policydocumentses("&ThisItem.'POLICY DOCUMENTS'&")/owolabi_document/$value")
+                            Width: =30
+                            ZIndex: =3
+
+                rect_horizontalLine_3 As rectangle:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =RGBA(217,217,217,1)
+                    Height: =2
+                    Width: =Parent.Width
+                    ZIndex: =6
+
+                buttons_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =70
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =30
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =0
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =7
+
+                    closeButton As button:
+                        BorderColor: =RGBA(17,65,133,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(17,65,133,1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
+                        OnSelect: |-
+                            =UpdateContext({openForm:false})
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =RGBA(17,65,133,1)
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =10
+                        Text: ="Close"
+                        Visible: =If(Or(Gallery2_3.Selected.'Approval Status' = 'Approval Status'.Approved,Gallery2_3.Selected.'Approval Status' = 'Approval Status'.Rejected), true,false)
+                        ZIndex: =1
+
+                    rejectButton As button:
+                        BorderColor: =RGBA(17,65,133,1)
+                        Color: =RGBA(17,65,133,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =Color.White
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverFill: =ColorFade(RGBA(217,217,217,1), 20%)
+                        OnSelect: |-
+                            =UpdateContext({action: "Reject"});UpdateContext({showPopUp:true});//Switch(Form4_1.Mode, FormMode.Edit,ViewForm(Form4_1),FormMode.New,UpdateContext({openForm:false}))
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =Self.Fill
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =10
+                        Text: ="Reject"
+                        Visible: =If(Gallery2_3.Selected.'Approval Status' = 'Approval Status'.Pending, true,false)
+                        ZIndex: =2
+
+                    approveButton As button:
+                        BorderColor: =RGBA(17,65,133,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: |-
+                            =DisplayMode.Edit/*If(
+                                And(
+                                    IsBlank(ErrorMessage42_1.Text),
+                                    IsBlank(ErrorMessage41_1.Text),
+                                    IsBlank(ErrorMessage40_1.Text),
+                                    IsBlank(ErrorMessage43_1.Text),
+                                    IsBlank(ErrorMessage46_1.Text),
+                                    IsBlank(ErrorMessage44_1.Text),
+                                    IsBlank(ErrorMessage43_1.Text),
+                                    IsBlank(ErrorMessage38_1.Text),
+                                    IsBlank(ErrorMessage47_1.Text),
+                                    IsBlank(ErrorMessage45_1.Text)
+                                ),
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )*/
+                        Fill: =RGBA(17,65,133,1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
+                        OnSelect: |-
+                            =UpdateContext({action: "Approve"});UpdateContext({showPopUp:true});
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =App.Theme.Colors.Darker40
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =10
+                        Text: ="Approve"
+                        Visible: =If(Gallery2_3.Selected.'Approval Status' = 'Approval Status'.Pending, true,false)
+                        ZIndex: =3
+
+    Loading_2 As Loading:
+        Visible: =showLoading
+        ZIndex: =5
+

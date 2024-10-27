@@ -1,0 +1,52 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2024-08-02T14:38:09.2320000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{DriveId}": "Drive ID",
+      "{DriveItemId}": "Drive item ID",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{Identifier}": "Identifier",
+      "{IsCheckedOut}": "Checked out",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "CheckoutUser": "Checked Out To",
+      "CheckoutUser#Claims": "Checked Out To Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "ID": "ID",
+      "MediaServiceImageTags": "Image Tags",
+      "MediaServiceImageTags#WssId": "Image Tags WssId",
+      "MediaServiceImageTags@odata.type": "MediaServiceImageTags (MediaServiceImageTags@odata.type)",
+      "MediaServiceOCR": "Extracted Text",
+      "Modified": "Modified",
+      "OData__ColorTag": "Color Tag",
+      "OData__DisplayName": "Sensitivity",
+      "OData__ExtendedDescription": "Description",
+      "Title": "Title"
+    },
+    "DatasetName": "https://legacypoise.sharepoint.com/sites/PropertyManagement",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Tenant Onboarding Documents",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

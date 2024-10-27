@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "429c5ef0-61db-48f7-bd71-27ef95f3a690",
+    "Name": "SendMail",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "b91acead-36e8-ee11-904c-002248995f95"
+  }
+]

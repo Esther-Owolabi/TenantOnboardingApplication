@@ -1,0 +1,1796 @@
+"'Policies Screen' As screen":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: |
+        =
+
+    Container13_2 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: |
+            =RGBA(248, 248, 248, 1)
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Navigator_2 As Navigator:
+            currentItem: =2
+            Height: =Parent.Height * 90/100
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            MenuItem: |-
+                =Table(
+                    {
+                        MenuID: 1,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Dashboard",
+                        PageNavigation: 'Home Screen'
+                    },
+                    {
+                        MenuID: 2,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Policies",
+                        PageNavigation: 'Policies Screen'
+                    },
+                    {
+                        MenuID: 3,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Renewal Requests",
+                        PageNavigation: 'Renewal Request screen'
+                    }
+                )
+            OnSelect: ="Text"
+            ZIndex: =1
+
+        Container17_1 As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            component_Header_1 As component_Header:
+                AlignInContainer: =AlignInContainer.Stretch
+                LayoutMinHeight: =640
+                LayoutMinWidth: =0
+                NoficationBellOnSelect: =
+                NotificationCircleVisibility: =CountIf('POLICY APPROVALS','Approval Status'=2)>0
+                Tooltip: ="You have some pending requests awaiting approval "
+                Width: =
+
+            Container32_1 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =0
+                LayoutMinWidth: =0
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =25
+                PaddingTop: =20
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Container34_1 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =100
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =1
+
+                    Container38_1 As groupContainer.horizontalAutoLayoutContainer:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1.5
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =40
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        PaddingRight: =10
+                        ZIndex: =1
+
+                        Label15_1 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FillPortions: =1
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Bold
+                            LayoutMinWidth: =0
+                            Size: =13
+                            Text: ="Policies"
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        Container47 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            FillPortions: =0
+                            Height: =Parent.Height - 25
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            ZIndex: =3
+
+                            Icon5_3 As icon.Reload:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(214,221,224,1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =30
+                                Icon: =Icon.Reload
+                                OnSelect: |+
+                                    =Refresh('POLICY COMPEDIUMS');
+                                    
+                                Tooltip: ="Refresh Requests"
+                                Width: =30
+                                X: =
+                                Y: =
+                                ZIndex: =1
+
+                            Container40_1 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderColor: =RGBA(214, 221, 224, 1)
+                                BorderThickness: =2
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =0
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =5
+                                PaddingRight: =5
+                                RadiusBottomLeft: =5
+                                RadiusBottomRight: =5
+                                RadiusTopLeft: =5
+                                RadiusTopRight: =5
+                                Width: =300
+                                ZIndex: =2
+
+                                Icon7_1 As icon.Search:
+                                    BorderColor: =
+                                    Color: =RGBA(214,221,224,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =30
+                                    Icon: =Icon.Search
+                                    Width: =30
+                                    ZIndex: =1
+
+                                TextInput3_1 As text:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    BorderStyle: =BorderStyle.None
+                                    BorderThickness: =2
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    Default: =
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    FillPortions: =1
+                                    FocusedBorderThickness: =4
+                                    Font: =App.Theme.Font
+                                    Height: =Parent.Height
+                                    HintText: ="Search by Policy Name"
+                                    HoverBorderColor: =App.Theme.Colors.Darker40
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =Color.Transparent
+                                    LayoutMinWidth: =0
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Size: =8
+                                    ZIndex: =2
+
+                                Icon9 As icon.Cancel:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(214,221,224,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =25
+                                    Icon: =Icon.Cancel
+                                    OnSelect: =Reset(TextInput3_1)
+                                    Visible: =!IsBlank(TextInput3_1.Text)
+                                    Width: =25
+                                    ZIndex: =3
+
+                            Button10 As button:
+                                AlignInContainer: =AlignInContainer.Center
+                                BorderColor: =App.Theme.Colors.Primary
+                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(17,65,133,1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                HoverBorderColor: =App.Theme.Colors.Darker10
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
+                                LayoutMinHeight: =
+                                LayoutMinWidth: =0
+                                OnSelect: |-
+                                    =NewForm(Form4);UpdateContext({openForm:true})
+                                PressedBorderColor: =App.Theme.Colors.Darker40
+                                PressedColor: =Self.Color
+                                PressedFill: =RGBA(17,65,133,1)
+                                RadiusBottomLeft: =6
+                                RadiusBottomRight: =6
+                                RadiusTopLeft: =6
+                                RadiusTopRight: =6
+                                Size: =10
+                                Text: ="➕New Policy"
+                                ZIndex: =3
+
+                    Container36_1 As groupContainer.horizontalAutoLayoutContainer:
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        PaddingRight: =10
+                        ZIndex: =3
+
+                        Label16_6 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Reference Code"
+                            ZIndex: =1
+
+                        Label16_7 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Policy Name"
+                            ZIndex: =2
+
+                        Label16_8 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Unit"
+                            ZIndex: =3
+
+                        Label16_9 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Status"
+                            Width: =90
+                            ZIndex: =4
+
+                        Label16_10 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Due Date"
+                            ZIndex: =5
+
+                        Label16_11 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Action"
+                            Width: =70
+                            ZIndex: =6
+
+                Container37_1 As groupContainer.verticalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
+
+                    Gallery2 As gallery.galleryVertical:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DelayItemLoading: =true
+                        Items: =Sort(Search('POLICY COMPEDIUMS',TextInput3_1.Text,'NAME OF POLICY'),'DAYS T0 EXPIRATION')
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Container42 As groupContainer.horizontalAutoLayoutContainer:
+                            DropShadow: =DropShadow.Light
+                            Height: =Parent.TemplateHeight
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =18
+                            PaddingRight: =10
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.TemplateWidth
+                            ZIndex: =1
+
+                            Label16_12 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.'REFERENCE CODE'
+                                ZIndex: =1
+
+                            Label16_13 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.'NAME OF POLICY'
+                                ZIndex: =2
+
+                            Label16_14 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.UNIT
+                                ZIndex: =3
+
+                            Container39 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                Fill: =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE",RGBA(1, 167, 37, 0.1),"EXPIRED",RGBA(201, 5, 5, 0.1),RGBA(254,99,9,0.1))
+                                FillPortions: =0
+                                Height: =30
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =10
+                                RadiusBottomLeft: =50
+                                RadiusBottomRight: =50
+                                RadiusTopLeft: =50
+                                RadiusTopRight: =50
+                                Width: =90
+                                X: =40
+                                ZIndex: =5
+
+                                Circle1 As circle:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Fill: |-
+                                        =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE",RGBA(1, 167, 37, 1),"EXPIRED",RGBA(201, 5, 5, 1),RGBA(254,99,9,1)
+                                        )
+                                    Height: =10
+                                    Width: =10
+                                    ZIndex: =1
+
+                                Label17 As label:
+                                    AutoHeight: =true
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE",RGBA(1,167,37,1),"EXPIRED",RGBA(201,5,5,1),RGBA(254,99,9,1))
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    Font: =Font.Arial
+                                    FontWeight: =FontWeight.Semibold
+                                    LayoutMinWidth: =0
+                                    Size: =8
+                                    Text: =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE","Active","EXPIRED","Expired","Due Soon")
+                                    ZIndex: =3
+
+                            Label16_16 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =Text(ThisItem.'EXPIRATION DATE',"dd-mm-yyyy")
+                                ZIndex: =6
+
+                            Container44 As groupContainer.manualLayoutContainer:
+                                FillPortions: =0
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =0
+                                Width: =70
+                                ZIndex: =8
+
+                                Icon8 As icon.View:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(214,221,224,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =30
+                                    Icon: =Icon.View
+                                    OnSelect: |-
+                                        =UpdateContext({policyItem: ThisItem}); UpdateContext({openForm:true});ViewForm(Form4)
+                                    Width: =30
+                                    X: =Parent.Width/2 - Self.Width/2
+                                    Y: =Parent.Height/2 - Self.Height/2
+                                    ZIndex: =1
+
+    "'POP UP_1' As 'POP UP'":
+        ActionText: =action
+        Height: =Parent.Height
+        NoAction: |-
+            =UpdateContext({showPopUp:false});
+        Visible: =showPopUp
+        Width: =Parent.Width
+        YesAction: |-
+            =Switch(
+                action,
+                "Submit",
+                UpdateContext({showPopUp: false});
+                UpdateContext({showLoading: true});
+                SubmitForm(Form4),
+                "Delete",
+                UpdateContext({showPopUp: false});
+                UpdateContext({showLoading: true});
+                Remove(
+                    'POLICY COMPEDIUMS',
+                    LookUp(
+                        'POLICY COMPEDIUMS',
+                        ID = Gallery2.Selected.ID
+                    )
+                );
+                UpdateContext({showLoading: false});
+                UpdateContext({openForm: false});
+                
+            )
+        ZIndex: =4
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        rect_shadow As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(0, 0, 0, 0.3)
+            Height: =Parent.Height
+            Visible: =openForm
+            Width: =Parent.Width
+            ZIndex: =2
+
+        Container46 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =25
+            PaddingLeft: =25
+            PaddingRight: =25
+            PaddingTop: =25
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =openForm
+            Width: =Parent.Width * 40%
+            X: =Parent.Width - Self.Width
+            ZIndex: =3
+
+            form_header As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =50
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =1
+
+                Label18 As label:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(4, 4, 4, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FillPortions: =1
+                    Font: =App.Theme.Font
+                    FontWeight: =FontWeight.Bold
+                    LayoutMinWidth: =0
+                    Size: =11
+                    Text: ="Policies"
+                    ZIndex: =1
+
+                Edit_container As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =20
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    Visible: =If(Form4.Mode = FormMode.View,true,false)
+                    Width: =20
+                    ZIndex: =2
+
+                    Image12 As image:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =Parent.Height
+                        Image: =edit
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Button1 As button:
+                        BorderColor: =App.Theme.Colors.Primary
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: =EditForm(Form4);
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Size: =15
+                        Text: ="Button"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                Delete_container As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =20
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    Visible: =If(Form4.Mode = FormMode.View,true,false)
+                    Width: =20
+                    ZIndex: =3
+
+                    Image12_1 As image:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =Parent.Height
+                        Image: =trash
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    Button1_1 As button:
+                        BorderColor: =App.Theme.Colors.Primary
+                        BorderStyle: =BorderStyle.None
+                        Color: =RGBA(0, 0, 0, 0)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: |-
+                            =UpdateContext({action:"Delete"});UpdateContext({showPopUp:true});
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Size: =15
+                        Text: ="Button"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+            rect_horizontalLine As rectangle:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =App.Theme.Colors.Darker40
+                Fill: =RGBA(217,217,217,1)
+                Height: =2
+                Width: =Parent.Width
+                ZIndex: =2
+
+            Container50 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Label19 As label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =RGBA(4, 4, 4, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.Arial
+                    FontWeight: =FontWeight.Semibold
+                    Size: =10
+                    Text: =Switch(Form4.Mode, FormMode.View,"Policy Details",FormMode.Edit ,"Edit Policy",FormMode.New,"New Policy")
+                    ZIndex: =1
+
+                Form4 As form.PowerApps_CoreControls_Form:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    DataSource: ='POLICY COMPEDIUMS'
+                    DefaultMode: =FormMode.View
+                    Item: =Gallery2.Selected
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    NumberOfColumns: =2
+                    OnFailure: |-
+                        =UpdateContext({showLoading:false});Notify(First(Errors('POLICY COMPEDIUMS')).Record.'OWNER NAME'.'Full Name',NotificationType.Error);
+                    OnSuccess: |-
+                        =Notify("Policy has been updated successfully",NotificationType.Success); ViewForm(Form4);UpdateContext({showLoading:false});UpdateContext({openForm:false});
+                    UseFluentV9Cards: =true
+                    ZIndex: =2
+
+                    "'OWNERS NAMES_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_ownersnames"
+                        Default: =ThisItem.'OWNERS NAMES'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,owolabi_ownersnames)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY COMPEDIUMS'], DataSourceInfo.MaxLength, owolabi_ownersnames)
+                        Required: =true
+                        Update: =DataCardValue49_2.Selected.DisplayName
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =3
+                        ZIndex: =1
+
+                        DataCardKey36 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        ErrorMessage29 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue49_2.Y + DataCardValue49_2.Height
+                            ZIndex: =3
+
+                        StarVisible29 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey36.Y
+                            ZIndex: =4
+
+                        DataCardValue49_2 As combobox:
+                            BorderColor: =RGBA(214, 221, 224, 1)
+                            ChevronBackground: =RGBA(245, 245, 245, 1)
+                            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                            ChevronFill: =RGBA(97, 97, 97, 1)
+                            ChevronHoverBackground: =ColorFade(RGBA(214, 221, 224, 1),-20%)
+                            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                            Color: =RGBA(4, 4, 4, 1)
+                            DefaultSelectedItems: |-
+                                =Switch(
+                                    Form4.Mode,
+                                    FormMode.View,
+                                    First(Office365Users.SearchUserV2({searchTerm: Parent.Default}).value),
+                                    FormMode.Edit,
+                                    First(Office365Users.SearchUserV2({searchTerm: Parent.Default}).value),
+                                    Blank()
+                                )//[Parent.Default]
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayFields: =["DisplayName","Mail"]
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =RGBA(245, 245, 245, 1)
+                            Font: =App.Theme.Font
+                            Height: =32
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =App.Theme.Colors.Lighter70
+                            InputTextPlaceholder: ="Choose Owner"
+                            Items: |-
+                                =Office365Users.SearchUserV2({searchTerm:Trim(Self.SearchText),isSearchTermRequired:false}).value
+                            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                            PressedColor: =RGBA(255, 255, 255, 1)
+                            PressedFill: =RGBA(214, 221, 224, 1)
+                            SearchFields: =["DisplayName"]
+                            SearchItems: |-
+                                =Search(Office365Users.SearchUserV2({searchTerm:Trim(Self.SearchText),isSearchTermRequired: false }).value,DataCardValue49_2.SearchText,DisplayName)
+                            SelectionColor: =RGBA(0, 0, 0, 1)
+                            SelectionFill: =RGBA(245, 245, 245, 1)
+                            SelectMultiple: =false
+                            Size: =13
+                            Template: =ListItemTemplate.Person
+                            Tooltip: =
+                            Width: =Parent.Width - 48
+                            X: =10
+                            Y: =DataCardKey36.Y + DataCardKey36.Height + 4
+                            ZIndex: =6
+
+                    "'OWNERS EMAIL_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_ownersemail"
+                        Default: =ThisItem.'OWNERS EMAIL'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,owolabi_ownersemail)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY COMPEDIUMS'], DataSourceInfo.MaxLength, owolabi_ownersemail)
+                        Required: =true
+                        Update: =DataCardValue49.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =4
+                        ZIndex: =1
+
+                        DataCardKey37 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =24
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue49 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: |-
+                                =Switch(
+                                    Form4.Mode,
+                                    FormMode.View,
+                                    Parent.Default,
+                                    FormMode.Edit,
+                                    DataCardValue49_2.Selected.Mail,
+                                    DataCardValue49_2.Selected.Mail
+                                )
+                            Width: =Parent.Width - 48
+                            X: =24
+                            Y: =DataCardKey37.Y + DataCardKey37.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage32 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =24
+                            Y: =DataCardValue49.Y + DataCardValue49.Height
+                            ZIndex: =3
+
+                        StarVisible32 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            X: =0
+                            Y: =DataCardKey37.Y
+                            ZIndex: =4
+
+                    "'EXPIRATION DATE_DataCard2' As typedDataCard.fluentV9TextualViewCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_expirationdate"
+                        Default: =ThisItem.'EXPIRATION DATE'
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'EXPIRATION DATE')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Visible: =If(Form4.Mode = FormMode.View,true, false)
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =5
+                        ZIndex: =1
+
+                        DataCardKey52 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =5
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue46 As 'Text input'":
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =5
+                            Y: =DataCardKey52.Y + DataCardKey52.Height + 4
+                            ZIndex: =2
+
+                    "'DAYS T0 EXPIRATION_DataCard2' As typedDataCard.fluentV9TextualViewCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_dayst0expiration"
+                        Default: =ThisItem.'DAYS T0 EXPIRATION'
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'DAYS T0 EXPIRATION')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Visible: =If(Form4.Mode = FormMode.View,true, false)
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =6
+                        ZIndex: =1
+
+                        DataCardKey51 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =5
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue45 As 'Text input'":
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =5
+                            Y: =DataCardKey51.Y + DataCardKey51.Height + 4
+                            ZIndex: =2
+
+                    "'EXPIRATION STATUS_DataCard2' As typedDataCard.fluentV9TextualViewCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_expirationstatus"
+                        Default: =ThisItem.'EXPIRATION STATUS'
+                        DisplayMode: =DisplayMode.View
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'EXPIRATION STATUS')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Visible: =If(Form4.Mode = FormMode.View,true, false)
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =6
+                        ZIndex: =1
+
+                        DataCardKey53 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =5
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue47 As 'Text input'":
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.View
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =5
+                            Y: =DataCardKey53.Y + DataCardKey53.Height + 4
+                            ZIndex: =2
+
+                    "'REFERENCE CODE_DataCard3' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_referencecode"
+                        Default: =ThisItem.'REFERENCE CODE'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'REFERENCE CODE')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY COMPEDIUMS'], DataSourceInfo.MaxLength, 'REFERENCE CODE')
+                        Required: =true
+                        Update: =DataCardValue38.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                        DataCardKey46 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible42.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue38 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey46.X
+                            Y: =DataCardKey46.Y + DataCardKey46.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage42 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DataCardValue38.Value),"Reference Code is required"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey46.X
+                            Y: =DataCardValue38.Y + DataCardValue38.Height
+                            ZIndex: =3
+
+                        StarVisible42 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            AutoHeight: =true
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =30
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey46.Y
+                            ZIndex: =4
+
+                    "'NAME OF POLICY_DataCard3' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_nameofpolicy"
+                        Default: =ThisItem.'NAME OF POLICY'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'NAME OF POLICY')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY COMPEDIUMS'], DataSourceInfo.MaxLength, 'NAME OF POLICY')
+                        Required: =true
+                        Update: =DataCardValue35.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =0
+                        ZIndex: =3
+
+                        DataCardKey45 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible41.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue35 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey45.X
+                            Y: =DataCardKey45.Y + DataCardKey45.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage41 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DataCardValue35.Value),"Name of Policy is required"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey45.X
+                            Y: =DataCardValue35.Y + DataCardValue35.Height
+                            ZIndex: =3
+
+                        StarVisible41 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey45.Y
+                            ZIndex: =4
+
+                    "'DOCUMENT TYPE_DataCard3' As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_documenttype"
+                        Default: =ThisItem.'DOCUMENT TYPE'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'DOCUMENT TYPE')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =DataCardValue34.Selected.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =1
+                        ZIndex: =3
+
+                        DataCardKey44 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible40.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue34 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices('DOCUMENT TYPE (POLICY COMPEDIUMS)')
+                            Required: =false
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey44.X
+                            Y: =DataCardKey44.Y + DataCardKey44.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage40 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =Color.Red
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DataCardValue34.Selected.Value),"Document Type is required"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey44.X
+                            Y: =DataCardValue34.Y + DataCardValue34.Height
+                            ZIndex: =3
+
+                        StarVisible40 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey44.Y
+                            ZIndex: =4
+
+                    "'RISK RATING_DataCard3' As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_riskrating"
+                        Default: =ThisItem.'RISK RATING'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'RISK RATING')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =DataCardValue40.Selected.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =1
+                        ZIndex: =3
+
+                        DataCardKey47 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible43.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue40 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices('RISK RATING (POLICY COMPEDIUMS)')
+                            Required: =false
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey47.X
+                            Y: =DataCardKey47.Y + DataCardKey47.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage43 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DataCardValue40.Selected.Value),"Risk rating field is required"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey47.X
+                            Y: =DataCardValue40.Y + DataCardValue40.Height
+                            ZIndex: =3
+
+                        StarVisible43 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey47.Y
+                            ZIndex: =4
+
+                    GROUP_DataCard3 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_group"
+                        Default: =ThisItem.GROUP
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,GROUP)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =DataCardValue44.Selected.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =2
+                        ZIndex: =3
+
+                        DataCardKey50 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible46.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue44 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices('GROUP (POLICY COMPEDIUMS)')
+                            Required: =false
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey50.X
+                            Y: =DataCardKey50.Y + DataCardKey50.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage46 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DataCardValue44.Selected.Value),"Group field is required"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey50.X
+                            Y: =DataCardValue44.Y + DataCardValue44.Height
+                            ZIndex: =3
+
+                        StarVisible46 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey50.Y
+                            ZIndex: =4
+
+                    UNIT_DataCard3 As typedDataCard.fluentV9ComboBoxOptionSetSingleEditCard:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_unit"
+                        Default: =ThisItem.UNIT
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,UNIT)
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =DataCardValue42.Selected.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =2
+                        ZIndex: =3
+
+                        DataCardKey48 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible44.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue42 As Combobox.pcfdataset:
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            DefaultSelectedItems: =[Parent.Default]
+                            DisplayMode: =Parent.DisplayMode
+                            Height: =32
+                            Items: =Choices('UNIT (POLICY COMPEDIUMS)')
+                            Required: =false
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey48.X
+                            Y: =DataCardKey48.Y + DataCardKey48.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage44 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DataCardValue42.Selected.Value),"Unit field is required"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey48.X
+                            Y: =DataCardValue42.Y + DataCardValue42.Height
+                            ZIndex: =3
+
+                        StarVisible44 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey48.Y
+                            ZIndex: =4
+
+                    "'UNIT MAIL_DataCard2' As typedDataCard.fluentV9TextualEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_unitmail"
+                        Default: =ThisItem.'UNIT MAIL'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'UNIT MAIL')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        MaxLength: =DataSourceInfo([@'POLICY COMPEDIUMS'], DataSourceInfo.MaxLength, 'UNIT MAIL')
+                        Required: =true
+                        Update: =DataCardValue43.Value
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =3
+                        ZIndex: =3
+
+                        DataCardKey49 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible45.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        "DataCardValue43 As 'Text input'":
+                            AccessibleLabel: =Parent.DisplayName
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                            Required: =Parent.Required
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Value: =Parent.Default
+                            Width: =Parent.Width - 48
+                            X: =DataCardKey49.X
+                            Y: =DataCardKey49.Y + DataCardKey49.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage45 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =Color.Red
+                            Height: =30
+                            Text: |-
+                                =Coalesce(
+                                    Parent.Error,
+                                    If(
+                                        !IsMatch(
+                                            Trim(DataCardValue43.Value),
+                                            Match.Email
+                                        ),
+                                        "Email address is invalid."
+                                    ),
+                                    If(
+                                        IsBlank(
+                                            DataCardValue43.Value
+                                            
+                                        ),
+                                        "Email address is required"
+                                    )
+                                )
+                            Visible: =!IsBlank(Self.Text)
+                            Weight: ='TextCanvas.Weight'.Regular
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey49.X
+                            Y: =DataCardValue43.Y + DataCardValue43.Height
+                            ZIndex: =3
+
+                        StarVisible45 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey49.Y
+                            ZIndex: =4
+
+                    "'DATE OF INITIATION_DataCard3' As typedDataCard.fluentV9DateTimeEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_dateofinitiation"
+                        Default: =ThisItem.'DATE OF INITIATION'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'DATE OF INITIATION')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =false
+                        Update: =If(Not IsBlank(DateValue5.SelectedDate),DateValue5.SelectedDate) 
+                        Width: =248
+                        WidthFit: =true
+                        X: =1
+                        Y: =4
+                        ZIndex: =3
+
+                        DataCardKey40 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible36.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        "DateValue5 As 'Date picker'":
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            SelectedDate: =Parent.Default
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =(Parent.Width - 48)
+                            X: =DataCardKey40.X
+                            Y: =DataCardKey40.Y + DataCardKey40.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage36 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =30
+                            Text: =Parent.Error
+                            Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey40.X
+                            Y: =DateValue5.Y + DateValue5.Height
+                            ZIndex: =6
+
+                        StarVisible36 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey40.Y
+                            ZIndex: =7
+
+                    "'DATE OF LAST UPDATED_DataCard3' As typedDataCard.fluentV9DateTimeEditCard":
+                        BorderColor: =App.Theme.Colors.Darker40
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="owolabi_dateoflastupdated"
+                        Default: =ThisItem.'DATE OF LAST UPDATED'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@'POLICY COMPEDIUMS'],DataSourceInfo.DisplayName,'DATE OF LAST UPDATED')
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =70
+                        Required: =true
+                        Update: =If(Not IsBlank(DateValue6.SelectedDate), DateValue6.SelectedDate)
+                        Width: =248
+                        WidthFit: =true
+                        X: =0
+                        Y: =5
+                        ZIndex: =3
+
+                        DataCardKey42 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =
+                            Height: =22
+                            Text: =Parent.DisplayName
+                            Weight: ='TextCanvas.Weight'.Semibold
+                            Width: =Parent.Width - 48
+                            Wrap: =false
+                            X: =StarVisible38.Width
+                            Y: =10
+                            ZIndex: =1
+
+                        "DateValue6 As 'Date picker'":
+                            AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                            BasePaletteColor: =
+                            BorderColor: =
+                            DisplayMode: =Parent.DisplayMode
+                            Fill: =
+                            FontColor: =
+                            Height: =32
+                            SelectedDate: =Parent.Default
+                            ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                            Width: =(Parent.Width - 48)
+                            X: =DataCardKey42.X
+                            Y: =DataCardKey42.Y + DataCardKey42.Height + 4
+                            ZIndex: =2
+
+                        ErrorMessage38 As Text:
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =Color.Red
+                            Height: =30
+                            Text: =Coalesce(Parent.Error,If(IsBlank(DateValue6.SelectedDate),"Please input date value"))
+                            Visible: =!IsBlank(Self.Text)
+                            Width: =Parent.Width - 48
+                            Wrap: =true
+                            X: =DataCardKey42.X
+                            Y: =DateValue6.Y + DateValue6.Height
+                            ZIndex: =6
+
+                        StarVisible38 As Text:
+                            Align: ='TextCanvas.Align'.Center
+                            BorderColor: =
+                            DisplayMode: =DisplayMode.Edit
+                            Fill: =
+                            FontColor: =RGBA(255, 0, 0, 1)
+                            Height: =20
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =10
+                            X: =0
+                            Y: =DataCardKey42.Y
+                            ZIndex: =7
+
+                buttons As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =70
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =30
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =3
+
+                    close_button As button:
+                        BorderColor: =RGBA(17,65,133,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(17,65,133,1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
+                        OnSelect: |-
+                            =UpdateContext({openForm:false})
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =RGBA(17,65,133,1)
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =10
+                        Text: ="Close"
+                        Visible: =If(Form4.Mode = FormMode.View, true,false)
+                        ZIndex: =1
+
+                    cancel_button As button:
+                        BorderColor: =RGBA(17,65,133,1)
+                        Color: =RGBA(17,65,133,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =Color.White
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverFill: =ColorFade(RGBA(217,217,217,1), 20%)
+                        OnSelect: |-
+                            =Switch(Form4.Mode, FormMode.Edit,ViewForm(Form4),FormMode.New,UpdateContext({openForm:false}))
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =Self.Fill
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =10
+                        Text: ="Cancel"
+                        Visible: =If(Or(Form4.Mode = FormMode.Edit,Form4.Mode = FormMode.New), true,false)
+                        ZIndex: =2
+
+                    save_button As button:
+                        BorderColor: =RGBA(17,65,133,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: |-
+                            =If(
+                                And(
+                                    IsBlank(ErrorMessage42.Text),
+                                    IsBlank(ErrorMessage41.Text),
+                                    IsBlank(ErrorMessage40.Text),
+                                    IsBlank(ErrorMessage43.Text),
+                                    IsBlank(ErrorMessage46.Text),
+                                    IsBlank(ErrorMessage44.Text),
+                                    IsBlank(ErrorMessage43.Text),
+                                    IsBlank(ErrorMessage38.Text),
+                                    //IsBlank(ErrorMessage47.Text),
+                                    IsBlank(ErrorMessage45.Text)
+                                ),
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
+                        Fill: =RGBA(17,65,133,1)
+                        Font: =Font.Arial
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =App.Theme.Colors.Darker10
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
+                        OnSelect: |-
+                            =UpdateContext({action: "Submit"});UpdateContext({showPopUp:true});
+                        PressedBorderColor: =App.Theme.Colors.Darker40
+                        PressedColor: =Self.Color
+                        PressedFill: =App.Theme.Colors.Darker40
+                        RadiusBottomLeft: =6
+                        RadiusBottomRight: =6
+                        RadiusTopLeft: =6
+                        RadiusTopRight: =6
+                        Size: =10
+                        Text: ="Save"
+                        Visible: =If(Or(Form4.Mode = FormMode.Edit,Form4.Mode = FormMode.New), true,false)
+                        ZIndex: =3
+
+    Loading_1 As Loading:
+        Visible: =showLoading
+        ZIndex: =5
+
