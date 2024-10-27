@@ -57,6 +57,6 @@ function sendPostRequest(e) {
     'muteHttpExceptions': true
   };
   Logger.log(JSON.stringify(sendData));
-  var myResponse = UrlFetchApp.fetch('https://prod-29.westeurope.logic.azure.com:443/workflows/0ad0e5580519426db66f0f5ca50aa151/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=MglEpvEhIcVXnSbOTDHeUTStp4O97hP1gtx7llK7RHM', options); // Replace with your Power Automate HTTP trigger URL
+  var myResponse = UrlFetchApp.fetch('Your Power Automate URL', options); // Replace with your Power Automate HTTP trigger URL
   Logger.log(myResponse.getContentText()); 
 }
