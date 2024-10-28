@@ -857,7 +857,6 @@
 
                             approve_button As button:
                                 BorderColor: =RGBA(85, 69, 191,1)
-                                Color: =RGBA(255, 255, 255,1)
                                 DisabledBorderColor: =RGBA(244, 244, 244, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -865,18 +864,23 @@
                                 FocusedBorderThickness: =2
                                 Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Semibold
-                                HoverBorderColor: =Self.BorderColor
-                                HoverFill: =RGBA(170, 163, 217, 0.2)
+                                HoverBorderColor: =RGBA(85, 69, 191,1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =ColorFade(Self.Fill,20%)
                                 OnSelect: |-
                                     =UpdateContext({action:"APPROVE"});UpdateContext({showPopUp:true});
-                                PressedBorderColor: =Self.BorderColor
+                                PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
-                                PressedFill: =RGBA(170, 163, 217, 0.4)
-                                Size: =11
+                                PressedFill: =Self.Fill
+                                RadiusBottomLeft: =6
+                                RadiusBottomRight: =6
+                                RadiusTopLeft: =6
+                                RadiusTopRight: =6
+                                Size: =15
                                 Text: ="Approve"
                                 X: =reject_button.X + reject_button.Width + 20
                                 Y: =Parent.Height/2 - Self.Height/2
-                                ZIndex: =2
+                                ZIndex: =3
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -1031,7 +1035,9 @@
 
     "'POP UP_4' As 'POP UP'":
         ActionText: =action
-        NoAction: ="Text"
-        YesAction: =
+        NoAction: |-
+            =UpdateContext({showPopUp:false})
+        Visible: =showPopUp
+        YesAction: =Navigate('Mail Screen',ScreenTransition.CoverRight)
         ZIndex: =4
 

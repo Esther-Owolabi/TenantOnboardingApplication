@@ -1,6 +1,7 @@
 "'Home Screen' As screen":
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents')
 
     Container13 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |

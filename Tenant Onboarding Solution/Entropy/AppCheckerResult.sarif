@@ -29991,36 +29991,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen_1'.showPopUp"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.showPopUp",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "showPopUp",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 17
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.Y"
                 }
               ],
