@@ -54,6 +54,7 @@
             LayoutMinHeight: =0
             LayoutMinWidth: =0
             LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
             ZIndex: =2
 
             Container32_7 As groupContainer.verticalAutoLayoutContainer:
@@ -161,7 +162,7 @@
                         ZIndex: =5
 
                         RichTextEditor2 As richTextEditor:
-                            BorderColor: =App.Theme.Colors.Darker40
+                            BorderColor: =If(IsBlank(Trim(Self.HtmlText)),Color.Red,Color.Black)
                             Default: ="<input type='text' placeholder='Enter your text here'>"
                             Height: =500
                             Width: =Parent.Width
