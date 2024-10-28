@@ -224,6 +224,6 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: =Navigate('Mail Screen',ScreenTransition.CoverRight)
+        YesAction: =//send generated docment
         ZIndex: =4
 
