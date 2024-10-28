@@ -219,7 +219,6 @@
                             Height: =Parent.Height
                             Size: =9
                             Text: =""
-                            Width: =200
                             ZIndex: =6
 
                 Container37 As groupContainer.verticalAutoLayoutContainer:
@@ -279,6 +278,7 @@
                                 Height: =Parent.Height
                                 Size: =9
                                 Text: =ThisItem.'Name of Prospective Tenant'
+                                Width: =200
                                 ZIndex: =2
 
                             Label16_17 As label:
@@ -290,8 +290,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.'Company Name and Address'
-                                Width: =200
+                                Text: =ThisItem.'Status'.Value
                                 ZIndex: =3
 
                             Container59_1 As groupContainer.manualLayoutContainer:

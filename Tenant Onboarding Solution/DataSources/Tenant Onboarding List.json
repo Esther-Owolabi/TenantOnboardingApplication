@@ -56,6 +56,8 @@
       "SpouseOccupation": "Spouse Occupation",
       "SpouseTelephoneNumber": "Spouse Telephone Number",
       "StateofOrigin": "State of Origin",
+      "Status": "Status",
+      "Status#Id": "Status Id",
       "SubmissionDate": "Submission Date",
       "TelephoneNumber": "Telephone Number",
       "Title": "Title"
