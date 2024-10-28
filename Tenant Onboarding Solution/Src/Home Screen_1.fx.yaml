@@ -711,7 +711,7 @@
                             Text: ="Current Residential Address"
                             Width: =200
                             X: =name_label.X
-                            Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                            Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
                             ZIndex: =37
 
                         currentResidentialAddress_value_1 As label:
