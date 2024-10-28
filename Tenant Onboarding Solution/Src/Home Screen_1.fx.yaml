@@ -725,7 +725,7 @@
                             Height: =30
                             Size: =11
                             Text: =record.'Current Residential Address'
-                            Width: =Parent.Width/2 - 20
+                            Width: =Parent.Width/3 - 20
                             X: =currentResidentialAddress_label_1.X
                             Y: =currentResidentialAddress_label_1.Y + currentResidentialAddress_label_1.Height
                             ZIndex: =38
