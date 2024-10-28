@@ -384,3 +384,87 @@
                             Y: =email_label.Y + email_label.Height
                             ZIndex: =16
 
+                        phoneNumber_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Phone Number"
+                            X: =email_value.X + email_value.Width + 10
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =17
+
+                        phoneNumber_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Telephone Number'
+                            Width: =Parent.Width/4 - 10
+                            X: =phoneNumber_label.X
+                            Y: =phoneNumber_label.Y + phoneNumber_label.Height
+                            ZIndex: =18
+
+                        marital_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Marital Status"
+                            X: =phoneNumber_value.X + phoneNumber_value.Width + 10
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =19
+
+                        marital_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Marital Status'
+                            Width: =Parent.Width/4 - 10
+                            X: =marital_label.X
+                            Y: =marital_label.Y + marital_label.Height
+                            ZIndex: =20
+
+                        wifeCount_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Number of Wives"
+                            X: =marital_value.X + marital_value.Width + 10
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =21
+
+                        wifeCount_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Number of Wives'
+                            Width: =Parent.Width/4 - 10
+                            X: =wifeCount_label.X
+                            Y: =wifeCount_label.Y + wifeCount_label.Height
+                            ZIndex: =22
+
