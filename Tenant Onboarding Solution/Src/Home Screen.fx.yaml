@@ -290,7 +290,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.'Status'.Value
+                                Text: =ThisItem.Status.Value
                                 ZIndex: =3
 
                             Container59_1 As groupContainer.manualLayoutContainer:

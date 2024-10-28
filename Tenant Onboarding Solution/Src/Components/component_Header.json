@@ -2203,7 +2203,7 @@
       "NoficationBellOnSelect",
       "Tooltip"
     ],
-    "LastModifiedTimestamp": "638657044123158421",
+    "LastModifiedTimestamp": "638657109210056382",
     "Name": "component_Header",
     "Rules": [
       {
@@ -2327,7 +2327,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638657044123158421",
+  "LastModifiedTimestamp": "638657109210056382",
   "Name": "67be405e305b4acc93d836607f4e0614",
   "OverridableProperties": {},
   "Version": "1.0"

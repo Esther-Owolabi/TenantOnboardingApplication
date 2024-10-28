@@ -103,7 +103,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 703,
+    "BindingErrorCount": 704,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -138,6 +138,7 @@
   },
   "ScreenOrder": [
     "Home Screen",
+    "Home Screen_1",
     "Details Screen",
     "Mail Screen",
     "Policies Screen",
