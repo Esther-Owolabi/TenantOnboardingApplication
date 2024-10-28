@@ -102,7 +102,7 @@
                                 FontWeight: =FontWeight.Bold
                                 LayoutMinWidth: =0
                                 Size: =13
-                                Text: ="Active Requests"
+                                Text: =record.'Name of Prospective Tenant'
                                 Width: =Parent.Width
                                 ZIndex: =7
 
@@ -222,7 +222,6 @@
                     ZIndex: =16
 
     LoadingImageHome_1 As Loading:
-        Visible: |
-            =loading
+        Visible: =false
         ZIndex: =2
 

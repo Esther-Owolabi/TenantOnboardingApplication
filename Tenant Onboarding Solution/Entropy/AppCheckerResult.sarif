@@ -28163,46 +28163,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen_1'.LoadingImageHome_1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.LoadingImageHome_1.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "loading"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.LoadingImageHome_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "loading"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Form.Container4.AddMediaButton1.AccessibleLabel"
                 }
               ],
