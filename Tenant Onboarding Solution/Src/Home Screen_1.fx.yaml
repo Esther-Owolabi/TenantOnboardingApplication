@@ -544,7 +544,7 @@
                             Height: =30
                             Size: =11
                             Text: =record.'Company Name and Address'
-                            Width: =Parent.Width/2 - 20
+                            Width: =Parent.Width/2 
                             X: =company_label.X
                             Y: =company_label.Y + company_label.Height
                             ZIndex: =26
@@ -559,7 +559,7 @@
                             Size: =10
                             Text: ="Name of Spouse"
                             X: =name_label.X
-                            Y: =company_value.Y + company_value.Height + 10
+                            Y: =If(company_value.Height > occupation_value.Height,company_value.Y + company_value.Height + 10,occupation_value.Y + occupation_value.Height + 10)
                             ZIndex: =27
 
                         spouseName_value As label:
@@ -577,6 +577,95 @@
                             X: =spouseName_label.X
                             Y: =spouseName_label.Y + spouseName_label.Height
                             ZIndex: =28
+
+                        spouseDetails_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Spouse Occupation/ Office Name and Address"
+                            Width: =300
+                            X: =spouseName_value.X + spouseName_value.Width + 10
+                            Y: =company_value.Y + company_value.Height + 10
+                            ZIndex: =29
+
+                        spouseDetails_value As label:
+                            AutoHeight: =true
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Spouse'
+                            Width: =Parent.Width/2
+                            X: =spouseDetails_label.X
+                            Y: =spouseDetails_label.Y + spouseDetails_label.Height
+                            ZIndex: =30
+
+                        noOfChildren_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Number of Children"
+                            X: =spouseDetails_value.X + spouseDetails_value.Width + 10
+                            Y: =company_value.Y + company_value.Height + 10
+                            ZIndex: =31
+
+                        noOfChildren_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Number of Children'
+                            Width: =Parent.Width/4 - 20
+                            X: =noOfChildren_label.X
+                            Y: =noOfChildren_label.Y + noOfChildren_label.Height
+                            ZIndex: =32
+
+                        spouseName_label_1 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Name of Spouse"
+                            X: =name_label.X
+                            Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                            ZIndex: =33
+
+                        spouseName_value_1 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Spouse'
+                            Width: =Parent.Width/4 - 20
+                            X: =spouseName_label_1.X
+                            Y: =spouseName_label_1.Y + spouseName_label_1.Height
+                            ZIndex: =34
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
