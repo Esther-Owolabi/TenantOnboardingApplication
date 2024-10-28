@@ -356,3 +356,31 @@
                             Y: =sex_label.Y + sex_label.Height
                             ZIndex: =14
 
+                        email_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Email"
+                            X: =name_label.X
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =15
+
+                        email_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Email Address'
+                            Width: =Parent.Width/4 - 20
+                            X: =email_label.X
+                            Y: =email_label.Y + email_label.Height
+                            ZIndex: =16
+
