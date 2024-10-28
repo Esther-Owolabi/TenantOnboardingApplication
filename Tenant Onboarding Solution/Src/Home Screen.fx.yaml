@@ -331,7 +331,7 @@
                                     HoverBorderColor: =App.Theme.Colors.Darker10
                                     HoverFill: =RGBA(128, 128, 128, 0.1)
                                     OnSelect: |-
-                                        =UpdateContext({loading:true});Set(record,ThisItem);Set(attachments,ThisItem.Attachments);UpdateContext({loading:false});Navigate('Home Screen_1',ScreenTransition.Fade);
+                                        =UpdateContext({loading:true});Set(record,ThisItem);Set(attachments,ThisItem.Attachments);UpdateContext({loading:false});Navigate('Details Screen',ScreenTransition.Fade);
                                     PressedBorderColor: =App.Theme.Colors.Darker40
                                     PressedColor: =Self.Color
                                     PressedFill: =Self.Fill

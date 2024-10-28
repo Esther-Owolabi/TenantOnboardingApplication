@@ -2,15 +2,53 @@
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
-    Container13_1 As groupContainer.horizontalAutoLayoutContainer:
+    LoadingImageHome_1 As Loading:
+        Visible: =false
+
+    Container13_6 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
             =RGBA(248, 248, 248, 1)
         Height: =Parent.Height
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
-        ZIndex: =1
+        ZIndex: =2
 
-        Container17_4 As groupContainer.verticalAutoLayoutContainer:
+        Navigator_5 As Navigator:
+            Height: =Parent.Height * 90/100
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            LogOutScreen: =
+            MenuItem: |-
+                =Table(
+                    {
+                        MenuID: 1,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Home",
+                        PageNavigation: 'Details Screen'
+                    },
+                    {
+                        MenuID: 2,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Requests",
+                        PageNavigation: 'Policies Screen'
+                    },
+                    {
+                        MenuID: 3,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Renewal Requests",
+                        PageNavigation: 'Renewal Request screen'
+                    }
+                )
+            OnSelect: ="Text"
+            ZIndex: =1
+
+        Container17_6 As groupContainer.verticalAutoLayoutContainer:
             Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =0
@@ -18,895 +56,988 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
-            component_Header_5 As component_Header:
-                AlignInContainer: =AlignInContainer.Stretch
-                LayoutMinHeight: =640
-                LayoutMinWidth: =0
-                NoficationBellOnSelect: =
-                Tooltip: ="You have some pending requests awaiting approval "
-                Width: =
-
-            Container32_4 As groupContainer.verticalAutoLayoutContainer:
+            Container32_6 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =10
+                LayoutGap: =5
                 LayoutMinHeight: =0
                 LayoutMinWidth: =0
                 LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =20
                 PaddingLeft: =20
-                PaddingRight: =25
-                PaddingTop: =20
                 Width: =Parent.Width
                 ZIndex: =3
 
-                Container34_4 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
-                    Height: =50
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =4
-
-                    Container35_1 As groupContainer.horizontalAutoLayoutContainer:
-                        Fill: =RGBA(255, 255, 255, 1)
-                        FillPortions: =1.5
-                        LayoutMinHeight: =0
-                        LayoutMinWidth: =0
-                        LayoutMode: =LayoutMode.Auto
-                        ZIndex: =5
-
-                        Container38_4 As groupContainer.horizontalAutoLayoutContainer:
-                            Height: =Parent.Height
-                            LayoutAlignItems: =LayoutAlignItems.Center
-                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                            LayoutMinHeight: =0
-                            LayoutMinWidth: =0
-                            LayoutMode: =LayoutMode.Auto
-                            PaddingLeft: =2
-                            PaddingRight: =10
-                            ZIndex: =6
-
-                            Arrow1 As arrow.backArrow:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                Fill: =RGBA(85, 69, 191, 1)
-                                Height: =40
-                                OnSelect: =Back()
-                                Width: =40
-                                ZIndex: =1
-
-                            Label15_4 As label:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: =RGBA(0, 0, 0, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                FillPortions: =1
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Bold
-                                LayoutMinWidth: =0
-                                Size: =13
-                                Text: =record.'Name of Prospective Tenant'
-                                Width: =Parent.Width
-                                ZIndex: =2
-
-                Container37_4 As groupContainer.verticalAutoLayoutContainer:
+                Container38_7 As groupContainer.horizontalAutoLayoutContainer:
                     Fill: =RGBA(255, 255, 255, 1)
-                    LayoutDirection: =LayoutDirection.Vertical
+                    FillPortions: =0
+                    Height: =70
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMinHeight: =0
                     LayoutMinWidth: =0
                     LayoutMode: =LayoutMode.Auto
-                    PaddingBottom: =10
-                    PaddingTop: =10
-                    ZIndex: =15
+                    PaddingLeft: =18
+                    PaddingRight: =10
+                    ZIndex: =1
 
-                    Container2 As groupContainer.verticalAutoLayoutContainer:
-                        FillPortions: =8
+                    Container59_3 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height - 25
                         LayoutMinHeight: =0
                         LayoutMinWidth: =250
-                        LayoutMode: =LayoutMode.Auto
+                        Width: =25
                         ZIndex: =1
 
-                        Form1 As form.PowerApps_CoreControls_Form:
+                        Icon2_1 As icon.ArrowLeft:
                             BorderColor: =App.Theme.Colors.Darker40
-                            DataSource: ='Tenant Onboarding List'
-                            DefaultMode: =FormMode.View
-                            Item: =record
-                            LayoutMinHeight: =0
-                            LayoutMinWidth: =0
-                            NumberOfColumns: =2
-                            UseFluentV9Cards: =true
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =Parent.Height
+                            Icon: =Icon.ArrowLeft
+                            Width: =Parent.Width
                             ZIndex: =1
 
-                            "'Name of Prospective Tenant_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="NameofProspectiveTenant"
-                                Default: =ThisItem.'Name of Prospective Tenant'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Name of Prospective Tenant')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Name of Prospective Tenant')
-                                Required: =false
-                                Update: =DataCardValue1.Value
-                                Width: =330
-                                X: =0
-                                Y: =0
-                                ZIndex: =2
-
-                                DataCardKey1 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue1 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey1.Y + DataCardKey1.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage1 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue1.Y + DataCardValue1.Height
-                                    ZIndex: =3
-
-                                StarVisible1 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey1.Y
-                                    ZIndex: =4
-
-                            "'Date of Birth_DataCard1' As typedDataCard.fluentV9DateEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="DateofBirth"
-                                Default: =ThisItem.'Date of Birth'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Date of Birth')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                Required: =false
-                                Update: =DataCardValue2.SelectedDate
-                                Width: =330
-                                X: =1
-                                Y: =0
-                                ZIndex: =2
-
-                                DataCardKey2 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue2 As 'Date picker'":
-                                    AccessibleLabel: =If(Parent.Required, Substitute("{0}. Required.", "{0}", Parent.DisplayName), Parent.DisplayName)
-                                    DisplayMode: =Parent.DisplayMode
-                                    EndDate: =Date(Year(Today())+100, 12, 31)
-                                    Height: =32
-                                    SelectedDate: =Parent.Default
-                                    StartDate: =Date(1900, 1, 1)
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey2.Y + DataCardKey2.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage2 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue2.Y + DataCardValue2.Height
-                                    ZIndex: =3
-
-                                StarVisible2 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey2.Y
-                                    ZIndex: =4
-
-                            Occupation_DataCard1 As typedDataCard.fluentV9TextualEditCard:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="Occupation"
-                                Default: =ThisItem.Occupation
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,Occupation)
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, Occupation)
-                                Required: =false
-                                Update: =DataCardValue3.Value
-                                Width: =330
-                                X: =0
-                                Y: =1
-                                ZIndex: =2
-
-                                DataCardKey3 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue3 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey3.Y + DataCardKey3.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage3 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue3.Y + DataCardValue3.Height
-                                    ZIndex: =3
-
-                                StarVisible3 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey3.Y
-                                    ZIndex: =4
-
-                            "'Telephone Number_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="TelephoneNumber"
-                                Default: =ThisItem.'Telephone Number'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Telephone Number')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Telephone Number')
-                                Required: =false
-                                Update: =DataCardValue4.Value
-                                Width: =330
-                                X: =1
-                                Y: =1
-                                ZIndex: =2
-
-                                DataCardKey4 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue4 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey4.Y + DataCardKey4.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage5 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue4.Y + DataCardValue4.Height
-                                    ZIndex: =3
-
-                                StarVisible5 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey4.Y
-                                    ZIndex: =4
-
-                            "'Email Address_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="EmailAddress"
-                                Default: =ThisItem.'Email Address'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Email Address')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Email Address')
-                                Required: =false
-                                Update: =DataCardValue5.Value
-                                Width: =330
-                                X: =0
-                                Y: =2
-                                ZIndex: =2
-
-                                DataCardKey5 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue5 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey5.Y + DataCardKey5.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage6 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue5.Y + DataCardValue5.Height
-                                    ZIndex: =3
-
-                                StarVisible6 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey5.Y
-                                    ZIndex: =4
-
-                            "'Marital Status_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="MaritalStatus"
-                                Default: =ThisItem.'Marital Status'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Marital Status')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Marital Status')
-                                Required: =false
-                                Update: =DataCardValue6.Value
-                                Width: =330
-                                X: =1
-                                Y: =2
-                                ZIndex: =2
-
-                                DataCardKey6 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue6 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey6.Y + DataCardKey6.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage8 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue6.Y + DataCardValue6.Height
-                                    ZIndex: =3
-
-                                StarVisible8 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey6.Y
-                                    ZIndex: =4
-
-                            "'Number of Children_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="NumberofChildren"
-                                Default: =ThisItem.'Number of Children'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Number of Children')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Number of Children')
-                                Required: =false
-                                Update: =DataCardValue7.Value
-                                Width: =330
-                                X: =0
-                                Y: =3
-                                ZIndex: =2
-
-                                DataCardKey7 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue7 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey7.Y + DataCardKey7.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage9 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue7.Y + DataCardValue7.Height
-                                    ZIndex: =3
-
-                                StarVisible9 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey7.Y
-                                    ZIndex: =4
-
-                            "'Current Residential Address_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="CurrentResidentialAddress"
-                                Default: =ThisItem.'Current Residential Address'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Current Residential Address')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Current Residential Address')
-                                Required: =false
-                                Update: =DataCardValue11.Value
-                                Width: =330
-                                X: =1
-                                Y: =3
-                                ZIndex: =2
-
-                                DataCardKey8 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue11 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey8.Y + DataCardKey8.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage11 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue11.Y + DataCardValue11.Height
-                                    ZIndex: =3
-
-                                StarVisible11 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey8.Y
-                                    ZIndex: =4
-
-                            "'Reason for Leaving_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="ReasonforLeaving"
-                                Default: =ThisItem.'Reason for Leaving'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Reason for Leaving')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Reason for Leaving')
-                                Required: =false
-                                Update: =DataCardValue12.Value
-                                Width: =330
-                                X: =0
-                                Y: =4
-                                ZIndex: =2
-
-                                DataCardKey11 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue12 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey11.Y + DataCardKey11.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage12 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue12.Y + DataCardValue12.Height
-                                    ZIndex: =3
-
-                                StarVisible12 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey11.Y
-                                    ZIndex: =4
-
-                            "'Pet Types_DataCard1' As typedDataCard.fluentV9TextualEditCard":
-                                BorderColor: =App.Theme.Colors.Darker40
-                                BorderStyle: =BorderStyle.Solid
-                                DataField: ="PetTypes"
-                                Default: =ThisItem.'Pet Types'
-                                DisplayMode: =Parent.DisplayMode
-                                DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Pet Types')
-                                Fill: =RGBA(0, 0, 0, 0)
-                                Height: =70
-                                MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Pet Types')
-                                Required: =false
-                                Update: =DataCardValue14.Value
-                                Width: =330
-                                X: =1
-                                Y: =4
-                                ZIndex: =2
-
-                                DataCardKey14 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =22
-                                    Text: =Parent.DisplayName
-                                    Weight: ='TextCanvas.Weight'.Semibold
-                                    Width: =Parent.Width - 48
-                                    Wrap: =false
-                                    X: =24
-                                    Y: =10
-                                    ZIndex: =1
-
-                                "DataCardValue14 As 'Text input'":
-                                    AccessibleLabel: =Parent.DisplayName
-                                    DisplayMode: =Parent.DisplayMode
-                                    Height: =32
-                                    Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
-                                    Required: =Parent.Required
-                                    ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                                    Value: =Parent.Default
-                                    Width: =Parent.Width - 48
-                                    X: =24
-                                    Y: =DataCardKey14.Y + DataCardKey14.Height + 4
-                                    ZIndex: =2
-
-                                ErrorMessage13 As Text:
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: =Parent.Error
-                                    Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =Parent.Width - 48
-                                    Wrap: =true
-                                    X: =24
-                                    Y: =DataCardValue14.Y + DataCardValue14.Height
-                                    ZIndex: =3
-
-                                StarVisible13 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =30
-                                    Text: ="*"
-                                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                                    Width: =30
-                                    X: =0
-                                    Y: =DataCardKey14.Y
-                                    ZIndex: =4
-
-                        "gal_formAttachments As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-                            BorderColor: =App.Theme.Colors.Darker40
-                            DelayItemLoading: =true
-                            Height: =767
-                            Items: =attachments
-                            LayoutMinHeight: =0
-                            LayoutMinWidth: =0
-                            LoadingSpinner: =LoadingSpinner.Data
-                            ShowNavigation: =true
-                            ShowScrollbar: =false
-                            TemplatePadding: =0
-                            TemplateSize: =Parent.Width/2//Min(440, Self.Height - 60)
-                            Width: =625
-                            X: =740
-                            Y: =1
+                        Button11_3 As button:
+                            BorderColor: =App.Theme.Colors.Primary
+                            BorderStyle: =BorderStyle.None
+                            Color: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =Color.Transparent
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            HoverBorderColor: =App.Theme.Colors.Darker10
+                            HoverFill: =Self.Fill
+                            OnSelect: =Navigate('Home Screen')
+                            PressedBorderColor: =App.Theme.Colors.Darker40
+                            PressedColor: =Self.Color
+                            PressedFill: =Self.Fill
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =15
+                            Text: =
+                            Width: =Parent.Width
                             ZIndex: =2
 
-                            Container5 As groupContainer.manualLayoutContainer:
-                                DropShadow: =DropShadow.Light
-                                Height: =Parent.TemplateHeight
-                                RadiusBottomLeft: =4
-                                RadiusBottomRight: =4
-                                RadiusTopLeft: =4
-                                RadiusTopRight: =4
-                                Width: =Parent.TemplateWidth
-                                ZIndex: =2
+                    Label15_7 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FillPortions: =1
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        LayoutMinWidth: =0
+                        Size: =13
+                        Text: =record.'Name of Prospective Tenant'
+                        Width: =Parent.Width
+                        ZIndex: =2
 
-                                Image10_1 As image:
-                                    BorderColor: =App.Theme.Colors.Darker40
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
-                                    Height: =Parent.Height * 90%
-                                    Image: |-
-                                        =With(
-                                            {
-                                                fileExtension: Last(
-                                                    ForAll(Split(
-                                                        ThisItem.DisplayName,
-                                                        "."
-                                                    ), {Result: ThisRecord.Value})
-                                                ).Result
-                                            },
+                    Button5 As button:
+                        BorderColor: =RGBA(85, 69, 191,1)
+                        Color: =RGBA(85, 69, 191,1)
+                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(255,255,255,1)
+                        FocusedBorderThickness: =2
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        HoverBorderColor: =Self.BorderColor
+                        HoverFill: =RGBA(170, 163, 217, 0.2)
+                        OnSelect: |-
+                            =UpdateContext({showImage:true})
+                        PressedBorderColor: =Self.BorderColor
+                        PressedColor: =Self.Color
+                        PressedFill: =RGBA(170, 163, 217, 0.4)
+                        Size: =11
+                        Text: ="View Attached Documents"
+                        ZIndex: =3
+
+                Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
+                    BorderThickness: =0
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height - Self.Y
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =100
+                    Width: =Parent.Width
+                    Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+                    ZIndex: =4
+
+                    DataCard1_1 As dataCard:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =0
+                        DisplayMode: =DisplayMode.Edit
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height - 100
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                        name_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Name"
+                            X: =10
+                            Y: =10
+                            ZIndex: =1
+
+                        name_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Prospective Tenant'
+                            Width: =Parent.Width/3 - 10
+                            X: =10
+                            Y: =name_label.Y + name_label.Height
+                            ZIndex: =2
+
+                        dob_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Date of Birth"
+                            X: =name_value.X + name_value.Width + 10
+                            Y: =name_label.Y
+                            ZIndex: =3
+
+                        dob_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =Text(record.'Date of Birth',"dd-mm-yyyy")
+                            Width: =Parent.Width/3 - 20
+                            X: =name_value.X + name_value.Width + 10
+                            Y: =dob_label.Y + dob_label.Height
+                            ZIndex: =4
+
+                        religion_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Religion"
+                            X: =name_label.X
+                            Y: =name_value.Y + name_value.Height + 10
+                            ZIndex: =5
+
+                        religion_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.Religion
+                            Width: =Parent.Width/4 - 20
+                            X: =religion_label.X
+                            Y: =religion_label.Y + religion_label.Height
+                            ZIndex: =6
+
+                        nationality_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Nationality"
+                            X: =religion_value.X + religion_value.Width + 10
+                            Y: =name_value.Y + name_value.Height + 10
+                            ZIndex: =7
+
+                        nationality_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.Nationality
+                            Width: =Parent.Width/4 - 10
+                            X: =nationality_label.X
+                            Y: =nationality_label.Y + nationality_label.Height
+                            ZIndex: =8
+
+                        stateOfOrigin_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="State of Origin"
+                            X: =nationality_value.X + nationality_value.Width + 10
+                            Y: =name_value.Y + name_value.Height + 10
+                            ZIndex: =9
+
+                        stateOfOrigin_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'State of Origin'
+                            Width: =Parent.Width/4 - 10
+                            X: =stateOfOrigin_label.X
+                            Y: =stateOfOrigin_label.Y + stateOfOrigin_label.Height
+                            ZIndex: =10
+
+                        lga_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="LGA"
+                            X: =stateOfOrigin_value.X + stateOfOrigin_value.Width + 10
+                            Y: =name_value.Y + name_value.Height + 10
+                            ZIndex: =11
+
+                        lga_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.LGA
+                            Width: =Parent.Width/4 - 10
+                            X: =lga_label.X
+                            Y: =lga_label.Y + lga_label.Height
+                            ZIndex: =12
+
+                        sex_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Sex"
+                            X: =dob_value.X + dob_value.Width + 10
+                            Y: =name_label.Y
+                            ZIndex: =13
+
+                        sex_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.Sex
+                            Width: =Parent.Width/3 - 20
+                            X: =sex_label.X
+                            Y: =sex_label.Y + sex_label.Height
+                            ZIndex: =14
+
+                        email_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Email"
+                            X: =name_label.X
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =15
+
+                        email_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Email Address'
+                            Width: =Parent.Width/4 - 20
+                            X: =email_label.X
+                            Y: =email_label.Y + email_label.Height
+                            ZIndex: =16
+
+                        phoneNumber_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Phone Number"
+                            X: =email_value.X + email_value.Width + 10
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =17
+
+                        phoneNumber_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Telephone Number'
+                            Width: =Parent.Width/4 - 10
+                            X: =phoneNumber_label.X
+                            Y: =phoneNumber_label.Y + phoneNumber_label.Height
+                            ZIndex: =18
+
+                        marital_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Marital Status"
+                            X: =phoneNumber_value.X + phoneNumber_value.Width + 10
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =19
+
+                        marital_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Marital Status'
+                            Width: =Parent.Width/4 - 10
+                            X: =marital_label.X
+                            Y: =marital_label.Y + marital_label.Height
+                            ZIndex: =20
+
+                        wifeCount_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Number of Wives"
+                            X: =marital_value.X + marital_value.Width + 10
+                            Y: =religion_value.Y + religion_value.Height + 10
+                            ZIndex: =21
+
+                        wifeCount_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Number of Wives'
+                            Width: =Parent.Width/4 - 10
+                            X: =wifeCount_label.X
+                            Y: =wifeCount_label.Y + wifeCount_label.Height
+                            ZIndex: =22
+
+                        occupation_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Occupation"
+                            X: =name_label.X
+                            Y: =email_value.Y + email_value.Height + 10
+                            ZIndex: =23
+
+                        occupation_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.Occupation
+                            Width: =Parent.Width/4 - 20
+                            X: =occupation_label.X
+                            Y: =occupation_label.Y + occupation_label.Height
+                            ZIndex: =24
+
+                        company_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Company Name and Address"
+                            Width: =200
+                            X: =occupation_value.X + occupation_value.Width + 10
+                            Y: =email_value.Y + email_value.Height + 10
+                            ZIndex: =25
+
+                        company_value As label:
+                            AutoHeight: =true
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Company Name and Address'
+                            Width: =Parent.Width/2 
+                            X: =company_label.X
+                            Y: =company_label.Y + company_label.Height
+                            ZIndex: =26
+
+                        spouseName_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Name of Spouse"
+                            X: =name_label.X
+                            Y: =If(company_value.Height > occupation_value.Height,company_value.Y + company_value.Height + 10,occupation_value.Y + occupation_value.Height + 10)
+                            ZIndex: =27
+
+                        spouseName_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Spouse'
+                            Width: =Parent.Width/4 - 20
+                            X: =spouseName_label.X
+                            Y: =spouseName_label.Y + spouseName_label.Height
+                            ZIndex: =28
+
+                        spouseDetails_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Spouse Occupation/ Office Name and Address"
+                            Width: =300
+                            X: =spouseName_value.X + spouseName_value.Width + 10
+                            Y: =company_value.Y + company_value.Height + 10
+                            ZIndex: =29
+
+                        spouseDetails_value As label:
+                            AutoHeight: =true
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Spouse'
+                            Width: =Parent.Width/2
+                            X: =spouseDetails_label.X
+                            Y: =spouseDetails_label.Y + spouseDetails_label.Height
+                            ZIndex: =30
+
+                        noOfChildren_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Number of Children"
+                            X: =spouseDetails_value.X + spouseDetails_value.Width + 10
+                            Y: =company_value.Y + company_value.Height + 10
+                            ZIndex: =31
+
+                        noOfChildren_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Number of Children'
+                            Width: =Parent.Width/4 - 20
+                            X: =noOfChildren_label.X
+                            Y: =noOfChildren_label.Y + noOfChildren_label.Height
+                            ZIndex: =32
+
+                        currentResidentialAddress_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Current Residential Address"
+                            Width: =200
+                            X: =name_label.X
+                            Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                            ZIndex: =33
+
+                        currentResidentialAddress_value As label:
+                            AutoHeight: =true
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Current Residential Address'
+                            Width: =Parent.Width/2 - 20
+                            X: =currentResidentialAddress_label.X
+                            Y: =currentResidentialAddress_label.Y + currentResidentialAddress_label.Height
+                            ZIndex: =34
+
+                        reasonForLeaving_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Reason for Leaving"
+                            Width: =200
+                            X: =currentResidentialAddress_value.X + currentResidentialAddress_value.Width + 10
+                            Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                            ZIndex: =35
+
+                        reasonForLeaving_value As label:
+                            AutoHeight: =true
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Reason for Leaving'
+                            Width: =Parent.Width/2 - 10
+                            X: =reasonForLeaving_label.X
+                            Y: =reasonForLeaving_label.Y + reasonForLeaving_label.Height
+                            ZIndex: =36
+
+                        petStatus_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Do you have pets or Intend to have one?"
+                            Width: =280
+                            X: =name_label.X
+                            Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
+                            ZIndex: =37
+
+                        petStatus_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Do you have pets or Intend to have pets'
+                            Width: =Parent.Width/3 - 20
+                            X: =petStatus_label.X
+                            Y: =petStatus_label.Y + petStatus_label.Height
+                            ZIndex: =38
+
+                        petTypes_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="If yes, what type?"
+                            Width: =280
+                            X: =petStatus_value.X + petStatus_value.Width + 10
+                            Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
+                            ZIndex: =39
+
+                        petTypes_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Pet Types'
+                            Width: =Parent.Width/3 - 20
+                            X: =petTypes_label.X
+                            Y: =petTypes_label.Y + petTypes_label.Height
+                            ZIndex: =40
+
+                        noOfCars_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Number of cars"
+                            Width: =280
+                            X: =name_label.X
+                            Y: =petStatus_value.Y + petStatus_value.Height + 10
+                            ZIndex: =41
+
+                        noOfCars_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Number of Cars'
+                            Width: =Parent.Width/3 - 20
+                            X: =noOfCars_label.X
+                            Y: =noOfCars_label.Y + noOfCars_label.Height
+                            ZIndex: =42
+
+                        noOfDependents_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: |-
+                                ="How many dependants do you intend to accommodate (If married, asides spouse & Children): "
+                            Width: =Parent.Width/2
+                            X: =noOfCars_value.X + noOfCars_value.Width + 10
+                            Y: =petStatus_value.Y + petStatus_value.Height + 10
+                            ZIndex: =43
+
+                        noOfDependents_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Number of Cars'
+                            Width: =Parent.Width/2
+                            X: =noOfDependents_label.X
+                            Y: =noOfDependents_label.Y + noOfDependents_label.Height
+                            ZIndex: =44
+
+                        Container7 As groupContainer.manualLayoutContainer:
+                            DropShadow: =DropShadow.Light
+                            Height: =70
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            Y: =noOfCars_value.Y + noOfCars_value.Height + 10
+                            ZIndex: =45
+
+                            reject_button As button:
+                                BorderColor: =RGBA(85, 69, 191,1)
+                                Color: =RGBA(85, 69, 191,1)
+                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(255,255,255,1)
+                                FocusedBorderThickness: =2
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =Self.BorderColor
+                                HoverFill: =RGBA(170, 163, 217, 0.2)
+                                OnSelect: |-
+                                    =UpdateContext({action:"REJECT"});UpdateContext({showPopUp:true});
+                                PressedBorderColor: =Self.BorderColor
+                                PressedColor: =Self.Color
+                                PressedFill: =RGBA(170, 163, 217, 0.4)
+                                Size: =11
+                                Text: ="Reject"
+                                X: =Parent.Width/2 - Self.Width -  Self.Width/2
+                                Y: =Parent.Height/2 - Self.Height/2
+                                ZIndex: =1
+
+                            approve_button As button:
+                                BorderColor: =RGBA(85, 69, 191,1)
+                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(85, 69, 191,1)
+                                FocusedBorderThickness: =2
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =RGBA(85, 69, 191,1)
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =ColorFade(Self.Fill,20%)
+                                OnSelect: |-
+                                    =UpdateContext({action:"APPROVE"});UpdateContext({showPopUp:true});
+                                PressedBorderColor: =App.Theme.Colors.Darker40
+                                PressedColor: =Self.Color
+                                PressedFill: =Self.Fill
+                                RadiusBottomLeft: =6
+                                RadiusBottomRight: =6
+                                RadiusTopLeft: =6
+                                RadiusTopRight: =6
+                                Size: =15
+                                Text: ="Approve"
+                                X: =reject_button.X + reject_button.Width + 20
+                                Y: =Parent.Height/2 - Self.Height/2
+                                ZIndex: =3
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 0, 0, 0.7)
+        Height: =Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =showImage
+        Width: =Parent.Width
+        ZIndex: =3
+
+        Icon3 As icon.Cancel:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255,255,255,1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({showImage:false})
+            Width: =30
+            X: =Parent.Width - Self.Width - 20
+            Y: =20
+            ZIndex: =1
+
+        Container6 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =Self.Width
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width * 30%
+            X: =Parent.Width / 2 - Self.Width/2
+            Y: =Parent.Height/2 - Self.Height/2
+            ZIndex: =2
+
+            Gallery1 As gallery.galleryHorizontal:
+                BorderColor: =App.Theme.Colors.Darker40
+                DelayItemLoading: =true
+                Height: =409.8
+                Items: =attachments
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowNavigation: =true
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =Parent.Width//If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Container5_1 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.TemplateHeight
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =1
+
+                    Image10_2 As image:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =Parent.Height * 90%
+                        Image: |-
+                            =With(
+                                {
+                                    fileExtension: Last(
+                                        ForAll(Split(
+                                            ThisItem.DisplayName,
+                                            "."
+                                        ), {Result: ThisRecord.Value})
+                                    ).Result
+                                },
+                                If(
+                                    fileExtension in [
+                                        "xlsx",
+                                        "xls",
+                                        "csv"
+                                    ],
+                                   "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M2048 475v1445q0 27-10 50t-27 40-41 28-50 10H640q-27 0-50-10t-40-27-28-41-10-50v-256H115q-24 0-44-9t-37-25-25-36-9-45V627q0-24 9-44t25-37 36-25 45-9h397V128q0-27 10-50t27-40 41-28 50-10h933q26 0 49 9t42 28l347 347q18 18 27 41t10 50zm-384-256v165h165l-165-165zM261 1424h189q2-4 12-23t25-45 29-55 29-53 23-41 10-17q27 59 60 118t65 116h187l-209-339 205-333H707q-31 57-60 114t-63 112q-29-57-57-113t-57-113H279l199 335-217 337zm379 496h1280V512h-256q-27 0-50-10t-40-27-28-41-10-50V128H640v384h397q24 0 44 9t37 25 25 36 9 45v922q0 24-9 44t-25 37-36 25-45 9H640v256zm640-1024V768h512v128h-512zm0 256v-128h512v128h-512zm0 256v-128h512v128h-512z' fill='Purple'></path></svg>"),
+                                    If(
+                                        fileExtension in [
+                                            "png",
+                                            "jpg",
+                                            "jpeg",
+                                            "gif"
+                                        ],
+                                        ThisItem.Value,
+                                        If(
+                                            "appres://" in ThisItem.AbsoluteUri,
+                                             "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M1115 0l549 549v91h-640V0h91zm37 512h293l-293-293v293zm384 384V768h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128H768zm-256 0v-128h128v128H512zm-256 0v-128h128v128H256zm0-1024V768h128v128H256zm0-256V512h128v128H256zm0-256V256h128v128H256zm0-256V0h128v128H256zm256 0V0h128v128H512zm256 0V0h128v128H768zM256 1152v-128h128v128H256zm0 256v-128h128v128H256zm0 256v-128h128v128H256z' fill='Purple'></path></svg>"),
                                             If(
                                                 fileExtension in [
-                                                    "xlsx",
-                                                    "xls",
-                                                    "csv"
-                                                ],
-                                               "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M2048 475v1445q0 27-10 50t-27 40-41 28-50 10H640q-27 0-50-10t-40-27-28-41-10-50v-256H115q-24 0-44-9t-37-25-25-36-9-45V627q0-24 9-44t25-37 36-25 45-9h397V128q0-27 10-50t27-40 41-28 50-10h933q26 0 49 9t42 28l347 347q18 18 27 41t10 50zm-384-256v165h165l-165-165zM261 1424h189q2-4 12-23t25-45 29-55 29-53 23-41 10-17q27 59 60 118t65 116h187l-209-339 205-333H707q-31 57-60 114t-63 112q-29-57-57-113t-57-113H279l199 335-217 337zm379 496h1280V512h-256q-27 0-50-10t-40-27-28-41-10-50V128H640v384h397q24 0 44 9t37 25 25 36 9 45v922q0 24-9 44t-25 37-36 25-45 9H640v256zm640-1024V768h512v128h-512zm0 256v-128h512v128h-512zm0 256v-128h512v128h-512z' fill='Purple'></path></svg>"),
+                                                    "pdf",
+                                                    "pptx",
+                                                    "docx",
+                                                    "ppt",
+                                                    "doc"
+                                                ] && IsBlank(Acceleration.X),
+                                                "https://thepoweraddicts.sharepoint.com/_layouts/15/getpreview.ashx?path=" & (ThisItem.AbsoluteUri) & "&resolution=6",
                                                 If(
-                                                    fileExtension in [
-                                                        "png",
-                                                        "jpg",
-                                                        "jpeg",
-                                                        "gif"
-                                                    ],
+                                                    fileExtension in "svg" && IsBlank(Acceleration.X),
                                                     ThisItem.Value,
-                                                    If(
-                                                        "appres://" in ThisItem.AbsoluteUri,
-                                                         "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M1115 0l549 549v91h-640V0h91zm37 512h293l-293-293v293zm384 384V768h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128H768zm-256 0v-128h128v128H512zm-256 0v-128h128v128H256zm0-1024V768h128v128H256zm0-256V512h128v128H256zm0-256V256h128v128H256zm0-256V0h128v128H256zm256 0V0h128v128H512zm256 0V0h128v128H768zM256 1152v-128h128v128H256zm0 256v-128h128v128H256zm0 256v-128h128v128H256z' fill='Purple'></path></svg>"),
-                                                        If(
-                                                            fileExtension in [
-                                                                "pdf",
-                                                                "pptx",
-                                                                "docx",
-                                                                "ppt",
-                                                                "doc"
-                                                            ] && IsBlank(Acceleration.X),
-                                                            "https://thepoweraddicts.sharepoint.com/_layouts/15/getpreview.ashx?path=" & (ThisItem.AbsoluteUri) & "&resolution=6",
-                                                            If(
-                                                                fileExtension in "svg" && IsBlank(Acceleration.X),
-                                                                ThisItem.Value,
-                                                                "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M1115 0l549 549v91h-640V0h91zm37 512h293l-293-293v293zm384 384V768h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128H768zm-256 0v-128h128v128H512zm-256 0v-128h128v128H256zm0-1024V768h128v128H256zm0-256V512h128v128H256zm0-256V256h128v128H256zm0-256V0h128v128H256zm256 0V0h128v128H512zm256 0V0h128v128H768zM256 1152v-128h128v128H256zm0 256v-128h128v128H256zm0 256v-128h128v128H256z' fill='Purple'></path></svg>")
-                                                            )
-                                                        )
-                                                    )
+                                                    "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M1115 0l549 549v91h-640V0h91zm37 512h293l-293-293v293zm384 384V768h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128H768zm-256 0v-128h128v128H512zm-256 0v-128h128v128H256zm0-1024V768h128v128H256zm0-256V512h128v128H256zm0-256V256h128v128H256zm0-256V0h128v128H256zm256 0V0h128v128H512zm256 0V0h128v128H768zM256 1152v-128h128v128H256zm0 256v-128h128v128H256zm0 256v-128h128v128H256z' fill='Purple'></path></svg>")
                                                 )
                                             )
                                         )
-                                    ImagePosition: =ImagePosition.Fill
-                                    OnSelect: =
-                                    RadiusBottomLeft: =8
-                                    RadiusBottomRight: =8
-                                    RadiusTopLeft: =8
-                                    RadiusTopRight: =8
-                                    Width: =Parent.Width
-                                    ZIndex: =1
+                                    )
+                                )
+                            )
+                        ImagePosition: =ImagePosition.Fill
+                        OnSelect: =
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =Parent.Width
+                        ZIndex: =1
 
-                                TextCanvas1 As Text:
-                                    Align: ='TextCanvas.Align'.Center
-                                    DisplayMode: =DisplayMode.Edit
-                                    Height: =Parent.Height - Image10_1.Height
-                                    Text: =First(Split(ThisItem.DisplayName,".")).Value
-                                    Weight: ='TextCanvas.Weight'.Bold
-                                    Width: =Parent.Width
-                                    X: =0
-                                    Y: =Parent.Height- Self.Height
-                                    ZIndex: =2
-
-                                Icon1 As icon.Download:
-                                    BorderColor: =App.Theme.Colors.Darker40
-                                    Color: =RGBA(102, 51, 153, 1)
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(244, 244, 244, 1)
-                                    Fill: =RGBA(255, 255, 255, 1)
-                                    Height: =40
-                                    Icon: =Icon.Download
-                                    OnSelect: =Download(ThisItem.AbsoluteUri)
-                                    Width: =40
-                                    X: =Parent.Width - Self.Width - 5
-                                    Y: =5
-                                    ZIndex: =3
-
-                    Container3 As groupContainer.horizontalAutoLayoutContainer:
-                        FillPortions: =2
-                        LayoutAlignItems: =LayoutAlignItems.Center
-                        LayoutGap: =20
-                        LayoutJustifyContent: =LayoutJustifyContent.Center
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
-                        LayoutMode: =LayoutMode.Auto
+                    TextCanvas1_1 As Text:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =Parent.Height - Image10_2.Height
+                        Text: =First(Split(ThisItem.DisplayName,".")).Value
+                        Weight: ='TextCanvas.Weight'.Bold
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =Parent.Height- Self.Height
                         ZIndex: =2
 
-                        Button3 As button:
-                            BorderColor: =RGBA(85, 69, 191, 1)
-                            Color: =App.Theme.Colors.PrimaryForeground
-                            DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            Fill: =RGBA(170, 163, 217, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =App.Theme.Colors.Darker10
-                            HoverColor: =App.Theme.Colors.PrimaryForeground
-                            HoverFill: =App.Theme.Colors.Darker10
-                            OnSelect: =Set(mailContent,"Rejected");Navigate('Mail Screen')
-                            PressedBorderColor: =App.Theme.Colors.Darker40
-                            PressedColor: =Self.Color
-                            PressedFill: =App.Theme.Colors.Darker40
-                            Size: =15
-                            Text: ="Reject"
-                            ZIndex: =1
+                    Icon1_1 As icon.Download:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255,255,255,1)//RGBA(102, 51, 153, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(0, 0, 0, 1)
+                        Height: =40
+                        Icon: =Icon.Download
+                        OnSelect: =Download(ThisItem.AbsoluteUri)
+                        PaddingBottom: =3
+                        PaddingTop: =3
+                        Width: =40
+                        X: =Parent.Width - Self.Width - 5
+                        Y: =5
+                        ZIndex: =3
 
-                        Button4 As button:
-                            BorderColor: =RGBA(170, 163, 217, 1)
-                            Color: =App.Theme.Colors.PrimaryForeground
-                            DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            Fill: =RGBA(85, 69, 191, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            HoverBorderColor: =App.Theme.Colors.Darker10
-                            HoverColor: =App.Theme.Colors.PrimaryForeground
-                            HoverFill: =App.Theme.Colors.Darker10
-                            OnSelect: |-
-                                =Set(mailContent,"Dear " & record.'Name of Prospective Tenant'&"," & Char(13)&"We are please to inform you that your request to rent our apartment has been Approved. Please see details of our payment below. Please <a href='https://google.com'>visit here</a> "); Navigate('Mail Screen')
-                            PressedBorderColor: =App.Theme.Colors.Darker40
-                            PressedColor: =Self.Color
-                            PressedFill: =App.Theme.Colors.Darker40
-                            Size: =15
-                            Text: ="Approve"
-                            ZIndex: =2
+    "'POP UP_4' As 'POP UP'":
+        ActionText: =action
+        NoAction: |-
+            =UpdateContext({showPopUp:false})
+        Visible: =showPopUp
+        YesAction: =Navigate('Mail Screen',ScreenTransition.CoverRight)
+        ZIndex: =4
 
