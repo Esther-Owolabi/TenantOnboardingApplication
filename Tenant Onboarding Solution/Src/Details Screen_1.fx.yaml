@@ -90,10 +90,23 @@
 
                         RichTextEditor2 As richTextEditor:
                             BorderColor: =App.Theme.Colors.Darker40
-                            Default: ="Enter some <strong>rich text</strong> here."
+                            Default: ="<input type='text' placeholder='Enter your text here'>"
                             Height: =500
                             Width: =Parent.Width
+                            Y: =txt_offerLetterPlaceholder.Height
                             ZIndex: =46
+
+                        txt_offerLetterPlaceholder As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)//RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Type in Offer letter here..."
+                            Width: =300
+                            ZIndex: =47
 
                         Container7_1 As groupContainer.manualLayoutContainer:
                             DropShadow: =DropShadow.Light
@@ -105,29 +118,6 @@
                             Width: =Parent.Width
                             Y: =RichTextEditor2.Y + RichTextEditor2.Height + 10
                             ZIndex: =50
-
-                            reject_button_1 As button:
-                                BorderColor: =RGBA(85, 69, 191,1)
-                                Color: =RGBA(85, 69, 191,1)
-                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
-                                Fill: =RGBA(255,255,255,1)
-                                FocusedBorderThickness: =2
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Semibold
-                                HoverBorderColor: =Self.BorderColor
-                                HoverFill: =RGBA(170, 163, 217, 0.2)
-                                OnSelect: |-
-                                    =UpdateContext({action:"REJECT"});UpdateContext({showPopUp:true});
-                                PressedBorderColor: =Self.BorderColor
-                                PressedColor: =Self.Color
-                                PressedFill: =RGBA(170, 163, 217, 0.4)
-                                Size: =11
-                                Text: ="Reject"
-                                X: =Parent.Width/2 - Self.Width -  Self.Width/2
-                                Y: =Parent.Height/2 - Self.Height/2
-                                ZIndex: =51
 
                             approve_button_1 As button:
                                 BorderColor: =RGBA(85, 69, 191,1)
@@ -150,9 +140,9 @@
                                 RadiusBottomRight: =6
                                 RadiusTopLeft: =6
                                 RadiusTopRight: =6
-                                Size: =15
-                                Text: ="Approve"
-                                X: =reject_button_1.X + reject_button_1.Width + 20
+                                Size: =12
+                                Text: ="Send Offer Letter"
+                                X: =Parent.Width/2 -Self.Width/2
                                 Y: =Parent.Height/2 - Self.Height/2
                                 ZIndex: =52
 
