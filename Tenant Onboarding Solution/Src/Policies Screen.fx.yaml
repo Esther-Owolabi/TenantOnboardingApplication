@@ -106,7 +106,7 @@
                             FontWeight: =FontWeight.Bold
                             LayoutMinWidth: =0
                             Size: =13
-                            Text: ="Policies"
+                            Text: ="All Requests"
                             Width: =Parent.Width
                             ZIndex: =1
 
@@ -230,16 +230,16 @@
                                 Text: ="➕New Policy"
                                 ZIndex: =3
 
-                    Container36_1 As groupContainer.horizontalAutoLayoutContainer:
+                    Container36_4 As groupContainer.horizontalAutoLayoutContainer:
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                         LayoutMinHeight: =0
                         LayoutMinWidth: =0
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =18
                         PaddingRight: =10
-                        ZIndex: =3
+                        ZIndex: =4
 
-                        Label16_6 As label:
+                        Label16_3 As label:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(159, 159, 159, 1)
@@ -248,10 +248,10 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             Size: =9
-                            Text: ="Reference Code"
+                            Text: ="Submission Date"
                             ZIndex: =1
 
-                        Label16_7 As label:
+                        Label16_5 As label:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(159, 159, 159, 1)
@@ -260,22 +260,11 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             Size: =9
-                            Text: ="Policy Name"
+                            Text: ="Name"
+                            Width: =200
                             ZIndex: =2
 
-                        Label16_8 As label:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: ="Unit"
-                            ZIndex: =3
-
-                        Label16_9 As label:
+                        Label16_30 As label:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(159, 159, 159, 1)
@@ -285,22 +274,9 @@
                             Height: =Parent.Height
                             Size: =9
                             Text: ="Status"
-                            Width: =90
-                            ZIndex: =4
-
-                        Label16_10 As label:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: ="Due Date"
                             ZIndex: =5
 
-                        Label16_11 As label:
+                        Label16_19 As label:
                             AlignInContainer: =AlignInContainer.Center
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(159, 159, 159, 1)
@@ -309,8 +285,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             Size: =9
-                            Text: ="Action"
-                            Width: =70
+                            Text: =""
                             ZIndex: =6
 
                 Container37_1 As groupContainer.verticalAutoLayoutContainer:
