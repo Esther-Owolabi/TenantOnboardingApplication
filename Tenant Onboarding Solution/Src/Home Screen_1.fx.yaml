@@ -708,8 +708,8 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =10
-                            Text: ="Current Residential Address"
-                            Width: =200
+                            Text: ="Do you have pets or Intend to have one?"
+                            Width: =280
                             X: =name_label.X
                             Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
                             ZIndex: =37
