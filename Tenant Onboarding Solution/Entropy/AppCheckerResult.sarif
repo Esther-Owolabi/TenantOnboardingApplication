@@ -939,686 +939,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Label15_5.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Label15_5.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Label15_5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Label15_4.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Label15_4.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Label15_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Name of Prospective Tenant_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Name of Prospective Tenant_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Name of Prospective Tenant_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Date of Birth_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Date of Birth_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Date of Birth'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Date of Birth_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Date of Birth"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Telephone Number_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Telephone Number_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Telephone Number'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Telephone Number_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Telephone Number"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Email Address_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Email Address_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Email Address'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Email Address_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Email Address"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Marital Status_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Marital Status_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Marital Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Marital Status_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Marital Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Number of Children_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Number of Children_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Number of Children'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Number of Children_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number of Children"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Current Residential Address_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Current Residential Address_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Current Residential Address'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Current Residential Address_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Current Residential Address"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Reason for Leaving_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Reason for Leaving_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Reason for Leaving'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Reason for Leaving_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Reason for Leaving"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Pet Types_DataCard1'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Pet Types_DataCard1'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Pet Types'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.Form1.'Pet Types_DataCard1'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Pet Types"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container3.Button4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container3.Button4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 32,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container3.Button4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_15.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_15.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_15"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": ".'Submission Date'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Submission Date"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 32,
-                  "snippet": {
-                    "text": "\"dd-mm-yyyy\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container13.Container17.Container32.Container37.Gallery2_2.Container42_1.Label16_18"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncorrectFormat-Func",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Renewal Request screen'.Container13_3.Container17_2.component_Header_3.NotificationCircleVisibility"
                 }
               ],
@@ -2406,7 +1726,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrSearchWrongTableType",
-          "ruleIndex": 6
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -2446,7 +1766,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColDNE-Name",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -4808,7 +4128,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5008,7 +4328,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5208,7 +4528,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5368,7 +4688,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5568,7 +4888,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -5728,7 +5048,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -6048,7 +5368,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -6529,7 +5849,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -6729,7 +6049,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -7050,7 +6370,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -7250,7 +6570,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -7450,7 +6770,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -7610,7 +6930,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -10176,7 +9496,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -13383,7 +12703,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrColumnTypeMismatch-ColName-ExpectedType-ActualType",
-          "ruleIndex": 10
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -14623,7 +13943,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -14743,7 +14063,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedTypesCSV",
-          "ruleIndex": 11
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -14784,7 +14104,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
-          "ruleIndex": 12
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -15184,7 +14504,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -15384,7 +14704,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -15584,7 +14904,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -15784,7 +15104,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -16064,7 +15384,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -16224,7 +15544,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -16384,7 +15704,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -16704,7 +16024,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -16904,7 +16224,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -17386,7 +16706,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -18830,7 +18150,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -19030,7 +18350,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -19190,7 +18510,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -19390,7 +18710,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -20955,7 +20275,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrNeedRecord-Arg",
-          "ruleIndex": 13
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -22116,7 +21436,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrNeedRecord-Arg",
-          "ruleIndex": 13
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -22957,7 +22277,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ErrIncorrectFormat-Func",
-          "ruleIndex": 5
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -23357,7 +22677,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -23557,7 +22877,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -23717,7 +23037,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -23917,7 +23237,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -24077,7 +23397,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -24477,7 +23797,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -24877,7 +24197,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -25277,7 +24597,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -25677,7 +24997,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -25877,7 +25197,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26037,7 +25357,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26317,7 +25637,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26838,7 +26158,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -26875,7 +26195,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -26955,7 +26275,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -27115,7 +26435,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -27315,7 +26635,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -27675,7 +26995,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -27875,7 +27195,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -28075,7 +27395,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -28275,7 +27595,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -28475,7 +27795,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -28836,407 +28156,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrNeedRecord-Arg",
-          "ruleIndex": 13
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Container38_7.Label15_7.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Container38_7.Label15_7.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Container38_7.Label15_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.name_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.name_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Name of Prospective Tenant'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.name_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Name of Prospective Tenant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": ".'Date of Birth'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Date of Birth"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": "\"dd-mm-yyyy\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.dob_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncorrectFormat-Func",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.stateOfOrigin_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.stateOfOrigin_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'State of Origin'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.stateOfOrigin_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "State of Origin"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.email_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.email_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Email Address'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.email_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Email Address"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.phoneNumber_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.phoneNumber_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Telephone Number'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.phoneNumber_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Telephone Number"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.marital_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.marital_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Marital Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.marital_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Marital Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.wifeCount_value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.wifeCount_value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 6,
-                  "snippet": {
-                    "text": ".'Number of Wives'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container13_6.Container17_6.Container32_6.Canvas1_1.DataCard1_1.wifeCount_value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number of Wives"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -29316,276 +28236,6 @@
                 "member": "TabIndex",
                 "module": "Navigator",
                 "type": "Navigator.Container2_3.Container16.Gallery1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Details Screen",
-                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1"
               }
             }
           ],
@@ -30683,18 +29333,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen1"
+                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen1",
+                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "module": "Screen1",
-                "type": "Screen1"
+                "member": "AccessibleLabel",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1"
               }
             }
           ],
@@ -30702,10 +29353,130 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Low"
+            "level": "Medium"
           },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 16
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container34_5.Container35_2.Container38_5.Arrow1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'.Container13_5.Container17_5.Container32_5.Container37_5.RichTextEditor1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen_1",
+                "type": "'Home Screen_1'.Container1.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen_1",
+                "type": "'Home Screen_1'.Container1.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
         },
         {
           "locations": [
@@ -30832,19 +29603,48 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "Screen1"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "Screen1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen1",
+                "type": "Screen1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container1.Icon3"
+                "module": "Details Screen",
+                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1"
               }
             }
           ],
@@ -30862,19 +29662,139 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.TabIndex"
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Home Screen_1'.Container1.Icon3.TabIndex",
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Home Screen_1",
-                "type": "'Home Screen_1'.Container1.Icon3"
+                "module": "Details Screen",
+                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container34_4.Container35_1.Container38_4.Arrow1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Details Screen",
+                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Details Screen",
+                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Details Screen",
+                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Details Screen",
+                "type": "'Details Screen'.Container13_1.Container17_4.Container32_4.Container37_4.Container2.gal_formAttachments.Container5.Icon1"
               }
             }
           ],
@@ -30945,36 +29865,6 @@
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
           "ruleIndex": 18
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Mail Screen'.loading"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.loading",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "loading",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 17
         },
         {
           "locations": [
@@ -31054,6 +29944,36 @@
                 "member": "policyItem",
                 "module": "Policies Screen",
                 "type": "'Policies Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 17
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Mail Screen'.loading"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Mail Screen'.loading",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "loading",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'"
               }
             }
           ],
@@ -31180,20 +30100,6 @@
               }
             },
             {
-              "id": "app-ErrIncorrectFormat-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incorrect format specifier for '{0}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrSearchWrongTableType",
               "messageStrings": {
                 "issue": {
@@ -31307,6 +30213,20 @@
               "properties": {
                 "componentType": "app",
                 "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncorrectFormat-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incorrect format specifier for '{0}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }

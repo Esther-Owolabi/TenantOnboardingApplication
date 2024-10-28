@@ -790,7 +790,7 @@
                             Y: =noOfCars_label.Y + noOfCars_label.Height
                             ZIndex: =42
 
-                        noOfCars_label_1 As label:
+                        noOfDependents_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 0.5)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -798,13 +798,14 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =10
-                            Text: ="Number of cars"
-                            Width: =280
+                            Text: |-
+                                ="How many dependants do you intend to accommodate (If married, asides spouse & Children): "
+                            Width: =Parent.Width/2
                             X: =noOfCars_value.X + noOfCars_value.Width + 10
                             Y: =petStatus_value.Y + petStatus_value.Height + 10
                             ZIndex: =43
 
-                        noOfCars_value_1 As label:
+                        noOfDependents_value As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -815,10 +816,67 @@
                             Height: =30
                             Size: =11
                             Text: =record.'Number of Cars'
-                            Width: =Parent.Width/3 - 20
-                            X: =noOfCars_label_1.X
-                            Y: =noOfCars_label_1.Y + noOfCars_label_1.Height
+                            Width: =Parent.Width/2
+                            X: =noOfDependents_label.X
+                            Y: =noOfDependents_label.Y + noOfDependents_label.Height
                             ZIndex: =44
+
+                        Container7 As groupContainer.manualLayoutContainer:
+                            DropShadow: =DropShadow.Light
+                            Height: =70
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            Y: =noOfCars_value.Y + noOfCars_value.Height + 10
+                            ZIndex: =45
+
+                            reject_button As button:
+                                BorderColor: =RGBA(85, 69, 191,1)
+                                Color: =RGBA(85, 69, 191,1)
+                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(255,255,255,1)
+                                FocusedBorderThickness: =2
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =Self.BorderColor
+                                HoverFill: =RGBA(170, 163, 217, 0.2)
+                                OnSelect: |-
+                                    =UpdateContext({showImage:true})
+                                PressedBorderColor: =Self.BorderColor
+                                PressedColor: =Self.Color
+                                PressedFill: =RGBA(170, 163, 217, 0.4)
+                                Size: =11
+                                Text: ="Reject"
+                                X: =Parent.Width/2 - Self.Width -  Self.Width/2
+                                Y: =Parent.Height/2 - Self.Height/2
+                                ZIndex: =1
+
+                            approve_button As button:
+                                BorderColor: =RGBA(85, 69, 191,1)
+                                Color: =RGBA(255, 255, 255,1)
+                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(85, 69, 191,1)
+                                FocusedBorderThickness: =2
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                HoverBorderColor: =Self.BorderColor
+                                HoverFill: =RGBA(170, 163, 217, 0.2)
+                                OnSelect: |-
+                                    =UpdateContext({showImage:true})
+                                PressedBorderColor: =Self.BorderColor
+                                PressedColor: =Self.Color
+                                PressedFill: =RGBA(170, 163, 217, 0.4)
+                                Size: =11
+                                Text: ="Approve"
+                                X: =reject_button.X + reject_button.Width + 20
+                                Y: =Parent.Height/2 - Self.Height/2
+                                ZIndex: =2
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
