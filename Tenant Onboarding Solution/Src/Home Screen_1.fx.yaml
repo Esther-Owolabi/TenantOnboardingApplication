@@ -2,13 +2,16 @@
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
+    LoadingImageHome_1 As Loading:
+        Visible: =false
+
     Container13_6 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
             =RGBA(248, 248, 248, 1)
         Height: =Parent.Height
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
-        ZIndex: =1
+        ZIndex: =2
 
         Navigator_5 As Navigator:
             Height: =Parent.Height * 90/100
@@ -55,173 +58,161 @@
 
             Container32_6 As groupContainer.verticalAutoLayoutContainer:
                 LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =5
                 LayoutMinHeight: =0
                 LayoutMinWidth: =0
                 LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =20
                 PaddingLeft: =20
-                PaddingRight: =25
-                PaddingTop: =20
                 Width: =Parent.Width
                 ZIndex: =3
 
-                Container34_6 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
-                    Height: =100
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    ZIndex: =4
-
-                    Container35_3 As groupContainer.horizontalAutoLayoutContainer:
-                        Fill: =RGBA(255, 255, 255, 1)
-                        FillPortions: =1.5
-                        LayoutMinHeight: =0
-                        LayoutMinWidth: =0
-                        LayoutMode: =LayoutMode.Auto
-                        PaddingLeft: =18
-                        ZIndex: =5
-
-                        Container38_6 As groupContainer.horizontalAutoLayoutContainer:
-                            Height: =Parent.Height
-                            LayoutAlignItems: =LayoutAlignItems.Center
-                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                            LayoutMinHeight: =0
-                            LayoutMinWidth: =0
-                            LayoutMode: =LayoutMode.Auto
-                            PaddingRight: =10
-                            ZIndex: =6
-
-                            Label15_6 As label:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: =RGBA(0, 0, 0, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                FillPortions: =1
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Bold
-                                LayoutMinWidth: =0
-                                Size: =13
-                                Text: =record.'Name of Prospective Tenant'
-                                Width: =Parent.Width
-                                ZIndex: =7
-
-                            Container59_2 As groupContainer.manualLayoutContainer:
-                                AlignInContainer: =AlignInContainer.Center
-                                FillPortions: =0
-                                Height: =Parent.Height - 25
-                                LayoutMinHeight: =0
-                                LayoutMinWidth: =250
-                                Width: =100
-                                ZIndex: =8
-
-                                Label26_2 As label:
-                                    Align: =Align.Center
-                                    BorderColor: =App.Theme.Colors.Darker40
-                                    Color: =RGBA(17, 65, 133, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    Font: =App.Theme.Font
-                                    FontWeight: =FontWeight.Semibold
-                                    Height: =Parent.Height
-                                    Size: =10
-                                    Text: ="View All"
-                                    Underline: =true
-                                    Width: =Parent.Width
-                                    ZIndex: =9
-
-                                Button11_2 As button:
-                                    BorderColor: =App.Theme.Colors.Primary
-                                    BorderStyle: =BorderStyle.None
-                                    Color: =RGBA(0, 0, 0, 0)
-                                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                                    DisabledColor: =RGBA(166, 166, 166, 1)
-                                    DisabledFill: =RGBA(244, 244, 244, 1)
-                                    Fill: =Color.Transparent
-                                    Font: =App.Theme.Font
-                                    FontWeight: =FontWeight.Semibold
-                                    Height: =35
-                                    HoverBorderColor: =App.Theme.Colors.Darker10
-                                    HoverFill: =Self.Fill
-                                    OnSelect: =Navigate('Policies Screen')
-                                    PressedBorderColor: =App.Theme.Colors.Darker40
-                                    PressedColor: =Self.Color
-                                    PressedFill: =Self.Fill
-                                    RadiusBottomLeft: =0
-                                    RadiusBottomRight: =0
-                                    RadiusTopLeft: =0
-                                    RadiusTopRight: =0
-                                    Size: =15
-                                    Text: =
-                                    Width: =100
-                                    ZIndex: =10
-
-                    Container36_4 As groupContainer.horizontalAutoLayoutContainer:
-                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                        LayoutMinHeight: =0
-                        LayoutMinWidth: =0
-                        LayoutMode: =LayoutMode.Auto
-                        PaddingLeft: =18
-                        PaddingRight: =10
-                        ZIndex: =11
-
-                        Label16_3 As label:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: ="Submission Date"
-                            ZIndex: =12
-
-                        Label16_5 As label:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: ="Name"
-                            Width: =200
-                            ZIndex: =13
-
-                        Label16_19 As label:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: =""
-                            ZIndex: =14
-
-                        Label16_30 As label:
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: ="Status"
-                            ZIndex: =15
-
-                Container37_6 As groupContainer.verticalAutoLayoutContainer:
+                Container38_7 As groupContainer.horizontalAutoLayoutContainer:
                     Fill: =RGBA(255, 255, 255, 1)
-                    LayoutDirection: =LayoutDirection.Vertical
+                    FillPortions: =0
+                    Height: =70
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMinHeight: =0
                     LayoutMinWidth: =0
                     LayoutMode: =LayoutMode.Auto
-                    ZIndex: =16
+                    PaddingLeft: =18
+                    PaddingRight: =10
+                    ZIndex: =1
 
-    LoadingImageHome_1 As Loading:
-        Visible: =false
-        ZIndex: =2
+                    Container59_3 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height - 25
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =250
+                        Width: =25
+                        ZIndex: =1
+
+                        Icon2_1 As icon.ArrowLeft:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =App.Theme.Colors.Darker30
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =Parent.Height
+                            Icon: =Icon.ArrowLeft
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                        Button11_3 As button:
+                            BorderColor: =App.Theme.Colors.Primary
+                            BorderStyle: =BorderStyle.None
+                            Color: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =Color.Transparent
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            HoverBorderColor: =App.Theme.Colors.Darker10
+                            HoverFill: =Self.Fill
+                            OnSelect: =Navigate('Home Screen')
+                            PressedBorderColor: =App.Theme.Colors.Darker40
+                            PressedColor: =Self.Color
+                            PressedFill: =Self.Fill
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =15
+                            Text: =
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                    Label15_7 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FillPortions: =1
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        LayoutMinWidth: =0
+                        Size: =13
+                        Text: =record.'Name of Prospective Tenant'
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
+                    BorderThickness: =0
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height - Self.Y
+                    LayoutMinHeight: =250
+                    LayoutMinWidth: =100
+                    Width: =Parent.Width
+                    Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+                    ZIndex: =4
+
+                    DataCard1_1 As dataCard:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        BorderThickness: =0
+                        DisplayMode: =DisplayMode.Edit
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height - 100
+                        Width: =Parent.Width
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                        name_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Name"
+                            X: =10
+                            Y: =10
+                            ZIndex: =1
+
+                        name_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Prospective Tenant'
+                            Width: =Parent.Width/2 - 10
+                            X: =name_label.X
+                            Y: =name_label.Y + name_label.Height
+                            ZIndex: =2
+
+                        dob_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Date of Birth"
+                            X: =name_value.X + name_value.Width + 10
+                            Y: =name_label.Y
+                            ZIndex: =3
+
+                        dob_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =Text(record.'Date of Birth',"dd-mm-yyyy")
+                            Width: =Parent.Width/2 - 20
+                            X: =name_value.X + name_value.Width + 10
+                            Y: =dob_label.Y + dob_label.Height
+                            ZIndex: =4
 
