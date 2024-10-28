@@ -29841,36 +29841,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Details Screen_1'.showImage"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Details Screen_1'.showImage",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "showImage",
-                "module": "Details Screen_1",
-                "type": "'Details Screen_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 18
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Details Screen_1'.Container13_7.Container17_7.Container32_7.Canvas1_2.Y"
                 }
               ],

@@ -170,27 +170,6 @@
                     PaddingRight: =10
                     ZIndex: =53
 
-                    Button5_1 As button:
-                        BorderColor: =RGBA(85, 69, 191,1)
-                        Color: =RGBA(85, 69, 191,1)
-                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(255,255,255,1)
-                        FocusedBorderThickness: =2
-                        Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Semibold
-                        HoverBorderColor: =Self.BorderColor
-                        HoverFill: =RGBA(170, 163, 217, 0.2)
-                        OnSelect: |-
-                            =UpdateContext({showImage:true})
-                        PressedBorderColor: =Self.BorderColor
-                        PressedColor: =Self.Color
-                        PressedFill: =RGBA(170, 163, 217, 0.4)
-                        Size: =11
-                        Text: ="View Attached Documents"
-                        ZIndex: =54
-
                     Label15_8 As label:
                         BorderColor: =App.Theme.Colors.Darker40
                         Color: =RGBA(0, 0, 0, 1)
