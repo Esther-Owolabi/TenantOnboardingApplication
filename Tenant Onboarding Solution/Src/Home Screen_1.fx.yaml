@@ -845,7 +845,7 @@
                                 HoverBorderColor: =Self.BorderColor
                                 HoverFill: =RGBA(170, 163, 217, 0.2)
                                 OnSelect: |-
-                                    =UpdateContext({showImage:true})
+                                    =UpdateContext({action:"REJECT"});UpdateContext({showPopUp:true});
                                 PressedBorderColor: =Self.BorderColor
                                 PressedColor: =Self.Color
                                 PressedFill: =RGBA(170, 163, 217, 0.4)
@@ -868,7 +868,7 @@
                                 HoverBorderColor: =Self.BorderColor
                                 HoverFill: =RGBA(170, 163, 217, 0.2)
                                 OnSelect: |-
-                                    =UpdateContext({showImage:true})
+                                    =UpdateContext({action:"APPROVE"});UpdateContext({showPopUp:true});
                                 PressedBorderColor: =Self.BorderColor
                                 PressedColor: =Self.Color
                                 PressedFill: =RGBA(170, 163, 217, 0.4)
@@ -1030,6 +1030,7 @@
                         ZIndex: =3
 
     "'POP UP_4' As 'POP UP'":
+        ActionText: =action
         NoAction: ="Text"
         YesAction: =
         ZIndex: =4

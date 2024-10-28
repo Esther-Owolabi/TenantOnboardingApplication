@@ -69,7 +69,7 @@
                     Font: =Font.Arial
                     FontWeight: =FontWeight.Bold
                     Size: =13
-                    Text: ="Confirm"
+                    Text: ='POP UP'.ActionText
                     ZIndex: =1
 
                 Rectangle9 As rectangle:

@@ -158,9 +158,9 @@
                       },
                       {
                         "Category": "Data",
-                        "InvariantScript": "\"Confirm\"",
+                        "InvariantScript": "'POP UP'.ActionText",
                         "Property": "Text",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Data",
@@ -3694,7 +3694,7 @@
       "NoAction",
       "YesAction"
     ],
-    "LastModifiedTimestamp": "638657324940368337",
+    "LastModifiedTimestamp": "638657326391857846",
     "Name": "POP UP",
     "Rules": [
       {
@@ -3807,7 +3807,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638657324940368337",
+  "LastModifiedTimestamp": "638657326391857846",
   "Name": "e90371fc71e54f6fba00a9ad24a1d042",
   "OverridableProperties": {},
   "Version": "1.0"
