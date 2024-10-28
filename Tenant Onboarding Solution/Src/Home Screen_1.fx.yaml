@@ -518,7 +518,7 @@
                             Y: =occupation_label.Y + occupation_label.Height
                             ZIndex: =24
 
-                        email_label_2 As label:
+                        company_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 0.5)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -532,7 +532,7 @@
                             Y: =email_value.Y + email_value.Height + 10
                             ZIndex: =25
 
-                        email_value_2 As label:
+                        company_value As label:
                             AutoHeight: =true
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 1)
@@ -545,9 +545,38 @@
                             Size: =11
                             Text: =record.'Company Name and Address'
                             Width: =Parent.Width/2 - 20
-                            X: =email_label_2.X
-                            Y: =email_label_2.Y + email_label_2.Height
+                            X: =company_label.X
+                            Y: =company_label.Y + company_label.Height
                             ZIndex: =26
+
+                        spouseName_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Name of Spouse"
+                            X: =name_label.X
+                            Y: =company_value.Y + company_value.Height + 10
+                            ZIndex: =27
+
+                        spouseName_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Name of Spouse'
+                            Width: =Parent.Width/4 - 20
+                            X: =spouseName_label.X
+                            Y: =spouseName_label.Y + spouseName_label.Height
+                            ZIndex: =28
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
