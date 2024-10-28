@@ -204,7 +204,7 @@
                                 HoverColor: =RGBA(255, 255, 255, 1)
                                 HoverFill: =ColorFade(Self.Fill,20%)
                                 OnSelect: |-
-                                    =UpdateContext({action:"SEND OFFER"});UpdateContext({showPopUp:true});
+                                    =If(IsBlank(Trim(RichTextEditor2.HtmlText)),Notify("Please write out the offer letter in the area provided",NotificationType.Information),UpdateContext({action:"SEND OFFER"});UpdateContext({showPopUp:true}))//;
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
