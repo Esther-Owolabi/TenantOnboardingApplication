@@ -183,7 +183,7 @@
                             Height: =30
                             Size: =11
                             Text: =record.'Name of Prospective Tenant'
-                            Width: =Parent.Width/2 - 10
+                            Width: =Parent.Width/3 - 10
                             X: =10
                             Y: =name_label.Y + name_label.Height
                             ZIndex: =2
@@ -211,38 +211,10 @@
                             Height: =30
                             Size: =11
                             Text: =Text(record.'Date of Birth',"dd-mm-yyyy")
-                            Width: =Parent.Width/2 - 20
+                            Width: =Parent.Width/3 - 20
                             X: =name_value.X + name_value.Width + 10
                             Y: =dob_label.Y + dob_label.Height
                             ZIndex: =4
-
-                        sex_label As label:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(4, 4, 4, 0.5)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =30
-                            Size: =10
-                            Text: ="Sex"
-                            X: =name_label.X
-                            Y: =name_value.Y + name_value.Height + 10
-                            ZIndex: =5
-
-                        sex_value As label:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(4, 4, 4, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(159, 159, 159, 0.1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =30
-                            Size: =11
-                            Text: =record.Sex
-                            Width: =Parent.Width/4 - 20
-                            X: =sex_label.X
-                            Y: =sex_label.Y + sex_label.Height
-                            ZIndex: =6
 
                         religion_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -253,9 +225,9 @@
                             Height: =30
                             Size: =10
                             Text: ="Religion"
-                            X: =sex_value.X + sex_value.Width + 10
+                            X: =name_label.X
                             Y: =name_value.Y + name_value.Height + 10
-                            ZIndex: =7
+                            ZIndex: =5
 
                         religion_value As label:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -267,10 +239,10 @@
                             Height: =30
                             Size: =11
                             Text: =record.Religion
-                            Width: =Parent.Width/4 - 10
+                            Width: =Parent.Width/4 - 20
                             X: =religion_label.X
                             Y: =religion_label.Y + religion_label.Height
-                            ZIndex: =8
+                            ZIndex: =6
 
                         nationality_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -283,7 +255,7 @@
                             Text: ="Nationality"
                             X: =religion_value.X + religion_value.Width + 10
                             Y: =name_value.Y + name_value.Height + 10
-                            ZIndex: =9
+                            ZIndex: =7
 
                         nationality_value As label:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -298,7 +270,7 @@
                             Width: =Parent.Width/4 - 10
                             X: =nationality_label.X
                             Y: =nationality_label.Y + nationality_label.Height
-                            ZIndex: =10
+                            ZIndex: =8
 
                         stateOfOrigin_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -311,7 +283,7 @@
                             Text: ="State of Origin"
                             X: =nationality_value.X + nationality_value.Width + 10
                             Y: =name_value.Y + name_value.Height + 10
-                            ZIndex: =11
+                            ZIndex: =9
 
                         stateOfOrigin_value As label:
                             BorderColor: =App.Theme.Colors.Darker40
@@ -326,5 +298,61 @@
                             Width: =Parent.Width/4 - 10
                             X: =stateOfOrigin_label.X
                             Y: =stateOfOrigin_label.Y + stateOfOrigin_label.Height
+                            ZIndex: =10
+
+                        lga_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="LGA"
+                            X: =stateOfOrigin_value.X + stateOfOrigin_value.Width + 10
+                            Y: =name_value.Y + name_value.Height + 10
+                            ZIndex: =11
+
+                        lga_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.LGA
+                            Width: =Parent.Width/4 - 10
+                            X: =lga_label.X
+                            Y: =lga_label.Y + lga_label.Height
                             ZIndex: =12
+
+                        sex_label As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Sex"
+                            X: =dob_value.X + dob_value.Width + 10
+                            Y: =name_label.Y
+                            ZIndex: =13
+
+                        sex_value As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.Sex
+                            Width: =Parent.Width/3 - 20
+                            X: =sex_label.X
+                            Y: =sex_label.Y + sex_label.Height
+                            ZIndex: =14
 
