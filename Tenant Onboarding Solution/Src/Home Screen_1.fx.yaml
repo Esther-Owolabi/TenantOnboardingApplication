@@ -724,7 +724,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =11
-                            Text: =record.'Current Residential Address'
+                            Text: =record.'Do you have pets or Intend to have pets'
                             Width: =Parent.Width/3 - 20
                             X: =petStatus_label.X
                             Y: =petStatus_label.Y + petStatus_label.Height
@@ -738,7 +738,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =10
-                            Text: ="Do you have pets or Intend to have one?"
+                            Text: ="If yes, what type?"
                             Width: =280
                             X: =petStatus_value.X + petStatus_value.Width + 10
                             Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
@@ -754,7 +754,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =11
-                            Text: =record.'Current Residential Address'
+                            Text: =record.'Pet Types'
                             Width: =Parent.Width/3 - 20
                             X: =currentResidentialAddress_label_1.X
                             Y: =currentResidentialAddress_label_1.Y + currentResidentialAddress_label_1.Height
