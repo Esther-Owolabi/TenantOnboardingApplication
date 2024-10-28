@@ -103,7 +103,7 @@
                             RadiusTopLeft: =4
                             RadiusTopRight: =4
                             Width: =Parent.Width
-                            Y: =noOfCars_value_1.Y + noOfCars_value_1.Height + 10
+                            Y: =RichTextEditor2.Y + RichTextEditor2.Height + 10
                             ZIndex: =50
 
                             reject_button_1 As button:
