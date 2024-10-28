@@ -646,12 +646,14 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =10
-                            Text: ="Name of Spouse"
+                            Text: ="Current Residential Address"
+                            Width: =200
                             X: =name_label.X
                             Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
                             ZIndex: =33
 
                         spouseName_value_1 As label:
+                            AutoHeight: =true
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -661,8 +663,8 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =11
-                            Text: =record.'Name of Spouse'
-                            Width: =Parent.Width/4 - 20
+                            Text: =record.'Current Residential Address'
+                            Width: =Parent.Width/2.5
                             X: =spouseName_label_1.X
                             Y: =spouseName_label_1.Y + spouseName_label_1.Height
                             ZIndex: =34
