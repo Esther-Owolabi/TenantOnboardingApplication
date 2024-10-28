@@ -760,7 +760,7 @@
                             Y: =petTypes_label.Y + petTypes_label.Height
                             ZIndex: =40
 
-                        petStatus_label_1 As label:
+                        noOfCars_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 0.5)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -768,7 +768,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =10
-                            Text: ="Do you have pets or Intend to have one?"
+                            Text: ="Number of cars"
                             Width: =280
                             X: =name_label.X
                             Y: =petStatus_value.Y + petStatus_value.Height + 10
@@ -784,10 +784,10 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =30
                             Size: =11
-                            Text: =record.'Do you have pets or Intend to have pets'
+                            Text: =record.'Number of Cars'
                             Width: =Parent.Width/3 - 20
-                            X: =petStatus_label_1.X
-                            Y: =petStatus_label_1.Y + petStatus_label_1.Height
+                            X: =noOfCars_label.X
+                            Y: =noOfCars_label.Y + noOfCars_label.Height
                             ZIndex: =42
 
     Container1 As groupContainer.manualLayoutContainer:
