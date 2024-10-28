@@ -638,7 +638,7 @@
                             Y: =noOfChildren_label.Y + noOfChildren_label.Height
                             ZIndex: =32
 
-                        spouseName_label_1 As label:
+                        currentResidentialAddress_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 0.5)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -652,7 +652,7 @@
                             Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
                             ZIndex: =33
 
-                        spouseName_value_1 As label:
+                        currentResidentialAddress_value As label:
                             AutoHeight: =true
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 1)
@@ -664,10 +664,41 @@
                             Height: =30
                             Size: =11
                             Text: =record.'Current Residential Address'
-                            Width: =Parent.Width/2.5
+                            Width: =Parent.Width/2 - 20
+                            X: =currentResidentialAddress_label.X
+                            Y: =currentResidentialAddress_label.Y + currentResidentialAddress_label.Height
+                            ZIndex: =34
+
+                        spouseName_label_1 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 0.5)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =10
+                            Text: ="Reason for Leaving"
+                            Width: =200
+                            X: =currentResidentialAddress_value.X + currentResidentialAddress_value.Width + 10
+                            Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                            ZIndex: =35
+
+                        spouseName_value_1 As label:
+                            AutoHeight: =true
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(4, 4, 4, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(159, 159, 159, 0.1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =30
+                            Size: =11
+                            Text: =record.'Reason for Leaving'
+                            Width: =Parent.Width/2 - 10
                             X: =spouseName_label_1.X
                             Y: =spouseName_label_1.Y + spouseName_label_1.Height
-                            ZIndex: =34
+                            ZIndex: =36
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
