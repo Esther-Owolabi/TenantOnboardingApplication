@@ -191,7 +191,7 @@
                             Y: =RichTextEditor2.Y + RichTextEditor2.Height + 10
                             ZIndex: =50
 
-                            approve_button_1 As button:
+                            sendLetter_button As button:
                                 BorderColor: =RGBA(85, 69, 191,1)
                                 DisabledBorderColor: =RGBA(244, 244, 244, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -204,7 +204,7 @@
                                 HoverColor: =RGBA(255, 255, 255, 1)
                                 HoverFill: =ColorFade(Self.Fill,20%)
                                 OnSelect: |-
-                                    =UpdateContext({action:"APPROVE"});UpdateContext({showPopUp:true});
+                                    =UpdateContext({action:"SEND OFFER"});UpdateContext({showPopUp:true});
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
