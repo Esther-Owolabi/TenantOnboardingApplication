@@ -181,7 +181,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             Size: =9
-                            Text: ="Name"
+                            Text: ="Submission Date"
                             ZIndex: =1
 
                         Label16_1 As label:
@@ -193,7 +193,7 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             Size: =9
-                            Text: ="Address"
+                            Text: ="Name"
                             Width: =200
                             ZIndex: =2
 
@@ -206,8 +206,21 @@
                             FontWeight: =FontWeight.Semibold
                             Height: =Parent.Height
                             Size: =9
-                            Text: =""
+                            Text: ="Status"
                             ZIndex: =5
+
+                        Label16_2 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: =""
+                            Width: =200
+                            ZIndex: =6
 
                 Container37 As groupContainer.verticalAutoLayoutContainer:
                     Fill: =RGBA(255, 255, 255, 1)
@@ -244,6 +257,18 @@
                             Width: =Parent.TemplateWidth
                             ZIndex: =1
 
+                            Label16_18 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =Text(ThisItem.'Submission Date',"dd-mm-yyyy")
+                                ZIndex: =1
+
                             Label16_15 As label:
                                 BorderColor: =App.Theme.Colors.Darker40
                                 Color: |
@@ -254,7 +279,7 @@
                                 Height: =Parent.Height
                                 Size: =9
                                 Text: =ThisItem.'Name of Prospective Tenant'
-                                ZIndex: =1
+                                ZIndex: =2
 
                             Label16_17 As label:
                                 BorderColor: =App.Theme.Colors.Darker40
@@ -267,7 +292,7 @@
                                 Size: =9
                                 Text: =ThisItem.'Company Name and Address'
                                 Width: =200
-                                ZIndex: =2
+                                ZIndex: =3
 
                             Container59_1 As groupContainer.manualLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
@@ -276,7 +301,7 @@
                                 LayoutMinHeight: =0
                                 LayoutMinWidth: =250
                                 Width: =150
-                                ZIndex: =3
+                                ZIndex: =4
 
                                 Label26_1 As label:
                                     Align: =Align.Center
