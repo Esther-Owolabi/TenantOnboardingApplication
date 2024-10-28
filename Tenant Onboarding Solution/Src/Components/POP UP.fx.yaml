@@ -75,7 +75,7 @@
                 Rectangle9 As rectangle:
                     AlignInContainer: =AlignInContainer.Stretch
                     BorderColor: =App.Theme.Colors.Darker40
-                    Fill: =RGBA(222,222,222,1)
+                    Fill: =RGBA(85, 69, 191,1)//RGBA(222,222,222,1)
                     Height: =2
                     ZIndex: =2
 
@@ -126,19 +126,19 @@
                 ZIndex: =3
 
                 no_btn As button:
-                    BorderColor: =RGBA(17,65,133,1)
-                    Color: =RGBA(17,65,133,1)
+                    BorderColor: =RGBA(85, 69, 191,1)
+                    Color: =RGBA(85, 69, 191,1)
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     Fill: =Color.White
+                    FocusedBorderThickness: =2
                     Font: =App.Theme.Font
                     FontWeight: =FontWeight.Semibold
-                    HoverBorderColor: =App.Theme.Colors.Darker10
-                    HoverColor: =RGBA(17,65,133,1)
+                    HoverBorderColor: =RGBA(85, 69, 191,1)
                     HoverFill: =ColorFade(Self.Fill, -20%)
                     OnSelect: ='POP UP'.NoAction()
-                    PressedBorderColor: =App.Theme.Colors.Darker40
+                    PressedBorderColor: =RGBA(85, 69, 191,1)
                     PressedColor: =Self.Color
                     PressedFill: =Self.Fill
                     Size: =15
@@ -146,16 +146,17 @@
                     ZIndex: =1
 
                 yes_btn As button:
-                    BorderColor: =RGBA(17,65,133,1)
+                    BorderColor: =RGBA(85, 69, 191,1)
                     DisabledBorderColor: =RGBA(244, 244, 244, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(17,65,133,1)
+                    Fill: =RGBA(85, 69, 191,1)
+                    FocusedBorderThickness: =2
                     Font: =App.Theme.Font
                     FontWeight: =FontWeight.Semibold
-                    HoverBorderColor: =App.Theme.Colors.Darker10
+                    HoverBorderColor: =RGBA(85, 69, 191,1)
                     HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(17,65,133,1),20%)
+                    HoverFill: =ColorFade(Self.Fill,20%)
                     OnSelect: ='POP UP'.YesAction()
                     PressedBorderColor: =App.Theme.Colors.Darker40
                     PressedColor: =Self.Color

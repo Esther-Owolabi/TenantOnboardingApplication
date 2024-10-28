@@ -502,7 +502,7 @@
                     "Rules": [
                       {
                         "Category": "Design",
-                        "InvariantScript": "RGBA(222,222,222,1)",
+                        "InvariantScript": "RGBA(85, 69, 191,1)//RGBA(222,222,222,1)",
                         "Property": "Fill",
                         "RuleProviderType": "User"
                       },
@@ -1951,8 +1951,22 @@
                         "NameMapSourceSchema": "?"
                       },
                       "DisabledBorderColor",
-                      "PressedBorderColor",
-                      "HoverBorderColor",
+                      {
+                        "AFDDataSourceName": "",
+                        "AutoRuleBindingEnabled": false,
+                        "AutoRuleBindingString": "App.Theme.Colors.Darker40",
+                        "InvariantPropertyName": "PressedBorderColor",
+                        "IsLockable": false,
+                        "NameMapSourceSchema": "?"
+                      },
+                      {
+                        "AFDDataSourceName": "",
+                        "AutoRuleBindingEnabled": false,
+                        "AutoRuleBindingString": "App.Theme.Colors.Darker10",
+                        "InvariantPropertyName": "HoverBorderColor",
+                        "IsLockable": false,
+                        "NameMapSourceSchema": "?"
+                      },
                       "BorderStyle",
                       "FocusedBorderColor",
                       {
@@ -2013,7 +2027,14 @@
                       "RadiusBottomLeft",
                       "RadiusBottomRight",
                       "BorderThickness",
-                      "FocusedBorderThickness",
+                      {
+                        "AFDDataSourceName": "",
+                        "AutoRuleBindingEnabled": false,
+                        "AutoRuleBindingString": "4",
+                        "InvariantPropertyName": "FocusedBorderThickness",
+                        "IsLockable": false,
+                        "NameMapSourceSchema": "?"
+                      },
                       "Size",
                       "Italic",
                       "Underline",
@@ -2093,9 +2114,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "4",
+                        "InvariantScript": "2",
                         "Property": "FocusedBorderThickness",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2225,9 +2246,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "RGBA(17,65,133,1)",
+                        "InvariantScript": "Self.Color",
                         "Property": "HoverColor",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2237,9 +2258,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "RGBA(17,65,133,1)",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "Color",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2249,15 +2270,15 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "App.Theme.Colors.Darker10",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "HoverBorderColor",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "App.Theme.Colors.Darker40",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "PressedBorderColor",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2267,9 +2288,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "RGBA(17,65,133,1)",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "BorderColor",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2340,7 +2361,14 @@
                       },
                       "DisabledBorderColor",
                       "PressedBorderColor",
-                      "HoverBorderColor",
+                      {
+                        "AFDDataSourceName": "",
+                        "AutoRuleBindingEnabled": false,
+                        "AutoRuleBindingString": "App.Theme.Colors.Darker10",
+                        "InvariantPropertyName": "HoverBorderColor",
+                        "IsLockable": false,
+                        "NameMapSourceSchema": "?"
+                      },
                       "BorderStyle",
                       "FocusedBorderColor",
                       "Color",
@@ -2415,7 +2443,14 @@
                         "NameMapSourceSchema": "?"
                       },
                       "BorderThickness",
-                      "FocusedBorderThickness",
+                      {
+                        "AFDDataSourceName": "",
+                        "AutoRuleBindingEnabled": false,
+                        "AutoRuleBindingString": "4",
+                        "InvariantPropertyName": "FocusedBorderThickness",
+                        "IsLockable": false,
+                        "NameMapSourceSchema": "?"
+                      },
                       "Size",
                       "Italic",
                       "Underline",
@@ -2501,9 +2536,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "4",
+                        "InvariantScript": "2",
                         "Property": "FocusedBorderThickness",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2609,9 +2644,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "ColorFade(RGBA(17,65,133,1),20%)",
+                        "InvariantScript": "ColorFade(Self.Fill,20%)",
                         "Property": "HoverFill",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2621,9 +2656,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "RGBA(17,65,133,1)",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "Fill",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2657,9 +2692,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "App.Theme.Colors.Darker10",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "HoverBorderColor",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -2675,9 +2710,9 @@
                       },
                       {
                         "Category": "Design",
-                        "InvariantScript": "RGBA(17,65,133,1)",
+                        "InvariantScript": "RGBA(85, 69, 191,1)",
                         "Property": "BorderColor",
-                        "RuleProviderType": "Unknown"
+                        "RuleProviderType": "User"
                       },
                       {
                         "Category": "Design",
@@ -3659,7 +3694,7 @@
       "NoAction",
       "YesAction"
     ],
-    "LastModifiedTimestamp": "638657310441312517",
+    "LastModifiedTimestamp": "638657324940368337",
     "Name": "POP UP",
     "Rules": [
       {
@@ -3772,7 +3807,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638657310441312517",
+  "LastModifiedTimestamp": "638657324940368337",
   "Name": "e90371fc71e54f6fba00a9ad24a1d042",
   "OverridableProperties": {},
   "Version": "1.0"

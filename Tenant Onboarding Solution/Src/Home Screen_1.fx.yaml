@@ -1029,3 +1029,8 @@
                         Y: =5
                         ZIndex: =3
 
+    "'POP UP_4' As 'POP UP'":
+        NoAction: ="Text"
+        YesAction: =
+        ZIndex: =4
+
