@@ -715,7 +715,6 @@
                             ZIndex: =37
 
                         currentResidentialAddress_value_1 As label:
-                            AutoHeight: =true
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
