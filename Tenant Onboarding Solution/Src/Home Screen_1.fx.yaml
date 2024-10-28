@@ -184,7 +184,7 @@
                             Size: =11
                             Text: =record.'Name of Prospective Tenant'
                             Width: =Parent.Width/2 - 10
-                            X: =name_label.X
+                            X: =10
                             Y: =name_label.Y + name_label.Height
                             ZIndex: =2
 
