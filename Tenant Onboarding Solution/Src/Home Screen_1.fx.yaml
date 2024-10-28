@@ -700,7 +700,7 @@
                             Y: =reasonForLeaving_label.Y + reasonForLeaving_label.Height
                             ZIndex: =36
 
-                        currentResidentialAddress_label_1 As label:
+                        petStatus_label As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 0.5)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -714,7 +714,7 @@
                             Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
                             ZIndex: =37
 
-                        currentResidentialAddress_value_1 As label:
+                        petStatus_value As label:
                             BorderColor: =App.Theme.Colors.Darker40
                             Color: =RGBA(4, 4, 4, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -726,8 +726,8 @@
                             Size: =11
                             Text: =record.'Current Residential Address'
                             Width: =Parent.Width/3 - 20
-                            X: =currentResidentialAddress_label_1.X
-                            Y: =currentResidentialAddress_label_1.Y + currentResidentialAddress_label_1.Height
+                            X: =petStatus_label.X
+                            Y: =petStatus_label.Y + petStatus_label.Height
                             ZIndex: =38
 
     Container1 As groupContainer.manualLayoutContainer:
