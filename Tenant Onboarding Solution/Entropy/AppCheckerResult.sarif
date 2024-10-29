@@ -2101,46 +2101,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_7.Navigator_6.MenuItem"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.Container13_7.Navigator_6.MenuItem",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 24,
-                  "charOffset": 2985,
-                  "snippet": {
-                    "text": "'Renewal Request screen'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "MenuItem",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.Container13_7.Navigator_6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Renewal Request screen"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Mail Screen'.Container13_7.Container17_7.Container32_7.Canvas1_2.Y"
                 }
               ],
