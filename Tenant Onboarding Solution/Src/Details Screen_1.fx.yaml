@@ -113,7 +113,7 @@
                             Height: =Parent.Height
                             HoverBorderColor: =App.Theme.Colors.Darker10
                             HoverFill: =Self.Fill
-                            OnSelect: =Navigate('Home Screen')
+                            OnSelect: =Back();
                             PressedBorderColor: =App.Theme.Colors.Darker40
                             PressedColor: =Self.Color
                             PressedFill: =Self.Fill
@@ -165,7 +165,7 @@
                             BorderColor: =If(IsBlank(Trim(Self.HtmlText)),Color.Red,Color.Black)
                             Default: ="<input type='text' placeholder='Enter your text here'>"
                             Height: =500
-                            Width: =Parent.Width
+                            Width: =Parent.Width - 20
                             Y: =txt_offerLetterPlaceholder.Height
                             ZIndex: =46
 
