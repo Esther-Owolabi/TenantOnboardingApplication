@@ -219,6 +219,14 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: =SendMail.Run("Esther Owolabi","APPROVED","owolabi.olaomopo@gmail.com",RichTextEditor2.HtmlText)
+        YesAction: |-
+            =UpdateContext({showLoading: true});
+            SendMail.Run(
+                "Esther",
+                "APPROVED",
+                "owolabi.olaomopo@gmail.com",
+                {text_2: RichTextEditor2.HtmlText}
+            );
+            UpdateContext({showLoading: false})
         ZIndex: =4
 
