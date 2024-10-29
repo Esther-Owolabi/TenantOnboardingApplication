@@ -219,6 +219,6 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: =//send generated docment
+        YesAction: =
         ZIndex: =4
 

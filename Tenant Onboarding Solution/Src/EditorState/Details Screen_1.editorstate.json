@@ -3043,14 +3043,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "YesAction",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "YesAction",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
