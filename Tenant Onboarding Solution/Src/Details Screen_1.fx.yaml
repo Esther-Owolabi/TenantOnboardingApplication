@@ -182,12 +182,7 @@
                             ZIndex: =47
 
                         Container7_1 As groupContainer.manualLayoutContainer:
-                            DropShadow: =DropShadow.Light
                             Height: =70
-                            RadiusBottomLeft: =4
-                            RadiusBottomRight: =4
-                            RadiusTopLeft: =4
-                            RadiusTopRight: =4
                             Width: =Parent.Width
                             Y: =RichTextEditor2.Y + RichTextEditor2.Height + 10
                             ZIndex: =50
