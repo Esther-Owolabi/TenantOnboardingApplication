@@ -17,7 +17,7 @@
                   {
                     "AFDDataSourceName": "",
                     "AutoRuleBindingEnabled": false,
-                    "AutoRuleBindingString": "SampleImage",
+                    "AutoRuleBindingString": "",
                     "InvariantPropertyName": "Image",
                     "IsLockable": false,
                     "NameMapSourceSchema": "?"
@@ -106,7 +106,7 @@
                     "Category": "Data",
                     "InvariantScript": "'logo black'",
                     "Property": "Image",
-                    "RuleProviderType": "User"
+                    "RuleProviderType": "Unknown"
                   },
                   {
                     "Category": "Design",
@@ -3720,7 +3720,7 @@
       },
       "LogOutScreen"
     ],
-    "LastModifiedTimestamp": "638658289831192769",
+    "LastModifiedTimestamp": "638658298982705848",
     "Name": "Navigator",
     "Rules": [
       {
@@ -3844,7 +3844,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638658289831192769",
+  "LastModifiedTimestamp": "638658298982705848",
   "Name": "255b88dbe8e94d3a8ed02e9fb8500187",
   "OverridableProperties": {},
   "TemplateOriginalName": "8a8eefebb69f4fb8a50fa1cff8038439",
