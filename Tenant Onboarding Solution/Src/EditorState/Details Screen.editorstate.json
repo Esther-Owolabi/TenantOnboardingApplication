@@ -10154,7 +10154,7 @@
         {
           "Category": "Data",
           "PropertyName": "MenuItem",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
