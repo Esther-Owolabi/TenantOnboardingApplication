@@ -2,9 +2,6 @@
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
-    LoadingImageHome_2 As Loading:
-        Visible: =showLoading
-
     Container13_7 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
             =RGBA(248, 248, 248, 1)
@@ -214,6 +211,10 @@
                                 Y: =Parent.Height/2 - Self.Height/2
                                 ZIndex: =52
 
+    LoadingImageHome_2 As Loading:
+        Visible: =showLoading
+        ZIndex: =2
+
     "'POP UP_5' As 'POP UP'":
         ActionText: =action
         NoAction: |-
@@ -229,14 +230,5 @@
                 {text_2: RichTextEditor2.HtmlText}
             );
             UpdateContext({showLoading: false})
-        ZIndex: =4
-
-    TextCanvas1 As Text:
-        DisplayMode: =DisplayMode.Edit
-        Height: =70
-        Text: =RichTextEditor2.HtmlText
-        Width: =354
-        X: =40
-        Y: =40
-        ZIndex: =5
+        ZIndex: =3
 
