@@ -219,6 +219,6 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: =
+        YesAction: =SendMail.Run("Esther Owolabi","APPROVED","owolabi.olaomopo@gmail.com",RichTextEditor2.HtmlText)
         ZIndex: =4
 

@@ -28163,6 +28163,87 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Details Screen_1'.'POP UP_5'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen_1'.'POP UP_5'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 85,
+                  "snippet": {
+                    "text": ".HtmlText"
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Details Screen_1",
+                "type": "'Details Screen_1'.'POP UP_5'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Record",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen_1'.'POP UP_5'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen_1'.'POP UP_5'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "Run"
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Details Screen_1",
+                "type": "'Details Screen_1'.'POP UP_5'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Navigator.Container2_3.Container16.Gallery1_2.AccessibleLabel"
                 }
               ],
