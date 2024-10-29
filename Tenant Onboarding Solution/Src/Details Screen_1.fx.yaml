@@ -3,7 +3,7 @@
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     LoadingImageHome_2 As Loading:
-        Visible: =false
+        Visible: =showLoading
 
     Container13_7 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
@@ -220,11 +220,12 @@
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
         YesAction: |-
-            =UpdateContext({showLoading: true});
+            =UpdateContext({showPopUp: false});
+            UpdateContext({showLoading: true});
             SendMail.Run(
-                "Esther",
+                record.'Name of Prospective Tenant',
                 "APPROVED",
-                "owolabi.olaomopo@gmail.com",
+                record.'Email Address',
                 {text_2: RichTextEditor2.HtmlText}
             );
             UpdateContext({showLoading: false})
