@@ -220,7 +220,7 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: |-
+        YesAction: |
             =UpdateContext({showPopUp: false});
             UpdateContext({showLoading: true});
             SendMail.Run(
@@ -229,6 +229,9 @@
                 record.'Email Address',
                 {text_2: RichTextEditor2.HtmlText}
             );
-            UpdateContext({showLoading: false})
+            UpdateContext({showLoading: false});
+            Reset(RichTextEditor2);
+            Navigate('Home Screen');
+            Set(record,Blank());
         ZIndex: =3
 
