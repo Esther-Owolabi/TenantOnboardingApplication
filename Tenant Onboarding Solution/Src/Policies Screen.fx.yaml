@@ -60,7 +60,7 @@
                 LayoutMinHeight: =640
                 LayoutMinWidth: =0
                 NoficationBellOnSelect: =
-                NotificationCircleVisibility: =CountIf('POLICY APPROVALS','Approval Status'=2)>0
+                NotificationCircleVisibility: =false
                 Tooltip: ="You have some pending requests awaiting approval "
                 Width: =
 
@@ -440,27 +440,7 @@
             =UpdateContext({showPopUp:false});
         Visible: =showPopUp
         Width: =Parent.Width
-        YesAction: |-
-            =Switch(
-                action,
-                "Submit",
-                UpdateContext({showPopUp: false});
-                UpdateContext({showLoading: true});
-                SubmitForm(Form4),
-                "Delete",
-                UpdateContext({showPopUp: false});
-                UpdateContext({showLoading: true});
-                Remove(
-                    'POLICY COMPEDIUMS',
-                    LookUp(
-                        'POLICY COMPEDIUMS',
-                        ID = Gallery2.Selected.ID
-                    )
-                );
-                UpdateContext({showLoading: false});
-                UpdateContext({openForm: false});
-                
-            )
+        YesAction: =
         ZIndex: =4
 
     Group1 As group:
