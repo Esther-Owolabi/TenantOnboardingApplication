@@ -163,7 +163,7 @@
 
                         RichTextEditor2 As richTextEditor:
                             BorderColor: =If(IsBlank(Trim(Self.HtmlText)),Color.Red,Color.Black)
-                            Default: ="<input type='text' placeholder='Enter your text here'>"
+                            Default: =""
                             Height: =500
                             Width: =Parent.Width - 20
                             Y: =txt_offerLetterPlaceholder.Height
@@ -229,4 +229,13 @@
             );
             UpdateContext({showLoading: false})
         ZIndex: =4
+
+    TextCanvas1 As Text:
+        DisplayMode: =DisplayMode.Edit
+        Height: =70
+        Text: =RichTextEditor2.HtmlText
+        Width: =354
+        X: =40
+        Y: =40
+        ZIndex: =5
 
