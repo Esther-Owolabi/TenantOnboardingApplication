@@ -1030,6 +1030,7 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: =Navigate('Mail Screen',ScreenTransition.CoverRight)
+        YesAction: |-
+            =UpdateContext({showPopUp:false});Navigate('Mail Screen',ScreenTransition.CoverRight)
         ZIndex: =4
 
