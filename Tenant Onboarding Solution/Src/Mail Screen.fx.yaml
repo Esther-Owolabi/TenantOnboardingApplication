@@ -2,7 +2,7 @@
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: |-
-        =//UpdateContext({showLoading: false});
+        =UpdateContext({showLoading: false});
 
     Container13_7 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
