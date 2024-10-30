@@ -68,7 +68,7 @@
                     LayoutMinWidth: =0
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =18
-                    PaddingRight: =10
+                    PaddingRight: =20
                     ZIndex: =1
 
                     Container59_3 As groupContainer.manualLayoutContainer:
@@ -580,7 +580,7 @@
                             Text: ="Spouse Occupation/ Office Name and Address"
                             Width: =300
                             X: =spouseName_value.X + spouseName_value.Width + 10
-                            Y: =company_value.Y + company_value.Height + 10
+                            Y: =spouseName_label.Y //+ company_value.Height + 10//company_value.Y + company_value.Height + 10
                             ZIndex: =29
 
                         spouseDetails_value As label:
@@ -610,7 +610,7 @@
                             Size: =10
                             Text: ="Number of Children"
                             X: =spouseDetails_value.X + spouseDetails_value.Width + 10
-                            Y: =company_value.Y + company_value.Height + 10
+                            Y: =spouseName_label.Y 
                             ZIndex: =31
 
                         noOfChildren_value As label:
@@ -732,7 +732,7 @@
                             Text: ="If yes, what type?"
                             Width: =280
                             X: =petStatus_value.X + petStatus_value.Width + 10
-                            Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
+                            Y: =petStatus_label.Y//If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
                             ZIndex: =39
 
                         petTypes_value As label:
