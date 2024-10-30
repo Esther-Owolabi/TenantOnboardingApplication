@@ -168,7 +168,6 @@
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Semibold
                         LayoutMinWidth: =0
                         Size: =13
                         Text: |-
@@ -178,11 +177,11 @@
 
                     Label15_10 As label:
                         BorderColor: =App.Theme.Colors.Darker40
-                        Color: =Switch(Self.Text, "Pending",RGBA(0,0,0,1),"Approved",RGBA(0,1,2,1),"Rejected",RGBA(0,0,0,1))
+                        Color: =Switch(Self.Text, "Pending",RGBA(201,5,5,1),"Approved",RGBA(1,167,37,1),"Rejected",RGBA(201,5,5,1))
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FillPortions: =1
                         Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Bold
+                        FontWeight: =FontWeight.Semibold
                         LayoutMinWidth: =0
                         Size: =13
                         Text: =record.Status.Value
@@ -858,6 +857,7 @@
                             RadiusBottomRight: =4
                             RadiusTopLeft: =4
                             RadiusTopRight: =4
+                            Visible: =If(Label15_10.Text = "Pending",true,false)
                             Width: =Parent.Width
                             Y: =noOfCars_value.Y + noOfCars_value.Height + 10
                             ZIndex: =45
