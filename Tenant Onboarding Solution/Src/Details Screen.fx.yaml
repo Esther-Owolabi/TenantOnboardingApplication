@@ -3,7 +3,7 @@
     LoadingSpinnerColor: =App.Theme.Colors.Primary
 
     LoadingImageHome_1 As Loading:
-        Visible: =false
+        Visible: =showLoading
 
     Container13_6 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
