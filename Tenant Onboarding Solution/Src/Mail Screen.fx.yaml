@@ -215,12 +215,12 @@
         YesAction: |
             =UpdateContext({showPopUp: false});
             UpdateContext({showLoading: true});
-            SendMail.Run(
+            Set(result,SendMail.Run(
                 record.'Name of Prospective Tenant',
                 "APPROVED",
                 record.'Email Address',
                 {text_2: RichTextEditor2.HtmlText}
-            );
+            ));
             UpdateContext({showLoading: false});
             Reset(RichTextEditor2);
             Navigate('Home Screen');
