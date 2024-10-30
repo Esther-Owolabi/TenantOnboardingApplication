@@ -364,8 +364,7 @@
                                 record.'Name of Prospective Tenant',
                                 "APPROVED",
                                 record.'Email Address',
-                                record.ID,
-                                {text_2: RichTextEditor2.HtmlText}
+                                record.ID,{text_2:RichTextEditor2.HtmlText}
                             ).responsecode
                         );
                         If(
