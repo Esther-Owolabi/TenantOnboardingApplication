@@ -212,18 +212,35 @@
         NoAction: |-
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
-        YesAction: |
+        YesAction: |-
             =UpdateContext({showPopUp: false});
             UpdateContext({showLoading: true});
-            Set(result,SendMail.Run(
-                record.'Name of Prospective Tenant',
-                "APPROVED",
-                record.'Email Address',
-                {text_2: RichTextEditor2.HtmlText}
-            ));
-            UpdateContext({showLoading: false});
-            Reset(RichTextEditor2);
-            Navigate('Home Screen');
-            Set(record,Blank());
+            Set(
+                result,
+                SendMail.Run(
+                    record.'Name of Prospective Tenant',
+                    "APPROVED",
+                    record.'Email Address',
+                    {text_2: RichTextEditor2.HtmlText}
+                ).responsecode
+            );
+            If(
+                result = "00",
+                UpdateContext({showLoading: false});
+                Reset(RichTextEditor2);
+                Notify(
+                    "Offer letter has been sent successfully",
+                    NotificationType.Success
+                );
+                Navigate('Home Screen');
+                Set(
+                    record,
+                    Blank()
+                ),
+                Notify(
+                    "There was an error sending the mail. Please check your network connectivity and try again.",
+                    NotificationType.Error
+                )
+            )
         ZIndex: =3
 

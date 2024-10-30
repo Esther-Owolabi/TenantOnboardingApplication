@@ -231,14 +231,15 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/30/2024 10:43:07",
+  "HeaderLastSavedDateTimeUTC": "10/30/2024 10:45:43",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "06614241-272d-4d64-80e8-0c9a4749ece6": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/f48a4d28adf840238c13fc1f6edbab90\"",
-    "117c2f58-56dd-43bc-8c77-a5d9621cc0c5": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-81f0969b-41ba-430c-b32c-d84cddf64a16\"",
-    "14f48360-4db6-4712-a0bf-8919cfe5b7a9": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/b55738b3c4bf4d9d249bb0933b19b804-408a13d26f716cf6\"",
-    "302a26c1-a614-493f-830f-339319620258": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/7c254e4823104a64818557fce3a428a4\"",
-    "cd44fba5-2bb5-4c9a-9642-c52d13a040e4": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/shared-onedriveforbu-4e969183-fe6d-4ef6-9e1e-3dd90341d210\""
+    "14f48360-4db6-4712-a0bf-8919cfe5b7a9": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/B55738B3C4BF4D9D249BB0933B19B804-408A13D26F716CF6\"",
+    "3194498a-6b4d-498d-82fd-101736f86017": "\"/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/shared-onedriveforbu-4e969183-fe6d-4ef6-9e1e-3dd90341d210\"",
+    "3ff92adc-8ee3-406e-b085-f5b3dca12e29": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/7c254e4823104a64818557fce3a428a4\"",
+    "cd9a3fdc-0476-4a94-9bdf-76c6ba5bf2d3": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-3dd0e6cf-f6cc-478e-a358-4bc128d9aea0\"",
+    "faa22aeb-ecf5-48c7-a0cf-643266abd7e5": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-81f0969b-41ba-430c-b32c-d84cddf64a16\""
   },
   "LocalDatabaseReferencesAsEmpty": true,
   "LocalResourceFileNames": {
