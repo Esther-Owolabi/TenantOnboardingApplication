@@ -1080,16 +1080,17 @@
                 "REJECT",
                 UpdateContext({showPopUp: false});
                 UpdateContext({showLoading: true});
-                SendMail.Run(
+                Set(result,SendMail.Run(
                     record.'Name of Prospective Tenant',
                     "REJECTED",
                     record.'Email Address',record.ID
-                );
+                ).responsecode);
                 UpdateContext({showLoading: false});
-                Navigate(
+                If(result = "00",Notify("Request has been rejected successfully and notification has been sent");Navigate(
                     'Home Screen',
                     ScreenTransition.CoverRight
-                )
+                ),Notify("There was a "))
+                
             );
         ZIndex: =4
 
