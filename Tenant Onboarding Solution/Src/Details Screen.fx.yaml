@@ -63,7 +63,6 @@
                     FillPortions: =0
                     Height: =70
                     LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutGap: =10
                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMinHeight: =0
                     LayoutMinWidth: =0
@@ -158,7 +157,7 @@
                     LayoutMinHeight: =250
                     LayoutMinWidth: =100
                     Width: =Parent.Width
-                    Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+                    Y: =
                     ZIndex: =4
 
                     DataCard1_1 As dataCard:

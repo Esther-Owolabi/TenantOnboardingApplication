@@ -1,0 +1,107 @@
+component_Header_3 As CanvasComponent:
+    NoficationBellOnSelect():
+        ThisProperty:
+            Default: =
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =60
+    NotificationBellVisibility: =true
+    NotificationCircleVisibility: =true
+    Tooltip: ="Text"
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container12_1 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutGap: =10
+        LayoutJustifyContent: =LayoutJustifyContent.End
+        LayoutMode: =LayoutMode.Auto
+        PaddingRight: =25
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container40_2 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            FillPortions: =0
+            Height: =50
+            LayoutMinHeight: =0
+            LayoutMinWidth: =250
+            Visible: =component_Header_3.Visible
+            Width: =50
+            ZIndex: =1
+
+            Button12_1 As button:
+                BorderColor: =Color.Transparent
+                BorderStyle: =BorderStyle.None
+                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =Color.Transparent
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height
+                HoverBorderColor: =App.Theme.Colors.Darker10
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =Color.Transparent
+                OnSelect: =component_Header_3.NoficationBellOnSelect()
+                PressedBorderColor: =App.Theme.Colors.Darker40
+                PressedColor: =Self.Color
+                PressedFill: =Color.Transparent
+                Size: =15
+                Text: =
+                Tooltip: =If(component_Header_3.NotificationCircleVisibility,component_Header_3.Tooltip)
+                Width: =Parent.Width
+                ZIndex: =2
+
+            Icon7_2 As icon.Bell:
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =App.Theme.Colors.Darker30
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =Self.Width
+                Icon: =Icon.Bell
+                OnSelect: =
+                Width: =Parent.Width - 20
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Parent.Height/2 - Self.Height/2
+                ZIndex: =3
+
+            Circle2_1 As circle:
+                BorderColor: =App.Theme.Colors.Darker40
+                Fill: =RGBA(239, 49, 37, 1)
+                Height: =Self.Width
+                Visible: =component_Header_3.NotificationCircleVisibility
+                Width: =10
+                X: =Icon7_2.X + Icon7_2.Width - Self.Width
+                Y: =Icon7_2.Y
+                ZIndex: =4
+
+        Image10_1 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(217, 217, 217, 1)
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =70
+            RadiusBottomRight: =70
+            RadiusTopLeft: =70
+            RadiusTopRight: =70
+            Width: =50
+            ZIndex: =5
+
+        Label7_1 As label:
+            AutoHeight: =true
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(4, 4, 4, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Semibold
+            Size: =8
+            Text: =First(Split(User().FullName," ")).Value  & " " &First(Split(Last(Split(User().FullName," ")).Value,"")).Value & "."
+            Width: =100
+            ZIndex: =6
+
