@@ -170,7 +170,7 @@
                                     FocusedBorderThickness: =4
                                     Font: =App.Theme.Font
                                     Height: =Parent.Height
-                                    HintText: ="Search by Policy Name"
+                                    HintText: ="Search by Name"
                                     HoverBorderColor: =App.Theme.Colors.Darker40
                                     HoverColor: =RGBA(0, 0, 0, 1)
                                     HoverFill: =Color.Transparent

@@ -407,7 +407,7 @@
       "MetaDataIDKey": "",
       "Name": "Canvas1_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1489,7 +1489,7 @@
       "MetaDataIDKey": "",
       "Name": "Container38_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1766,7 +1766,7 @@
       "MetaDataIDKey": "",
       "Name": "Container59_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2490,7 +2490,7 @@
       "MetaDataIDKey": "",
       "Name": "Label15_9",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2740,7 +2740,7 @@
       "MetaDataIDKey": "",
       "Name": "LoadingImageHome_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3076,7 +3076,7 @@
       "MetaDataIDKey": "",
       "Name": "POP UP_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3198,7 +3198,7 @@
       "MetaDataIDKey": "",
       "Name": "RichTextEditor2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3698,7 +3698,7 @@
       "MetaDataIDKey": "",
       "Name": "txt_offerLetterPlaceholder",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
