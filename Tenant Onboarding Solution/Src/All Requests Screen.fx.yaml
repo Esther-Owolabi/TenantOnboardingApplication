@@ -1,8 +1,9 @@
 "'All Requests Screen' As screen":
     Fill: =Color.White
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: |
+    OnVisible: |-
         =
+        Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents')
 
     Container13_2 As groupContainer.horizontalAutoLayoutContainer:
         Fill: |
