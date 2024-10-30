@@ -231,7 +231,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/30/2024 09:18:35",
+  "HeaderLastSavedDateTimeUTC": "10/30/2024 09:58:06",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "06614241-272d-4d64-80e8-0c9a4749ece6": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/f48a4d28adf840238c13fc1f6edbab90\"",
@@ -242,20 +242,20 @@
   },
   "LocalDatabaseReferencesAsEmpty": true,
   "LocalResourceFileNames": {
-    "edit": "89aa5efd-8c19-4fa3-a6be-7290d0b81658.svg",
+    "legacy poise logo": "00c09aa8-3c41-43e0-941a-9473a453731e.png",
+    "legacy poise purple": "8e2a56df-db43-4420-ac41-11c6be2a09b0.png",
+    "legacy poise purple cropped": "5867ba87-0748-44c1-9f68-27a991ab6689.png",
     "logo black": "a62933f7-f8f9-4678-b793-765bac9e5b0b.png",
-    "P (2)": "5b56a269-7a4e-4484-b7a7-009a22202a57.png",
     "quuestion_icon": "7443b9ca-655c-4ff4-8cdc-680c3bf3bc3e.gif",
-    "Spinner-1.4s-201px": "9fb2aff7-df70-465e-aa7c-f6944cb18994.svg",
-    "trash": "f38e660e-defa-4859-ab54-5f235466a736.svg"
+    "Spinner-1.4s-201px": "9fb2aff7-df70-465e-aa7c-f6944cb18994.svg"
   },
   "LocalResourceRootPaths": {
-    "edit": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images089aa5efd-8c19-4fa3-a6be-7290d0b81658.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=CTyjeqtU5wf3Nvk%2FHBiIROjdTb%2FPsDpd3%2FI0UNsi6Rw%3D",
+    "legacy poise logo": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/2ea15c4d-a2f2-433e-81f7-8e85f73318d9.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T09%3A40%3A12Z&ske=2024-10-31T09%3A55%3A12Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T09%3A55%3A12Z&sr=b&sp=r&sig=eNqpp2Wy5Wh4DGULR6dFPE27O1rpwXsf2w0upOJUlKI%3D",
+    "legacy poise purple": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/2b406e32-4e09-4fd7-93af-9aa1996fd06c.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T09%3A55%3A56Z&ske=2024-10-31T10%3A10%3A56Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T10%3A10%3A56Z&sr=b&sp=r&sig=xQumzd7ZO4jcXwTVuM42KWg1%2BX62n9zbVfnvPR3bzlc%3D",
+    "legacy poise purple cropped": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/3b93e8ff-c2b0-467f-957e-bc6f30fce170.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T09%3A57%3A51Z&ske=2024-10-31T10%3A12%3A51Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T10%3A12%3A51Z&sr=b&sp=r&sig=%2B5jMtcfd3%2F9mB27M4YxKZW9nASA6qUbI0qTLCDF9w%2BI%3D",
     "logo black": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images0a62933f7-f8f9-4678-b793-765bac9e5b0b.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=e%2BYNmcQ8TNcil44EOFaSKNJKy2NQPoK%2BTW21s9pkqAo%3D",
-    "P (2)": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images05b56a269-7a4e-4484-b7a7-009a22202a57.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=1KsIu3EvobCwRBzy%2BobtASSARKT2fvFAVeboSB%2FTN8c%3D",
     "quuestion_icon": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images07443b9ca-655c-4ff4-8cdc-680c3bf3bc3e.gif?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=fzrlQAUi8J28bl3c2AHA2bQdhkOnsyUZke2B5o0L%2FtQ%3D",
-    "Spinner-1.4s-201px": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images09fb2aff7-df70-465e-aa7c-f6944cb18994.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=TIlzl43A7zspOqyyiyCfef6HlScTKUBeTMsYDst5v7U%3D",
-    "trash": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images0f38e660e-defa-4859-ab54-5f235466a736.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=q%2FrVu3pzkNUzg9mp20LpMRLSsEhq8S%2FN7Yw6RJvPOdM%3D"
+    "Spinner-1.4s-201px": "https://docserverpwaprodneu.blob.core.windows.net/c20cc8a4-ef50-42ae-8adc-125a0198c5bc-1/resource/Assets0Images09fb2aff7-df70-465e-aa7c-f6944cb18994.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-10-30T08%3A29%3A58Z&ske=2024-10-31T08%3A44%3A58Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-10-31T08%3A44%3A58Z&sr=b&sp=r&sig=TIlzl43A7zspOqyyiyCfef6HlScTKUBeTMsYDst5v7U%3D"
   },
   "OrderComponentMetadata": {
     "0c27134eceb94dd7831601c78ed5fcf0": 6,
@@ -741,13 +741,13 @@
     "yes_btn": 190
   },
   "ResourcesJsonIndices": {
-    "Image-edit": 3,
+    "Image-legacy poise logo": 4,
+    "Image-legacy poise purple": 3,
+    "Image-legacy poise purple cropped": 6,
     "Image-logo black": 2,
-    "Image-P (2)": 6,
     "Image-quuestion_icon": 5,
     "Image-SampleImage": 0,
-    "Image-Spinner-1.4s-201px": 1,
-    "Image-trash": 4
+    "Image-Spinner-1.4s-201px": 1
   },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},

@@ -1709,17 +1709,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.edit"
+                  "fullyQualifiedName": "App.logo black"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.edit",
+                  "fullyQualifiedName": "App.logo black",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "edit",
+                "member": "logo black",
                 "module": "App",
                 "type": "App"
               }
@@ -1739,17 +1739,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.trash"
+                  "fullyQualifiedName": "App.legacy poise purple"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.trash",
+                  "fullyQualifiedName": "App.legacy poise purple",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "trash",
+                "member": "legacy poise purple",
                 "module": "App",
                 "type": "App"
               }
@@ -1769,17 +1769,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.P (2)"
+                  "fullyQualifiedName": "App.legacy poise logo"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.P (2)",
+                  "fullyQualifiedName": "App.legacy poise logo",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "P (2)",
+                "member": "legacy poise logo",
                 "module": "App",
                 "type": "App"
               }
