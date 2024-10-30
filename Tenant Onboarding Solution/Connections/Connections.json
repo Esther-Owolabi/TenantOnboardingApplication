@@ -1,4 +1,18 @@
 {
+  "0217e6da-5d1e-4c0b-85e7-0f1c7d39d16c": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
+    ],
+    "id": "0217e6da-5d1e-4c0b-85e7-0f1c7d39d16c"
+  },
   "06614241-272d-4d64-80e8-0c9a4749ece6": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",
@@ -77,29 +91,15 @@
       "SendMail"
     ],
     "dependencies": {
-      "shared_office365": "cd9a3fdc-0476-4a94-9bdf-76c6ba5bf2d3",
-      "shared_office365_1": "faa22aeb-ecf5-48c7-a0cf-643266abd7e5",
-      "shared_onedriveforbusiness": "3194498a-6b4d-498d-82fd-101736f86017",
-      "shared_sharepointonline": "3ff92adc-8ee3-406e-b085-f5b3dca12e29"
+      "shared_office365": "bb6504b4-ce2c-43e6-b17b-cc40a172b250",
+      "shared_office365_1": "0217e6da-5d1e-4c0b-85e7-0f1c7d39d16c",
+      "shared_onedriveforbusiness": "bb7b68d9-09a5-4d32-813a-8856c63fbb75",
+      "shared_sharepointonline": "8a577f21-dafe-47a4-ad6a-f3e4959f5783"
     },
     "dependents": [],
     "id": "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
   },
-  "3194498a-6b4d-498d-82fd-101736f86017": {
-    "connectionRef": {
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1689/1.0.1689.3722/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
-    ],
-    "id": "3194498a-6b4d-498d-82fd-101736f86017"
-  },
-  "3ff92adc-8ee3-406e-b085-f5b3dca12e29": {
+  "8a577f21-dafe-47a4-ad6a-f3e4959f5783": {
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
@@ -111,9 +111,9 @@
     "dependents": [
       "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
     ],
-    "id": "3ff92adc-8ee3-406e-b085-f5b3dca12e29"
+    "id": "8a577f21-dafe-47a4-ad6a-f3e4959f5783"
   },
-  "cd9a3fdc-0476-4a94-9bdf-76c6ba5bf2d3": {
+  "bb6504b4-ce2c-43e6-b17b-cc40a172b250": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/office365/icon.png",
@@ -125,13 +125,13 @@
     "dependents": [
       "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
     ],
-    "id": "cd9a3fdc-0476-4a94-9bdf-76c6ba5bf2d3"
+    "id": "bb6504b4-ce2c-43e6-b17b-cc40a172b250"
   },
-  "faa22aeb-ecf5-48c7-a0cf-643266abd7e5": {
+  "bb7b68d9-09a5-4d32-813a-8856c63fbb75": {
     "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1689/1.0.1689.3722/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
     },
     "datasets": {},
     "dataSources": [],
@@ -139,6 +139,6 @@
     "dependents": [
       "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
     ],
-    "id": "faa22aeb-ecf5-48c7-a0cf-643266abd7e5"
+    "id": "bb7b68d9-09a5-4d32-813a-8856c63fbb75"
   }
 }

@@ -6,11 +6,13 @@
       <string name="ManualTriggerInput_text_def" />
       <string name="ManualTriggerInput_text_2_def" />
       <string name="ManualTriggerInput_text_3_def" />
+      <number name="ManualTriggerInput_number_def" />
       <object name="ManualTriggerInput">
         <property name="text_1" type="string" />
         <property name="text" type="string" />
         <property name="text_2" type="string" />
         <property name="text_3" type="string" />
+        <property name="number" type="number" />
       </object>
       <string name="ResponseActionOutput_responsecode_def" />
       <object name="ResponseActionOutput">
@@ -40,6 +42,9 @@
             </param>
             <param style="plain" name="text_3" path="/text_3" type="xs:string" required="true">
               <doc title="Mail" />
+            </param>
+            <param style="plain" name="number" path="/number" type="xs:double" required="true">
+              <doc title="itemID" />
             </param>
           </representation>
         </request>
