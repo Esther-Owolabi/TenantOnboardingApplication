@@ -1093,6 +1093,7 @@
                 If(
                     result = "00",
                     Notify("Request has been rejected successfully and notification has been sent");
+                    Set(record,Blank());
                     Navigate(
                         'Home Screen',
                         ScreenTransition.CoverRight
