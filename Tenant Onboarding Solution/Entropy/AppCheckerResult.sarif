@@ -1649,6 +1649,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container34_1.Container38_1.Container47.ComboBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container34_1.Container38_1.Container47.ComboBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "All Requests Screen",
+                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container34_1.Container38_1.Container47.ComboBox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container34_1.Container38_1.Container47.Icon5_3.AccessibleLabel"
                 }
               ],

@@ -106,6 +106,7 @@
                             AlignInContainer: =AlignInContainer.SetByContainer
                             FillPortions: =0
                             Height: =Parent.Height - 25
+                            LayoutGap: =10
                             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
@@ -113,27 +114,27 @@
                             ZIndex: =3
 
                             Icon5_3 As icon.Reload:
+                                AlignInContainer: =AlignInContainer.Center
                                 BorderColor: =App.Theme.Colors.Darker40
-                                Color: =RGBA(214,221,224,1)
+                                Color: =RGBA(170, 163, 217, 1)//RGBA(214,221,224,1)
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(244, 244, 244, 1)
-                                Height: =30
+                                Height: =Icon7_1.Height
                                 Icon: =Icon.Reload
                                 OnSelect: |+
                                     =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
                                     
                                 Tooltip: ="Refresh Requests"
-                                Width: =30
+                                Width: =Self.Height
                                 X: =
                                 Y: =
                                 ZIndex: =1
 
                             Container40_1 As groupContainer.horizontalAutoLayoutContainer:
-                                AlignInContainer: =AlignInContainer.SetByContainer
-                                BorderColor: =RGBA(214, 221, 224, 1)
+                                AlignInContainer: =AlignInContainer.Center
+                                BorderColor: =RGBA(170, 163, 217, 0.7)//RGBA(214, 221, 224, 1)
                                 BorderThickness: =2
-                                FillPortions: =0
-                                Height: =Parent.Height
+                                Height: =Parent.Height - 5
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutMinHeight: =0
                                 LayoutMinWidth: =0
@@ -144,17 +145,17 @@
                                 RadiusBottomRight: =5
                                 RadiusTopLeft: =5
                                 RadiusTopRight: =5
-                                Width: =300
+                                Width: =250
                                 ZIndex: =2
 
                                 Icon7_1 As icon.Search:
                                     BorderColor: =
-                                    Color: =RGBA(214,221,224,1)
+                                    Color: =RGBA(170, 163, 217, 0.7)//RGBA(214,221,224,1)
                                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                     DisabledColor: =RGBA(244, 244, 244, 1)
-                                    Height: =30
+                                    Height: =Parent.Height -5
                                     Icon: =Icon.Search
-                                    Width: =30
+                                    Width: =Self.Height
                                     ZIndex: =1
 
                                 TextInput3_1 As text:
@@ -179,7 +180,7 @@
                                     RadiusBottomRight: =0
                                     RadiusTopLeft: =0
                                     RadiusTopRight: =0
-                                    Size: =8
+                                    Size: =9
                                     ZIndex: =2
 
                                 Icon9 As icon.Cancel:
@@ -194,32 +195,36 @@
                                     Width: =25
                                     ZIndex: =3
 
-                            Button10 As button:
-                                AlignInContainer: =AlignInContainer.Center
-                                BorderColor: =App.Theme.Colors.Primary
-                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                            ComboBox1 As combobox:
+                                BorderColor: =RGBA(85, 69, 191,1)
+                                ChevronBackground: =RGBA(85, 69, 191,1)
+                                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                ChevronFill: =RGBA(170, 163, 217, 1)
+                                ChevronHoverBackground: =RGBA(85, 69, 191,1)
+                                ChevronHoverFill: =App.Theme.Colors.PrimaryForeground
+                                Color: =RGBA(85, 69, 191,1)//RGBA(0, 0, 0, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
-                                Fill: =RGBA(17,65,133,1)
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Semibold
+                                DisplayFields: =["Value"]
+                                FillPortions: =0.8
+                                Font: =Font.Arial
                                 Height: =Parent.Height
-                                HoverBorderColor: =App.Theme.Colors.Darker10
-                                HoverColor: =RGBA(255, 255, 255, 1)
-                                HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
-                                LayoutMinHeight: =
-                                LayoutMinWidth: =0
-                                OnSelect: =
-                                PressedBorderColor: =App.Theme.Colors.Darker40
-                                PressedColor: =Self.Color
-                                PressedFill: =RGBA(17,65,133,1)
-                                RadiusBottomLeft: =6
-                                RadiusBottomRight: =6
-                                RadiusTopLeft: =6
-                                RadiusTopRight: =6
-                                Size: =10
-                                Text: ="➕New Policy"
-                                ZIndex: =3
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =App.Theme.Colors.Lighter70
+                                InputTextPlaceholder: ="Filter by Status"
+                                Items: =Choices('Tenant Onboarding List'.Status)
+                                LayoutMinWidth: =160
+                                PressedColor: =App.Theme.Colors.PrimaryForeground
+                                PressedFill: =RGBA(85, 69, 191,1)
+                                SearchFields: =["Value"]
+                                SearchItems: =Choices('Tenant Onboarding List'.Status,ComboBox1.SearchText)
+                                SelectionColor: =App.Theme.Colors.PrimaryForeground
+                                SelectionFill: =RGBA(170, 163, 217, 1)
+                                Size: =9
+                                Width: =160
+                                ZIndex: =5
 
                     Container36_4 As groupContainer.horizontalAutoLayoutContainer:
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
