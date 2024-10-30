@@ -1069,6 +1069,6 @@
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
         YesAction: |-
-            =UpdateContext({showPopUp:false});Navigate('Mail Screen',ScreenTransition.CoverRight)
+            =Switch(action,"APPROVE",UpdateContext({showPopUp:false});Navigate('Mail Screen',ScreenTransition.CoverRight),"REJECT",UpdateContext({showPopUp:false});UpdateContext({showLoading:true});SendMail.Run(record.'Name of Prospective Tenant',"REJECTED",record.'Email Address');UpdateContext({showLoading:false});Navigate('Home Screen',ScreenTransition.CoverRight));
         ZIndex: =4
 
