@@ -297,7 +297,14 @@
                     Gallery2 As gallery.galleryVertical:
                         BorderColor: =App.Theme.Colors.Darker40
                         DelayItemLoading: =true
-                        Items: =Sort(Search('Tenant Onboarding List',TextInput3_1.Text,'Name of Prospective Tenant'),Status.Value)
+                        Items: |-
+                            =Filter(
+                                'Tenant Onboarding List',
+                                StartsWith(
+                                    'Name of Prospective Tenant',
+                                    TextInput3_1.Text
+                                ) && IsBlank(ComboBox1.SelectedItems) || Status.Value = ComboBox1.Selected.Value
+                            )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =0
                         LayoutMinWidth: =0
