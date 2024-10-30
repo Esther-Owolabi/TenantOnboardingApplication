@@ -1099,326 +1099,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_14.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_14.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".UNIT"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_14"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "UNIT"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": ".'EXPIRATION STATUS'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EXPIRATION STATUS"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Circle1.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Circle1.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": ".'EXPIRATION STATUS'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Circle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EXPIRATION STATUS"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Label17.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Label17.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": ".'EXPIRATION STATUS'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Label17"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EXPIRATION STATUS"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Label17.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Label17.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": ".'EXPIRATION STATUS'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container39.Label17"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EXPIRATION STATUS"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": ".'EXPIRATION DATE'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EXPIRATION DATE"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 32,
-                  "snippet": {
-                    "text": "\"dd-mm-yyyy\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "All Requests Screen",
-                "type": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Label16_16"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncorrectFormat-Func",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'All Requests Screen'.Container13_2.Container17_1.Container32_1.Container37_1.Gallery2.Container42.Container44.Icon8.OnSelect"
                 }
               ],
@@ -1964,7 +1644,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1994,7 +1674,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2024,7 +1704,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2054,7 +1734,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2084,7 +1764,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2114,7 +1794,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2144,7 +1824,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2174,7 +1854,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2204,7 +1884,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2234,7 +1914,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2264,7 +1944,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2294,7 +1974,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2324,7 +2004,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2354,7 +2034,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2384,7 +2064,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2414,7 +2094,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2444,7 +2124,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2474,7 +2154,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 9
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2503,7 +2183,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 10
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2533,7 +2213,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleIndex": 10
         }
       ],
       "tool": {
@@ -2632,20 +2312,6 @@
                   "Try simplifying the formula.",
                   "Try moving your data to a different data source."
                 ],
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncorrectFormat-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incorrect format specifier for '{0}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
                 "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""

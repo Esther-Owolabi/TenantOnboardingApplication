@@ -339,21 +339,9 @@
                                 Text: =ThisItem.'Name of Prospective Tenant'
                                 ZIndex: =2
 
-                            Label16_14 As label:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: |
-                                    =RGBA(97, 93, 93, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Semibold
-                                Height: =Parent.Height
-                                Size: =9
-                                Text: =ThisItem.UNIT
-                                ZIndex: =3
-
                             Container39 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
-                                Fill: =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE",RGBA(1, 167, 37, 0.1),"EXPIRED",RGBA(201, 5, 5, 0.1),RGBA(254,99,9,0.1))
+                                Fill: =Switch(ThisItem.Status.Value,"Approved",RGBA(1, 167, 37, 0.1),"Rejected",RGBA(201, 5, 5, 0.1),"Pending",RGBA(254,99,9,0.1))
                                 FillPortions: =0
                                 Height: =30
                                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -373,7 +361,7 @@
                                 Circle1 As circle:
                                     BorderColor: =App.Theme.Colors.Darker40
                                     Fill: |-
-                                        =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE",RGBA(1, 167, 37, 1),"EXPIRED",RGBA(201, 5, 5, 1),RGBA(254,99,9,1)
+                                        =Switch(ThisItem.Status.Value,"Approved",RGBA(1, 167, 37, 1),"Rejected",RGBA(201, 5, 5, 1),"Pending",RGBA(254,99,9,1)
                                         )
                                     Height: =10
                                     Width: =10
@@ -382,27 +370,15 @@
                                 Label17 As label:
                                     AutoHeight: =true
                                     BorderColor: =App.Theme.Colors.Darker40
-                                    Color: =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE",RGBA(1,167,37,1),"EXPIRED",RGBA(201,5,5,1),RGBA(254,99,9,1))
+                                    Color: =Switch(ThisItem.Status.Value,"Approved",RGBA(1,167,37,1),"Rejected",RGBA(201,5,5,1),"Pending",RGBA(254,99,9,1))
                                     DisabledColor: =RGBA(166, 166, 166, 1)
                                     FillPortions: =1
                                     Font: =Font.Arial
                                     FontWeight: =FontWeight.Semibold
                                     LayoutMinWidth: =0
                                     Size: =8
-                                    Text: =Switch(ThisItem.'EXPIRATION STATUS',"NOT DUE","Active","EXPIRED","Expired","Due Soon")
+                                    Text: =ThisItem.Status.Value
                                     ZIndex: =3
-
-                            Label16_16 As label:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: |
-                                    =RGBA(97, 93, 93, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Semibold
-                                Height: =Parent.Height
-                                Size: =9
-                                Text: =Text(ThisItem.'EXPIRATION DATE',"dd-mm-yyyy")
-                                ZIndex: =6
 
                             Container44 As groupContainer.manualLayoutContainer:
                                 FillPortions: =0
