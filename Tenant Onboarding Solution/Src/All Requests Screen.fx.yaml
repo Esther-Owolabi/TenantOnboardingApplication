@@ -215,14 +215,16 @@
                                 HoverColor: =RGBA(0, 0, 0, 1)
                                 HoverFill: =App.Theme.Colors.Lighter70
                                 InputTextPlaceholder: ="Filter by Status"
+                                IsSearchable: =false
                                 Items: =Choices('Tenant Onboarding List'.Status)
                                 LayoutMinWidth: =160
                                 PressedColor: =App.Theme.Colors.PrimaryForeground
                                 PressedFill: =RGBA(85, 69, 191,1)
                                 SearchFields: =["Value"]
-                                SearchItems: =Choices('Tenant Onboarding List'.Status,ComboBox1.SearchText)
+                                SearchItems: =[]
                                 SelectionColor: =App.Theme.Colors.PrimaryForeground
                                 SelectionFill: =RGBA(170, 163, 217, 1)
+                                SelectMultiple: =false
                                 Size: =9
                                 Width: =160
                                 ZIndex: =5
