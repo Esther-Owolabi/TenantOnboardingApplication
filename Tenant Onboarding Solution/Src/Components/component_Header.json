@@ -50,7 +50,14 @@
               "DisabledFill",
               "PressedFill",
               "HoverFill",
-              "BorderColor",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "App.Theme.Colors.Darker40",
+                "InvariantPropertyName": "BorderColor",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "DisabledBorderColor",
               "PressedBorderColor",
               "HoverBorderColor",
@@ -90,7 +97,14 @@
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
               },
-              "BorderThickness",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "BorderThickness",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "FocusedBorderThickness",
               "PaddingTop",
               "PaddingRight",
@@ -223,9 +237,9 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "App.Theme.Colors.Darker40",
+                "InvariantScript": "RGBA(85, 69, 191,1)",
                 "Property": "BorderColor",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "User"
               },
               {
                 "Category": "Design",
@@ -295,7 +309,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "0",
+                "InvariantScript": "2",
                 "Property": "BorderThickness",
                 "RuleProviderType": "Unknown"
               },
@@ -1077,7 +1091,7 @@
       "NoficationBellOnSelect",
       "Tooltip"
     ],
-    "LastModifiedTimestamp": "638658767132469575",
+    "LastModifiedTimestamp": "638658806842355865",
     "Name": "component_Header",
     "Rules": [
       {
@@ -1201,7 +1215,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638658767132469575",
+  "LastModifiedTimestamp": "638658806842355865",
   "Name": "67be405e305b4acc93d836607f4e0614",
   "OverridableProperties": {},
   "Version": "1.0"
