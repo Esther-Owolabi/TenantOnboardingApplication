@@ -1181,46 +1181,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Mail Screen'.LoadingImageHome_2.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Mail Screen'.LoadingImageHome_2.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "showLoading"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "Mail Screen",
-                "type": "'Mail Screen'.LoadingImageHome_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "showLoading"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Navigator.Container2_3.Container16.Gallery1_2.AccessibleLabel"
                 }
               ],

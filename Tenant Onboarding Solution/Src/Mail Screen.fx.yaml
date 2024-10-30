@@ -215,7 +215,7 @@
             =UpdateContext({showPopUp:false})
         Visible: =showPopUp
         YesAction: |-
-            =Notify("Hello")/*UpdateContext({showPopUp: false});
+            =UpdateContext({showPopUp: false});
             UpdateContext({showLoading: true});
             Set(
                 result,
@@ -243,6 +243,6 @@
                     "There was an error sending the mail. Please check your network connectivity and try again.",
                     NotificationType.Error
                 )
-            )*/
+            )
         ZIndex: =3
 
