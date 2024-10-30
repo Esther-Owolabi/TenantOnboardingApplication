@@ -305,7 +305,7 @@
                                 StartsWith(
                                     'Name of Prospective Tenant',
                                     TextInput3_1.Text
-                                ) && Status.Value = ComboBox1.Selected.Value || IsBlank(ComboBox1.SelectedItems)
+                                ) && (Status.Value = ComboBox1.Selected.Value || IsBlank(ComboBox1.SelectedItems))
                             )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =0
