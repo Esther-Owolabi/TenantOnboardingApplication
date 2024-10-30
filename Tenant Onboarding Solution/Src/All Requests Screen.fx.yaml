@@ -291,7 +291,7 @@
                     Gallery2 As gallery.galleryVertical:
                         BorderColor: =App.Theme.Colors.Darker40
                         DelayItemLoading: =true
-                        Items: =Sort(Search('POLICY COMPEDIUMS',TextInput3_1.Text,'NAME OF POLICY'),'DAYS T0 EXPIRATION')
+                        Items: =Sort(Search('Tenant Onboarding List',TextInput3_1.Text,'Name of Prospective Tenant'),Status.Value)
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =0
                         LayoutMinWidth: =0
@@ -324,7 +324,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.'REFERENCE CODE'
+                                Text: =ThisItem.'Submission Date'
                                 ZIndex: =1
 
                             Label16_13 As label:
@@ -336,7 +336,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.'NAME OF POLICY'
+                                Text: =ThisItem.'Name of Prospective Tenant'
                                 ZIndex: =2
 
                             Label16_14 As label:
