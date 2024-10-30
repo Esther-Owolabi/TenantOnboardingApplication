@@ -64,6 +64,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "10642815-41c0-4272-9418-89a5182ec61c": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "2d53a4e8-17f8-4f77-9be9-29130dda6e1f": {
+          "value": "shared_sharepointonline"
+        },
+        "3f6c6473-1b66-4d50-8182-b6a01639e9be": {
+          "value": "shared_office365"
+        },
+        "7d841589-9447-4fe2-bdc5-cee3e21b2baf": {
+          "value": "shared_office365_1"
+        },
         "workflowDisplayName": {
           "value": "Send Mail"
         },
@@ -75,6 +87,18 @@
         }
       },
       "parameterHintsV2": {
+        "shared_office365": {
+          "value": "3f6c6473-1b66-4d50-8182-b6a01639e9be"
+        },
+        "shared_office365_1": {
+          "value": "7d841589-9447-4fe2-bdc5-cee3e21b2baf"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "10642815-41c0-4272-9418-89a5182ec61c"
+        },
+        "shared_sharepointonline": {
+          "value": "2d53a4e8-17f8-4f77-9be9-29130dda6e1f"
+        },
         "workflowDisplayName": {
           "value": "Send Mail"
         },
