@@ -150,6 +150,45 @@
                         Text: ="View Attached Documents"
                         ZIndex: =3
 
+                Container38_8 As groupContainer.horizontalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =0
+                    Height: =40
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =18
+                    PaddingRight: =20
+                    ZIndex: =2
+
+                    Label15_8 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Semibold
+                        LayoutMinWidth: =0
+                        Size: =13
+                        Text: |-
+                            ="Status:"
+                        Width: =70
+                        ZIndex: =2
+
+                    Label15_10 As label:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =Switch(Self.Text, "Pending",RGBA(0,0,0,1),"Approved",RGBA(0,1,2,1),"Rejected",RGBA(0,0,0,1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FillPortions: =1
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        LayoutMinWidth: =0
+                        Size: =13
+                        Text: =record.Status.Value
+                        Width: =Parent.Width
+                        ZIndex: =3
+
                 Canvas1_1 As fluidGrid.fluidGridWithBlankCard:
                     BorderThickness: =0
                     Fill: =RGBA(255, 255, 255, 1)
@@ -158,7 +197,7 @@
                     LayoutMinWidth: =100
                     Width: =Parent.Width
                     Y: =
-                    ZIndex: =4
+                    ZIndex: =3
 
                     DataCard1_1 As dataCard:
                         BorderColor: =RGBA(0, 0, 0, 1)
