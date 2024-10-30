@@ -120,7 +120,7 @@
                                 Height: =30
                                 Icon: =Icon.Reload
                                 OnSelect: |+
-                                    =Refresh('POLICY COMPEDIUMS');
+                                    =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
                                     
                                 Tooltip: ="Refresh Requests"
                                 Width: =30
@@ -209,8 +209,7 @@
                                 HoverFill: =ColorFade(RGBA(17,65,133,1), 20%)
                                 LayoutMinHeight: =
                                 LayoutMinWidth: =0
-                                OnSelect: |-
-                                    =NewForm(Form4);UpdateContext({openForm:true})
+                                OnSelect: =
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =RGBA(17,65,133,1)
@@ -395,170 +394,11 @@
                                     Height: =30
                                     Icon: =Icon.View
                                     OnSelect: |-
-                                        =UpdateContext({policyItem: ThisItem}); UpdateContext({openForm:true});ViewForm(Form4)
+                                        =UpdateContext({policyItem: ThisItem}); UpdateContext({openForm:true});
                                     Width: =30
                                     X: =Parent.Width/2 - Self.Width/2
                                     Y: =Parent.Height/2 - Self.Height/2
                                     ZIndex: =1
-
-    "'POP UP_1' As 'POP UP'":
-        ActionText: =action
-        Height: =Parent.Height
-        NoAction: |-
-            =UpdateContext({showPopUp:false});
-        Visible: =showPopUp
-        Width: =Parent.Width
-        YesAction: =
-        ZIndex: =4
-
-    Group1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =4
-
-        rect_shadow As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(0, 0, 0, 0.3)
-            Height: =Parent.Height
-            Visible: =openForm
-            Width: =Parent.Width
-            ZIndex: =2
-
-        Container46 As groupContainer.verticalAutoLayoutContainer:
-            DropShadow: =DropShadow.Light
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =25
-            PaddingLeft: =25
-            PaddingRight: =25
-            PaddingTop: =25
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
-            Visible: =openForm
-            Width: =Parent.Width * 40%
-            X: =Parent.Width - Self.Width
-            ZIndex: =3
-
-            form_header As groupContainer.horizontalAutoLayoutContainer:
-                FillPortions: =0
-                Height: =50
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutGap: =10
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =1
-
-                Label18 As label:
-                    BorderColor: =App.Theme.Colors.Darker40
-                    Color: =RGBA(4, 4, 4, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FillPortions: =1
-                    Font: =App.Theme.Font
-                    FontWeight: =FontWeight.Bold
-                    LayoutMinWidth: =0
-                    Size: =11
-                    Text: ="Policies"
-                    ZIndex: =1
-
-                Edit_container As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =20
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =0
-                    Visible: =If(Form4.Mode = FormMode.View,true,false)
-                    Width: =20
-                    ZIndex: =2
-
-                    Image12 As image:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Height: =Parent.Height
-                        Image: =edit
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                    Button1 As button:
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(0, 0, 0, 0)
-                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height
-                        HoverBorderColor: =App.Theme.Colors.Darker10
-                        HoverColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        OnSelect: =EditForm(Form4);
-                        PressedBorderColor: =App.Theme.Colors.Darker40
-                        PressedColor: =Self.Color
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Size: =15
-                        Text: ="Button"
-                        Width: =Parent.Width
-                        ZIndex: =2
-
-                Delete_container As groupContainer.manualLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =20
-                    LayoutMinHeight: =0
-                    LayoutMinWidth: =0
-                    Visible: =If(Form4.Mode = FormMode.View,true,false)
-                    Width: =20
-                    ZIndex: =3
-
-                    Image12_1 As image:
-                        BorderColor: =App.Theme.Colors.Darker40
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Height: =Parent.Height
-                        Image: =trash
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                    Button1_1 As button:
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderStyle: =BorderStyle.None
-                        Color: =RGBA(0, 0, 0, 0)
-                        DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Font: =App.Theme.Font
-                        FontWeight: =FontWeight.Semibold
-                        Height: =Parent.Height
-                        HoverBorderColor: =App.Theme.Colors.Darker10
-                        HoverColor: =RGBA(0, 0, 0, 0)
-                        HoverFill: =RGBA(0, 0, 0, 0)
-                        OnSelect: |-
-                            =UpdateContext({action:"Delete"});UpdateContext({showPopUp:true});
-                        PressedBorderColor: =App.Theme.Colors.Darker40
-                        PressedColor: =Self.Color
-                        PressedFill: =RGBA(0, 0, 0, 0)
-                        Size: =15
-                        Text: ="Button"
-                        Width: =Parent.Width
-                        ZIndex: =2
-
-            rect_horizontalLine As rectangle:
-                AlignInContainer: =AlignInContainer.Stretch
-                BorderColor: =App.Theme.Colors.Darker40
-                Fill: =RGBA(217,217,217,1)
-                Height: =2
-                Width: =Parent.Width
-                ZIndex: =2
 
     Loading_1 As Loading:
         Visible: =false
