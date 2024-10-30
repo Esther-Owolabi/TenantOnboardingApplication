@@ -1083,7 +1083,7 @@
                 SendMail.Run(
                     record.'Name of Prospective Tenant',
                     "REJECTED",
-                    record.'Email Address'
+                    record.'Email Address',record.ID
                 );
                 UpdateContext({showLoading: false});
                 Navigate(
