@@ -23,62 +23,6 @@ component_Header As CanvasComponent:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container40 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Center
-            FillPortions: =0
-            Height: =50
-            LayoutMinHeight: =0
-            LayoutMinWidth: =250
-            Visible: =component_Header.Visible
-            Width: =50
-            ZIndex: =1
-
-            Icon7 As icon.Bell:
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =App.Theme.Colors.Darker30
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =Self.Width
-                Icon: =Icon.Bell
-                OnSelect: =
-                Width: =Parent.Width - 20
-                X: =Parent.Width/2 - Self.Width/2
-                Y: =Parent.Height/2 - Self.Height/2
-                ZIndex: =1
-
-            Circle2 As circle:
-                BorderColor: =App.Theme.Colors.Darker40
-                Fill: =RGBA(239, 49, 37, 1)
-                Height: =Self.Width
-                Visible: =component_Header.NotificationCircleVisibility
-                Width: =10
-                X: =Icon7.X + Icon7.Width - Self.Width
-                Y: =Icon7.Y
-                ZIndex: =2
-
-            Button12 As button:
-                BorderColor: =Color.Transparent
-                BorderStyle: =BorderStyle.None
-                DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =Color.Transparent
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =Parent.Height
-                HoverBorderColor: =App.Theme.Colors.Darker10
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =Color.Transparent
-                OnSelect: =component_Header.NoficationBellOnSelect()
-                PressedBorderColor: =App.Theme.Colors.Darker40
-                PressedColor: =Self.Color
-                PressedFill: =Color.Transparent
-                Size: =15
-                Text: =
-                Tooltip: =If(component_Header.NotificationCircleVisibility,component_Header.Tooltip)
-                Width: =Parent.Width
-                ZIndex: =3
-
         Image10 As image:
             BorderColor: =App.Theme.Colors.Darker40
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
