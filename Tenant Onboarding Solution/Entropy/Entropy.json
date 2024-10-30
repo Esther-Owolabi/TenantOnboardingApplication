@@ -17,8 +17,7 @@
     "Navigator_5": 9,
     "Navigator_6": 9,
     "POP UP": 8,
-    "POP UP_4": 11,
-    "POP UP_5": 11
+    "POP UP_4": 11
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -213,7 +212,6 @@
     "phoneNumber_value": 170,
     "POP UP": 4,
     "POP UP_4": 207,
-    "POP UP_5": 133,
     "reasonForLeaving_label": 184,
     "reasonForLeaving_value": 186,
     "Rectangle9": 9,
@@ -242,7 +240,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/30/2024 11:32:42",
+  "HeaderLastSavedDateTimeUTC": "10/30/2024 11:33:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0217e6da-5d1e-4c0b-85e7-0f1c7d39d16c": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-81f0969b-41ba-430c-b32c-d84cddf64a16\"",
@@ -512,7 +510,6 @@
     "phoneNumber_value": {},
     "POP UP": {},
     "POP UP_4": {},
-    "POP UP_5": {},
     "reasonForLeaving_label": {},
     "reasonForLeaving_value": {},
     "Rectangle9": {},
@@ -748,7 +745,6 @@
     "phoneNumber_value": 63,
     "POP UP": 0,
     "POP UP_4": 100,
-    "POP UP_5": 117,
     "reasonForLeaving_label": 77,
     "reasonForLeaving_value": 79,
     "Rectangle9": 184,
