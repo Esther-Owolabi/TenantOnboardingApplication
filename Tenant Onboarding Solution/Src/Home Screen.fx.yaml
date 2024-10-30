@@ -225,7 +225,7 @@
                     Gallery2_2 As gallery.galleryVertical:
                         BorderColor: =App.Theme.Colors.Darker40
                         DelayItemLoading: =true
-                        Items: ='Tenant Onboarding List'
+                        Items: =Filter('Tenant Onboarding List',Status.Value = "Pending")
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =0
                         LayoutMinWidth: =0
