@@ -265,6 +265,7 @@
                             Height: =Parent.Height
                             Size: =9
                             Text: ="Status"
+                            Width: =90
                             ZIndex: =5
 
                         Label16_19 As label:
@@ -336,6 +337,7 @@
                                 Height: =Parent.Height
                                 Size: =9
                                 Text: =ThisItem.'Name of Prospective Tenant'
+                                Width: =200
                                 ZIndex: =2
 
                             Container39 As groupContainer.horizontalAutoLayoutContainer:
@@ -379,28 +381,53 @@
                                     Text: =ThisItem.Status.Value
                                     ZIndex: =3
 
-                            Container44 As groupContainer.manualLayoutContainer:
+                            Container59_2 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
                                 FillPortions: =0
+                                Height: =Parent.Height - 25
                                 LayoutMinHeight: =0
-                                LayoutMinWidth: =0
-                                Width: =70
-                                ZIndex: =8
+                                LayoutMinWidth: =250
+                                Width: =150
+                                ZIndex: =9
 
-                                Icon8 As icon.View:
+                                Label26_2 As label:
+                                    Align: =Align.Center
                                     BorderColor: =App.Theme.Colors.Darker40
-                                    Color: =RGBA(214,221,224,1)
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(244, 244, 244, 1)
-                                    Height: =30
-                                    Icon: =Icon.View
-                                    OnSelect: |-
-                                        =UpdateContext({policyItem: ThisItem}); UpdateContext({openForm:true});
-                                    Width: =30
-                                    X: =Parent.Width/2 - Self.Width/2
-                                    Y: =Parent.Height/2 - Self.Height/2
+                                    Color: =RGBA(17, 65, 133, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Font: =App.Theme.Font
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    Size: =10
+                                    Text: ="See details"
+                                    Underline: =true
+                                    Width: =Parent.Width
                                     ZIndex: =1
 
+                                Button11_2 As button:
+                                    BorderColor: =App.Theme.Colors.Primary
+                                    BorderStyle: =BorderStyle.None
+                                    Color: =RGBA(0, 0, 0, 0)
+                                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Fill: =Color.Transparent
+                                    Font: =App.Theme.Font
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    HoverBorderColor: =App.Theme.Colors.Darker10
+                                    HoverFill: =RGBA(128, 128, 128, 0.1)
+                                    OnSelect: |-
+                                        =UpdateContext({loading:true});Set(record,ThisItem);Set(attachments,ThisItem.Attachments);UpdateContext({loading:false});Navigate('Details Screen',ScreenTransition.Fade);
+                                    PressedBorderColor: =App.Theme.Colors.Darker40
+                                    PressedColor: =Self.Color
+                                    PressedFill: =Self.Fill
+                                    Size: =15
+                                    Text: =
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
     Loading_1 As Loading:
-        Visible: =false
+        Visible: =loading
         ZIndex: =5
 
