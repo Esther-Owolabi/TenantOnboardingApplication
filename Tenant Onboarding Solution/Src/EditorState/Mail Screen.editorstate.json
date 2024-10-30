@@ -2953,7 +2953,7 @@
         {
           "Category": "Data",
           "PropertyName": "MenuItem",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

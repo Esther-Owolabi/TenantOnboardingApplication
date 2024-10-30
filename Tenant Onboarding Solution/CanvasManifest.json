@@ -103,7 +103,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 56,
+    "BindingErrorCount": 54,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -140,6 +140,6 @@
     "Home Screen",
     "Details Screen",
     "Mail Screen",
-    "Policies Screen"
+    "All Requests Screen"
   ]
 }
