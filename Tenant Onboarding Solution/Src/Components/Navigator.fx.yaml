@@ -54,7 +54,7 @@ Navigator As CanvasComponent:
 
         logo_container As groupContainer.manualLayoutContainer:
             FillPortions: =0
-            Height: =40
+            Height: =50
             LayoutMinHeight: =100
             LayoutMinWidth: =0
             PaddingLeft: =10
