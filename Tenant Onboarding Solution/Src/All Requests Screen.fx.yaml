@@ -112,6 +112,7 @@
                             LayoutMinHeight: =100
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
+                            PaddingRight: =5
                             ZIndex: =3
 
                             Icon5_3 As icon.Reload:
@@ -199,11 +200,11 @@
 
                             ComboBox1 As combobox:
                                 AlignInContainer: =AlignInContainer.Center
-                                BorderColor: =RGBA(85, 69, 191,1)
-                                ChevronBackground: =RGBA(85, 69, 191,1)
+                                BorderColor: =RGBA(170, 163, 217, 0.7)//RGBA(85, 69, 191,1)
+                                ChevronBackground: =RGBA(170, 163, 217, 0.7)//RGBA(85, 69, 191,1)
                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
                                 ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                                ChevronFill: =RGBA(170, 163, 217, 1)
+                                ChevronFill: =RGBA(85, 69, 191,1)//RGBA(170, 163, 217, 1)
                                 ChevronHoverBackground: =RGBA(85, 69, 191,1)
                                 ChevronHoverFill: =App.Theme.Colors.PrimaryForeground
                                 Color: =RGBA(85, 69, 191,1)//RGBA(0, 0, 0, 1)
@@ -217,13 +218,12 @@
                                 HoverColor: =RGBA(0, 0, 0, 1)
                                 HoverFill: =App.Theme.Colors.Lighter70
                                 InputTextPlaceholder: ="Filter by Status"
-                                IsSearchable: =false
                                 Items: =Choices('Tenant Onboarding List'.Status)
                                 LayoutMinWidth: =160
                                 PressedColor: =App.Theme.Colors.PrimaryForeground
                                 PressedFill: =RGBA(85, 69, 191,1)
                                 SearchFields: =["Value"]
-                                SearchItems: =[]
+                                SearchItems: =Choices('Tenant Onboarding List'.Status,ComboBox1.SearchText)
                                 SelectionColor: =App.Theme.Colors.PrimaryForeground
                                 SelectionFill: =RGBA(170, 163, 217, 1)
                                 SelectMultiple: =false

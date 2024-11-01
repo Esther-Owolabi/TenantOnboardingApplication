@@ -107,6 +107,23 @@
                                 Width: =Parent.Width
                                 ZIndex: =1
 
+                            Icon5_4 As icon.Reload:
+                                AlignInContainer: =AlignInContainer.Center
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(170, 163, 217, 1)//RGBA(214,221,224,1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =Icon7_1.Height
+                                Icon: =Icon.Reload
+                                OnSelect: |+
+                                    =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
+                                    
+                                Tooltip: ="Refresh Requests"
+                                Width: =Self.Height
+                                X: =
+                                Y: =
+                                ZIndex: =2
+
                             Container59 As groupContainer.manualLayoutContainer:
                                 AlignInContainer: =AlignInContainer.Center
                                 FillPortions: =0
