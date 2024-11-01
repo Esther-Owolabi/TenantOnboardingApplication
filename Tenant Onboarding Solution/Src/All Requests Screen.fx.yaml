@@ -211,7 +211,7 @@
                                 DisplayFields: =["Value"]
                                 FillPortions: =0.8
                                 Font: =Font.Arial
-                                Height: =Parent.Height
+                                Height: =Parent.Height - 5
                                 HoverColor: =RGBA(0, 0, 0, 1)
                                 HoverFill: =App.Theme.Colors.Lighter70
                                 InputTextPlaceholder: ="Filter by Status"
