@@ -45,7 +45,7 @@ component_Header As CanvasComponent:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Semibold
-            Size: =8
+            Size: =10
             Text: =First(Split(User().FullName," ")).Value  & " " &First(Split(Last(Split(User().FullName," ")).Value,"")).Value & "."
             Width: =100
             ZIndex: =3
