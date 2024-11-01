@@ -1033,7 +1033,6 @@
                                     )
                                 )
                             )
-                        ImagePosition: =ImagePosition.Fill
                         OnSelect: =
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
