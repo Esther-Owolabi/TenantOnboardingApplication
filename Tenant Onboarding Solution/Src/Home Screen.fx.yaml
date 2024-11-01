@@ -113,7 +113,7 @@
                                 Color: =RGBA(170, 163, 217, 1)//RGBA(214,221,224,1)
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(244, 244, 244, 1)
-                                Height: =Icon7_1.Height
+                                Height: =30
                                 Icon: =Icon.Reload
                                 OnSelect: |+
                                     =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
