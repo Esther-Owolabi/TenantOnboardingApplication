@@ -34,11 +34,7 @@ App As appinfo:
         
         
         //createCommentLog(userName:Text,commentTime:DateTime,comments:Text,newComment:Text) = Concatenate(comments:Text, Char(10), userName, )
-    OnStart: |+
-        =
-        
-        
-        
+    OnStart: =
     SizeBreakpoints: =[425, 768, 1024,1440]//[600, 900, 1200]
     StartScreen: =
     Theme: =PowerAppsTheme

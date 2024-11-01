@@ -48,7 +48,7 @@
       "enableideaspanel": true,
       "enablelegacybarcodescanner": false,
       "enablelegacydatatable": false,
-      "enableonstart": true,
+      "enableonstart": false,
       "enableonstartnavigate": false,
       "enablepcfmoderndatasets": true,
       "enablerowscopeonetonexpand": false,

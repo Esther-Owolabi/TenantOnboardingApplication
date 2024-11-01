@@ -16,14 +16,7 @@
         },
         "BackEnabled",
         "Theme",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "OnStart",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnStart",
         "StartScreen",
         {
           "AFDDataSourceName": "",
