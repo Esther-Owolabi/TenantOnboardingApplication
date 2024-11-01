@@ -198,6 +198,7 @@
                                     ZIndex: =3
 
                             ComboBox1 As combobox:
+                                AlignInContainer: =AlignInContainer.Center
                                 BorderColor: =RGBA(85, 69, 191,1)
                                 ChevronBackground: =RGBA(85, 69, 191,1)
                                 ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
