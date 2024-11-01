@@ -35,7 +35,7 @@
                 </svg>",
                         MenuName: "Requests",
                         PageNavigation: 'All Requests Screen'
-                    } 
+                    }
                 )
             OnSelect: ="Text"
             ZIndex: =1
