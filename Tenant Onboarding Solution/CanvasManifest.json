@@ -107,7 +107,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 29,
+    "BindingErrorCount": 25,
     "ConnectionString": "",
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
@@ -147,6 +147,9 @@
     "Attendance Screen",
     "Details Screen",
     "Mail Screen",
-    "All Requests Screen"
+    "All Requests Screen",
+    "Screen1",
+    "Screen2",
+    "Screen3"
   ]
 }

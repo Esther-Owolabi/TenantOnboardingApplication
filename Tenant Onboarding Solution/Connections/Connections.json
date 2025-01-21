@@ -13,6 +13,19 @@
       "parameterHintsV2": {}
     },
     "datasets": {
+      "https://legacypoise.sharepoint.com/sites/ArchwoodNetworkLimited": {
+        "dataSources": {
+          "Attendance": {
+            "tableName": "d0724a6c-6d40-4783-88e2-f44bf79f469e"
+          },
+          "Documents": {
+            "tableName": "6f0bd1d2-12b9-4523-862d-3005ebe969df"
+          },
+          "Employees": {
+            "tableName": "8cb6617c-23cc-49d7-8af8-6fec593fd245"
+          }
+        }
+      },
       "https://legacypoise.sharepoint.com/sites/PropertyManagement_legacypo_DatabaseSite": {
         "datasetOverride": {
           "environmentVariableName": "legacypo_DatabaseSite",
@@ -38,7 +51,10 @@
     },
     "dataSources": [
       "Tenant Onboarding List",
-      "Tenant Onboarding Documents"
+      "Tenant Onboarding Documents",
+      "Attendance",
+      "Employees",
+      "Documents"
     ],
     "dependencies": {},
     "dependents": [],
@@ -144,7 +160,9 @@
       "id": "/providers/microsoft.powerapps/apis/shared_office365"
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "Office365Outlook"
+    ],
     "dependencies": {},
     "dependents": [
       "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
