@@ -12,6 +12,7 @@
         ZIndex: =1
 
         Navigator_3 As Navigator:
+            currentItem: =2
             Height: =Parent.Height * 90/100
             LayoutMinHeight: =640
             LayoutMinWidth: =640

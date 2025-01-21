@@ -8026,7 +8026,14 @@
           "NameMapSourceSchema": "?"
         },
         "OnSelect",
-        "currentItem",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "1",
+          "InvariantPropertyName": "currentItem",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -8101,7 +8108,7 @@
         {
           "Category": "Data",
           "PropertyName": "currentItem",
-          "RuleProviderType": "System"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
