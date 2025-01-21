@@ -166,17 +166,6 @@
                                     Width: =100
                                     ZIndex: =10
 
-                                Icon2 As icon.ArrowUp:
-                                    BorderColor: =App.Theme.Colors.Darker40
-                                    Color: =RGBA(255,255,255,1)
-                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                    DisabledColor: =RGBA(244, 244, 244, 1)
-                                    Height: =Parent.Height * 0.5
-                                    Icon: =Icon.ArrowUp
-                                    Width: =Parent.Width * 0.3
-                                    Y: =Parent.Height/2 - Self.Height/2 
-                                    ZIndex: =12
-
                     Container36_2 As groupContainer.horizontalAutoLayoutContainer:
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                         LayoutMinHeight: =0
