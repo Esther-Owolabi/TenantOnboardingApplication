@@ -143,6 +143,7 @@
   "ScreenOrder": [
     "Dashboard Screen",
     "Employee Screen",
+    "Employee Details Screen",
     "Attendance Screen",
     "Details Screen",
     "Mail Screen",
