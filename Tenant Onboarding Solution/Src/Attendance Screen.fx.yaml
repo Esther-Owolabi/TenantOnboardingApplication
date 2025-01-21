@@ -112,7 +112,7 @@
                                 Font: =App.Theme.Font
                                 FontWeight: =FontWeight.Bold
                                 LayoutMinWidth: =0
-                                Size: =13
+                                Size: =15
                                 Text: ="Attendance"
                                 Width: =Parent.Width
                                 ZIndex: =7
@@ -129,14 +129,14 @@
                                 Label26_5 As label:
                                     Align: =Align.Center
                                     BorderColor: =App.Theme.Colors.Darker40
-                                    Color: =RGBA(85, 69, 191,1)
+                                    Color: =RGBA(255, 255, 255,1)
                                     DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Fill: =RGBA(85, 69, 191, 1)
                                     Font: =App.Theme.Font
                                     FontWeight: =FontWeight.Semibold
                                     Height: =Parent.Height
                                     Size: =10
-                                    Text: ="View All"
-                                    Underline: =true
+                                    Text: ="Upload Attendance"
                                     Width: =Parent.Width
                                     ZIndex: =9
 
@@ -166,22 +166,16 @@
                                     Width: =100
                                     ZIndex: =10
 
-                            Icon5_6 As icon.Reload:
-                                AlignInContainer: =AlignInContainer.Center
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: =RGBA(170, 163, 217, 1)//RGBA(214,221,224,1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
-                                Height: =30
-                                Icon: =Icon.Reload
-                                OnSelect: |+
-                                    =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
-                                    
-                                Tooltip: ="Refresh Requests"
-                                Width: =Self.Height
-                                X: =
-                                Y: =
-                                ZIndex: =11
+                                Icon2 As icon.ArrowUp:
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(255,255,255,1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =Parent.Height * 0.5
+                                    Icon: =Icon.ArrowUp
+                                    Width: =Parent.Width * 0.3
+                                    Y: =Parent.Height/2 - Self.Height/2 
+                                    ZIndex: =12
 
                     Container36_2 As groupContainer.horizontalAutoLayoutContainer:
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween

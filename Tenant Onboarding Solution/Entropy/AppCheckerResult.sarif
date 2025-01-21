@@ -1819,66 +1819,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container34_3.Container35_2.Container38_3.Icon5_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container34_3.Container35_2.Container38_3.Icon5_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Attendance Screen",
-                "type": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container34_3.Container35_2.Container38_3.Icon5_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container34_3.Container35_2.Container38_3.Icon5_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container34_3.Container35_2.Container38_3.Icon5_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Attendance Screen",
-                "type": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container34_3.Container35_2.Container38_3.Icon5_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Attendance Screen'.Container13_3.Container17_3.Container32_3.Container3_3.Gallery2_6.AccessibleLabel"
                 }
               ],
