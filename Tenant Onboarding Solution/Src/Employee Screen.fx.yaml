@@ -340,10 +340,10 @@
                                 DisabledFill: =RGBA(244, 244, 244, 1)
                                 Height: =43
                                 Image: ='box-arrow-up-right'
-                                PaddingBottom: =5
-                                PaddingLeft: =5
-                                PaddingRight: =5
-                                PaddingTop: =5
+                                PaddingBottom: =7
+                                PaddingLeft: =7
+                                PaddingRight: =7
+                                PaddingTop: =7
                                 Tooltip: ="Export Employee Record"
                                 Width: =Parent.Width
                                 ZIndex: =4
