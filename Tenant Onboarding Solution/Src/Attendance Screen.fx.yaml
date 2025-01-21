@@ -113,7 +113,7 @@
                                 FontWeight: =FontWeight.Bold
                                 LayoutMinWidth: =0
                                 Size: =13
-                                Text: ="Active Requests"
+                                Text: ="Attendance"
                                 Width: =Parent.Width
                                 ZIndex: =7
 
