@@ -1100,7 +1100,7 @@
                     Notify("Request has been rejected successfully and notification has been sent");
                     Set(record,Blank());
                     Navigate(
-                        'Home Screen',
+                        'Dashboard Screen',
                         ScreenTransition.CoverRight
                     ),
                     Notify("There was a problem rejecting this request. Please try again.")

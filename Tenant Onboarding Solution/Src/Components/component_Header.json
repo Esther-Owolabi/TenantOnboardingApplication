@@ -167,7 +167,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container12",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 204,
+            "PublishOrderIndex": 170,
             "Rules": [
               {
                 "Category": "Data",
@@ -503,7 +503,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container12",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 205,
+            "PublishOrderIndex": 171,
             "Rules": [
               {
                 "Category": "Data",
@@ -901,7 +901,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "component_Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 203,
+        "PublishOrderIndex": 169,
         "Rules": [
           {
             "Category": "Design",
@@ -1091,7 +1091,7 @@
       "NoficationBellOnSelect",
       "Tooltip"
     ],
-    "LastModifiedTimestamp": "638660432494120928",
+    "LastModifiedTimestamp": "638730445404212498",
     "Name": "component_Header",
     "Rules": [
       {
@@ -1140,7 +1140,7 @@
         "Category": "Design",
         "InvariantScript": "60",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -1173,7 +1173,7 @@
       "Name": "NotificationBellVisibility",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.343\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1182,7 +1182,7 @@
       "Name": "NotificationCircleVisibility",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.343\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 2,
@@ -1195,7 +1195,7 @@
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.343\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Void\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Void\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1204,7 +1204,7 @@
       "Name": "Tooltip",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.343\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -1215,7 +1215,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638660432494120928",
+  "LastModifiedTimestamp": "638730445404212498",
   "Name": "67be405e305b4acc93d836607f4e0614",
   "OverridableProperties": {},
   "Version": "1.0"

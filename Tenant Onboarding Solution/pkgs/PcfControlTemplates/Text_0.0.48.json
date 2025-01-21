@@ -40,46 +40,7 @@
         "Type": 29,
         "WizardStep": null
       },
-      "BorderRadiusBottomLeft": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 3,
-        "SectionName": null,
-        "SectionType": "StyleAndThemeSection",
-        "ShowInCanvasInlineActionBar": false,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "BorderRadiusBottomRight": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 3,
-        "SectionName": null,
-        "SectionType": "StyleAndThemeSection",
-        "ShowInCanvasInlineActionBar": false,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "BorderRadiusTopLeft": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 3,
-        "SectionName": null,
-        "SectionType": "StyleAndThemeSection",
-        "ShowInCanvasInlineActionBar": false,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "BorderRadiusTopRight": {
+      "BorderRadius": {
         "EnabledForFlyout": false,
         "HelperUI": null,
         "Hidden": false,
@@ -297,7 +258,7 @@
         "SectionName": null,
         "SectionType": "SizeAndPositioningSection",
         "ShowInCanvasInlineActionBar": false,
-        "Type": 0,
+        "Type": 42,
         "WizardStep": null
       },
       "Visible": {
@@ -699,53 +660,31 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "Middle",
-      "Description": "Display text using the selected text vertical alignment.",
-      "DescriptionResourceString": "TextCanvas_VerticalAlign_Desc",
+      "DefaultValue": "",
+      "Description": "Display text using the selected text verlitcal alignment.",
+      "DescriptionResourceString": "VerticalAlign_Desc",
       "DisplayName": "Vertical align",
-      "DisplayNameResourceString": "TextCanvas_VerticalAlign",
-      "EnumValues": [
-        {
-          "Description": "Top",
-          "DisplayName": "Top",
-          "IsDefaultValue": false,
-          "Name": "Top",
-          "Value": "Top"
-        },
-        {
-          "Description": "Middle",
-          "DisplayName": "Middle",
-          "IsDefaultValue": true,
-          "Name": "Middle",
-          "Value": "Middle"
-        },
-        {
-          "Description": "Bottom",
-          "DisplayName": "Bottom",
-          "IsDefaultValue": false,
-          "Name": "Bottom",
-          "Value": "Bottom"
-        }
-      ],
+      "DisplayNameResourceString": "VerticalAlign",
+      "EnumValues": [],
       "HelperUI": null,
       "Hidden": false,
       "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
+      "IsLinkableToParentTheme": true,
       "IsPrimaryBehavioral": false,
       "IsPrimaryInput": false,
       "IsPrimaryOutput": false,
       "IsResettable": false,
-      "IsResettableToManifestDefault": false,
+      "IsResettableToManifestDefault": true,
       "Name": "VerticalAlign",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
-      "PhoneDefaultValue": "Middle",
+      "PhoneDefaultValue": "",
       "Required": false,
       "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 2,
-      "WebDefaultValue": "Middle"
+      "Type": 6,
+      "Usage": 0,
+      "WebDefaultValue": ""
     },
     {
       "Category": "data",
@@ -980,7 +919,7 @@
       "DisplayNameResourceString": "Fill",
       "EnumValues": [],
       "HelperUI": null,
-      "Hidden": true,
+      "Hidden": false,
       "IsDataSourceProperty": false,
       "IsLinkableToParentTheme": true,
       "IsPrimaryBehavioral": false,
@@ -1087,12 +1026,41 @@
     {
       "Category": "data",
       "DefaultValue": "",
+      "Description": "Roundedness of the control's corners. A value of 0 is perfectly square.",
+      "DescriptionResourceString": "BorderRadius_Description",
+      "DisplayName": "Border radius",
+      "DisplayNameResourceString": "BorderRadius",
+      "EnumValues": [],
+      "HelperUI": null,
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": true,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": true,
+      "Name": "BorderRadius",
+      "NullDefaultValue": "",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 16,
+      "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
       "Description": "Roundedness of the control's top left corner. A value of 0 is perfectly square.",
       "DescriptionResourceString": "BorderRadiusTopLeft_Description",
       "DisplayName": "Top left border radius",
       "DisplayNameResourceString": "BorderRadiusTopLeft",
       "EnumValues": [],
-      "HelperUI": null,
+      "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
       "IsLinkableToParentTheme": true,
@@ -1121,7 +1089,7 @@
       "DisplayName": "Top right border radius",
       "DisplayNameResourceString": "BorderRadiusTopRight",
       "EnumValues": [],
-      "HelperUI": null,
+      "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
       "IsLinkableToParentTheme": true,
@@ -1150,7 +1118,7 @@
       "DisplayName": "Bottom right border radius",
       "DisplayNameResourceString": "BorderRadiusBottomRight",
       "EnumValues": [],
-      "HelperUI": null,
+      "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
       "IsLinkableToParentTheme": true,
@@ -1179,7 +1147,7 @@
       "DisplayName": "Bottom left border radius",
       "DisplayNameResourceString": "BorderRadiusBottomLeft",
       "EnumValues": [],
-      "HelperUI": null,
+      "HelperUI": "",
       "Hidden": false,
       "IsDataSourceProperty": false,
       "IsLinkableToParentTheme": true,
@@ -1455,21 +1423,21 @@
       "IsControlSpecific": false,
       "LoadingOrder": 8,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.TextCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.TextCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Text\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Text\"},\"Size\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"14\"},\"Weight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Regular\"},\"Align\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Start\"},\"VerticalAlign\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Middle\"},\"AutoHeight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Height\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"32\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontItalic\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"FontStrikethrough\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"FontUnderline\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Wrap\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"Fill\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderStyle\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderThickness\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusTopLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusTopRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusBottomRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusBottomLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingTop\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingBottom\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"}]},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.TextCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.TextCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Text\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Text\"},\"Size\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"14\"},\"Weight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Regular\"},\"Align\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Start\"},\"VerticalAlign\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"AutoHeight\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Height\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"32\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontItalic\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"FontStrikethrough\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"FontUnderline\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"Wrap\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"Fill\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderStyle\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderThickness\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadius\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusTopLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusTopRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusBottomRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"BorderRadiusBottomLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingTop\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingRight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingBottom\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"PaddingLeft\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"}]},\"Events\":null,\"CommonEvents\":null,\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 9,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Text\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"Size\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Weight\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Align\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"VerticalAlign\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AutoHeight\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Height\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Font\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Font\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontItalic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontStrikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontUnderline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Wrap\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Fill\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"ColorPalette\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderStyle\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"BorderStyle\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderThickness\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Color\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusTopLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusTopRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusBottomRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusBottomLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingTop\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingBottom\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
+      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Text\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"Size\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Weight\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Align\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"VerticalAlign\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"VerticalAlign\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AutoHeight\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Height\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Font\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Font\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontItalic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontStrikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontUnderline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Wrap\",\"Type\":\"TwoOptions\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Fill\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"ColorPalette\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderStyle\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"BorderStyle\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderThickness\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Color\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadius\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusTopLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusTopRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusBottomRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BorderRadiusBottomLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingTop\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingRight\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingBottom\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PaddingLeft\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.42\",\"IsFirstParty\":true}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.48\",\"IsFirstParty\":true}}",
       "Type": 3
     },
     {
@@ -1805,7 +1773,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Text\",\"TextCanvas_Align\":\"Align\",\"TextCanvas_Align_Desc\":\"Display text using the selected text alignment.\",\"TextCanvas_Align_Start\":\"Start\",\"TextCanvas_Align_End\":\"End\",\"TextCanvas_Align_Center\":\"Center\",\"TextCanvas_Align_Justify\":\"Justify\",\"TextCanvas_AutoHeight\":\"Auto height\",\"TextCanvas_AutoHeight_Desc\":\"Container height will adjust to text content.\",\"TextCanvas_Desc\":\"Display text\",\"TextCanvas_Height\":\"Text height\",\"TextCanvas_Height_Desc\":\"The height of the control.\",\"TextCanvas_Italic\":\"Italic\",\"TextCanvas_Italic_Desc\":\"Display text using the italic font style.\",\"TextCanvas_Size\":\"Font size\",\"TextCanvas_Size_Desc\":\"Display text using the selected font sizes.\",\"TextCanvas_Strikethrough\":\"Strikethrough\",\"TextCanvas_Strikethrough_Desc\":\"Display text using the strikethrough font style.\",\"TextCanvas_Text\":\"Text\",\"TextCanvas_Text_Desc\":\"Text that appears on a control.\",\"TextCanvas_Underline\":\"Underline\",\"TextCanvas_Underline_Desc\":\"Display text using the underline font style.\",\"TextCanvas_VerticalAlign\":\"Vertical align\",\"TextCanvas_VerticalAlign_Desc\":\"Display text using the selected text vertical alignment.\",\"TextCanvas_VerticalAlign_Top\":\"Top\",\"TextCanvas_VerticalAlign_Middle\":\"Middle\",\"TextCanvas_VerticalAlign_Bottom\":\"Bottom\",\"TextCanvas_Weight\":\"Font weight\",\"TextCanvas_Weight_Desc\":\"Display text using the selected font weights.\",\"TextCanvas_Weight_Medium\":\"Medium\",\"TextCanvas_Weight_Regular\":\"Regular\",\"TextCanvas_Weight_Semibold\":\"Semibold\",\"TextCanvas_Weight_Bold\":\"Bold\",\"TextCanvas_Wrap\":\"Wrap\",\"TextCanvas_Wrap_Desc\":\"Display overflow text as wrapped.\",\"Font\":\"Font\",\"Font_description\":\"The name of the family of fonts in which text appears\",\"Font_Color\":\"Font color\",\"Font_Color_description\":\"The color of text in the control\",\"Fill\":\"Fill\",\"Fill_Description\":\"Background color fo the control.\",\"BorderStyle\":\"Border style\",\"BorderStyle_Description\":\"Style of borders around the control\",\"BorderStyle_Dashed\":\"Dashed\",\"BorderStyle_Dotted\":\"Dotted\",\"BorderStyle_None\":\"None\",\"BorderStyle_Solid\":\"Solid\",\"BorderThickness\":\"Border thickness\",\"BorderThickness_Description\":\"Thickness or width of borders around the control.\",\"BorderColor\":\"Border color\",\"BorderColor_Description\":\"Color of borders around the control.\",\"BorderRadiusTopLeft\":\"Top left border radius\",\"BorderRadiusTopLeft_Description\":\"Roundedness of the control's top left corner. A value of 0 is perfectly square.\",\"BorderRadiusTopRight\":\"Top right border radius\",\"BorderRadiusTopRight_Description\":\"Roundedness of the control's top right corner. A value of 0 is perfectly square.\",\"BorderRadiusBottomRight\":\"Bottom right border radius\",\"BorderRadiusBottomRight_Description\":\"Roundedness of the control's bottom right corner. A value of 0 is perfectly square.\",\"BorderRadiusBottomLeft\":\"Bottom left border radius\",\"BorderRadiusBottomLeft_Description\":\"Roundedness of the control's bottom left corner. A value of 0 is perfectly square.\",\"PaddingTop\":\"Top\",\"PaddingTop_Description\":\"Padding to apply to the top of the control.\",\"PaddingBottom\":\"Bottom\",\"PaddingBottom_Description\":\"Padding to apply to the bottom of the control.\",\"PaddingLeft\":\"Left\",\"PaddingLeft_Description\":\"Padding to apply to the left of the control.\",\"PaddingRight\":\"Right\",\"PaddingRight_Description\":\"Padding to apply to the right of the control.\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Text\",\"TextCanvas_Align\":\"Align\",\"TextCanvas_Align_Desc\":\"Display text using the selected text alignment.\",\"TextCanvas_Align_Start\":\"Start\",\"TextCanvas_Align_End\":\"End\",\"TextCanvas_Align_Center\":\"Center\",\"TextCanvas_Align_Justify\":\"Justify\",\"TextCanvas_AutoHeight\":\"Auto height\",\"TextCanvas_AutoHeight_Desc\":\"Container height will adjust to text content.\",\"TextCanvas_Desc\":\"Display text\",\"TextCanvas_Height\":\"Text height\",\"TextCanvas_Height_Desc\":\"The height of the control.\",\"TextCanvas_Italic\":\"Italic\",\"TextCanvas_Italic_Desc\":\"Display text using the italic font style.\",\"TextCanvas_Size\":\"Font size\",\"TextCanvas_Size_Desc\":\"Display text using the selected font sizes.\",\"TextCanvas_Strikethrough\":\"Strikethrough\",\"TextCanvas_Strikethrough_Desc\":\"Display text using the strikethrough font style.\",\"TextCanvas_Text\":\"Text\",\"TextCanvas_Text_Desc\":\"Text that appears on a control.\",\"TextCanvas_Underline\":\"Underline\",\"TextCanvas_Underline_Desc\":\"Display text using the underline font style.\",\"TextCanvas_VerticalAlign\":\"Vertical align\",\"TextCanvas_VerticalAlign_Desc\":\"Display text using the selected text vertical alignment.\",\"TextCanvas_VerticalAlign_Top\":\"Top\",\"TextCanvas_VerticalAlign_Middle\":\"Middle\",\"TextCanvas_VerticalAlign_Bottom\":\"Bottom\",\"VerticalAlign\":\"Vertical align\",\"VerticalAlign_Desc\":\"Display text using the selected text verlitcal alignment.\",\"TextCanvas_Weight\":\"Font weight\",\"TextCanvas_Weight_Desc\":\"Display text using the selected font weights.\",\"TextCanvas_Weight_Medium\":\"Medium\",\"TextCanvas_Weight_Regular\":\"Regular\",\"TextCanvas_Weight_Semibold\":\"Semibold\",\"TextCanvas_Weight_Bold\":\"Bold\",\"TextCanvas_Wrap\":\"Wrap\",\"TextCanvas_Wrap_Desc\":\"Display overflow text as wrapped.\",\"Font\":\"Font\",\"Font_description\":\"The name of the family of fonts in which text appears\",\"Font_Color\":\"Font color\",\"Font_Color_description\":\"The color of text in the control\",\"Fill\":\"Fill\",\"Fill_Description\":\"Background color fo the control.\",\"BorderStyle\":\"Border style\",\"BorderStyle_Description\":\"Style of borders around the control\",\"BorderStyle_Dashed\":\"Dashed\",\"BorderStyle_Dotted\":\"Dotted\",\"BorderStyle_None\":\"None\",\"BorderStyle_Solid\":\"Solid\",\"BorderThickness\":\"Border thickness\",\"BorderThickness_Description\":\"Thickness or width of borders around the control.\",\"BorderColor\":\"Border color\",\"BorderColor_Description\":\"Color of borders around the control.\",\"BorderRadiusTopLeft\":\"Top left border radius\",\"BorderRadiusTopLeft_Description\":\"Roundedness of the control's top left corner. A value of 0 is perfectly square.\",\"BorderRadiusTopRight\":\"Top right border radius\",\"BorderRadiusTopRight_Description\":\"Roundedness of the control's top right corner. A value of 0 is perfectly square.\",\"BorderRadiusBottomRight\":\"Bottom right border radius\",\"BorderRadiusBottomRight_Description\":\"Roundedness of the control's bottom right corner. A value of 0 is perfectly square.\",\"BorderRadiusBottomLeft\":\"Bottom left border radius\",\"BorderRadiusBottomLeft_Description\":\"Roundedness of the control's bottom left corner. A value of 0 is perfectly square.\",\"BorderRadius\":\"Border radius\",\"BorderRadius_Description\":\"Roundedness of the control's corners. A value of 0 is perfectly square.\",\"PaddingTop\":\"Top\",\"PaddingTop_Description\":\"Padding to apply to the top of the control.\",\"PaddingBottom\":\"Bottom\",\"PaddingBottom_Description\":\"Padding to apply to the bottom of the control.\",\"PaddingLeft\":\"Left\",\"PaddingLeft_Description\":\"Padding to apply to the left of the control.\",\"PaddingRight\":\"Right\",\"PaddingRight_Description\":\"Padding to apply to the right of the control.\"}}}",
       "Type": 3
     },
     {
@@ -1823,5 +1791,5 @@
       "Type": 4
     }
   ],
-  "Version": "0.0.42"
+  "Version": "0.0.48"
 }

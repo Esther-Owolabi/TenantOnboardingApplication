@@ -234,7 +234,7 @@
                     "Offer letter has been sent successfully",
                     NotificationType.Success
                 );
-                Navigate('Home Screen');
+                Navigate('Dashboard Screen');
                 Set(
                     record,
                     Blank()

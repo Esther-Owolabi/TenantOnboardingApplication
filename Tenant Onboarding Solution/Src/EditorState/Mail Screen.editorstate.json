@@ -3140,7 +3140,7 @@
         {
           "Category": "Behavior",
           "PropertyName": "YesAction",
-          "RuleProviderType": "User"
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",

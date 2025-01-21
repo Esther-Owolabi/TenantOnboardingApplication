@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": true,
       "DataflowAnalysisFlagStateToggledByUser": true
     },
-    "DocVersion": "1.343",
+    "DocVersion": "1.345",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -32,6 +32,9 @@
       "delayloadscreens": true,
       "disablebehaviorreturntypecheck": false,
       "disablecdsfileandlargeimage": false,
+      "disabledeferloadingunusedscreenswithstartscreen": false,
+      "disablefallbacktopayamlv2": false,
+      "disableloadcomponentdefinitionsondemand": false,
       "disableruntimepolicies": false,
       "dynamicschema": false,
       "enableappembeddingux": false,
@@ -68,7 +71,6 @@
       "improvedtabstopbehavior": false,
       "isemptyrequirestableargument": true,
       "keeprecentscreensloaded": false,
-      "legacyformulabar": false,
       "longlivingcache": false,
       "mobilenativerendering": true,
       "nativecdsexperimental": true,
@@ -80,7 +82,7 @@
       "pdffunction": false,
       "powerfxdecimal": false,
       "powerfxv1": false,
-      "preferpayamlv3inux": false,
+      "preferpayamlv2inux": false,
       "primaryoutputpropertycoerciondeprecated": true,
       "proactivecontrolrename": false,
       "projectionmapping": true,
@@ -105,7 +107,8 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 27,
+    "BindingErrorCount": 29,
+    "ConnectionString": "",
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "DesktopOrTablet",
@@ -119,16 +122,15 @@
     "EnableInstrumentation": false,
     "FileID": "ef000272-9a1e-4f3c-bb8a-88f0738f58e6",
     "Id": "ee017b82-4c35-4def-9017-26fd41f19663",
-    "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "Tenant Onboarding Application",
+    "Name": "Attendance Management System",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 2,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Tenant Onboarding Application",
+    "AppName": "Attendance Management System",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -139,7 +141,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Home Screen",
+    "Dashboard Screen",
+    "Employee Screen",
+    "Attendance Screen",
     "Details Screen",
     "Mail Screen",
     "All Requests Screen"

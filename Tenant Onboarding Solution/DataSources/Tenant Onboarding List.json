@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-08-02T14:38:09.2320000Z",
+      "LastChangedTimeString": "2025-01-11T02:38:52.4780000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -60,7 +60,11 @@
       "Status#Id": "Status Id",
       "SubmissionDate": "Submission Date",
       "TelephoneNumber": "Telephone Number",
-      "Title": "Title"
+      "Title": "Title",
+      "Year": "Year",
+      "Year_x0020_3": "Year 3",
+      "Year3": "Year3",
+      "Year30": "Year3 (Year30)"
     },
     "DatasetName": "https://legacypoise.sharepoint.com/sites/PropertyManagement",
     "EncodeDataset": true,

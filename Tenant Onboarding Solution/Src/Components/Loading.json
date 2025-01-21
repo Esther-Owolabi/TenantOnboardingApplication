@@ -133,7 +133,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Container51",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 225,
+            "PublishOrderIndex": 191,
             "Rules": [
               {
                 "Category": "Data",
@@ -421,7 +421,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Loading",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 224,
+        "PublishOrderIndex": 190,
         "Rules": [
           {
             "Category": "Design",
@@ -601,7 +601,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638660432494119664",
+    "LastModifiedTimestamp": "638730445404210545",
     "Name": "Loading",
     "Rules": [
       {
@@ -660,7 +660,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638660432494119664",
+  "LastModifiedTimestamp": "638730445404210545",
   "Name": "d69fd426bfa04ab69df3b1c7358e8336",
   "OverridableProperties": {},
   "Version": "1.0"

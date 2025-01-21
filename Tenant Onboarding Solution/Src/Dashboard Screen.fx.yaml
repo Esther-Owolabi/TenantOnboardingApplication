@@ -1,0 +1,373 @@
+"'Dashboard Screen' As screen":
+    Fill: =Color.White
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents')
+
+    Container13 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: |
+            =RGBA(248, 248, 248, 1)
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Navigator_1 As Navigator:
+            Height: =Parent.Height * 90/100
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+            LogOutScreen: =
+            MenuItem: |-
+                =Table(
+                    {
+                        MenuID: 1,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                  <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                </svg>",
+                        MenuName: "Dashboard",
+                        PageNavigation: 'Dashboard Screen'
+                    },
+                    {
+                        MenuID: 2,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-people' viewBox='0 0 16 16'>
+                  <path d='M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4'/>
+                </svg>",
+                        MenuName: "Employees",
+                        PageNavigation: 'Employee Screen'
+                    },
+                    {
+                        MenuID: 3,
+                        MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-clipboard' viewBox='0 0 16 16'>
+                  <path d='M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z'/>
+                  <path d='M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z'/>
+                </svg>",
+                        MenuName: "Attendance",
+                        PageNavigation: 'Attendance Screen'
+                    }
+                )
+            OnSelect: ="Text"
+            ZIndex: =1
+
+        Container17 As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            component_Header_2 As component_Header:
+                AlignInContainer: =AlignInContainer.Stretch
+                LayoutMinHeight: =640
+                LayoutMinWidth: =0
+                NoficationBellOnSelect: =
+                Tooltip: ="You have some pending requests awaiting approval "
+                Width: =
+
+            Container32 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =0
+                LayoutMinWidth: =0
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =25
+                PaddingTop: =20
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Container34 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =100
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =2
+
+                    Container35 As groupContainer.horizontalAutoLayoutContainer:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1.5
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        ZIndex: =1
+
+                        Container38 As groupContainer.horizontalAutoLayoutContainer:
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =0
+                            LayoutMinWidth: =0
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingRight: =10
+                            ZIndex: =1
+
+                            Label15 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(0, 0, 0, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                FillPortions: =1
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Bold
+                                LayoutMinWidth: =0
+                                Size: =13
+                                Text: ="Dashboard"
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                            Icon5_4 As icon.Reload:
+                                AlignInContainer: =AlignInContainer.Center
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(170, 163, 217, 1)//RGBA(214,221,224,1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =30
+                                Icon: =Icon.Reload
+                                OnSelect: |+
+                                    =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
+                                    
+                                Tooltip: ="Refresh Requests"
+                                Width: =Self.Height
+                                X: =
+                                Y: =
+                                ZIndex: =2
+
+                            Container59 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height - 25
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =250
+                                Width: =100
+                                ZIndex: =3
+
+                                Label26 As label:
+                                    Align: =Align.Center
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(85, 69, 191,1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Font: =App.Theme.Font
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    Size: =10
+                                    Text: ="View All"
+                                    Underline: =true
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                Button11 As button:
+                                    BorderColor: =App.Theme.Colors.Primary
+                                    BorderStyle: =BorderStyle.None
+                                    Color: =RGBA(0, 0, 0, 0)
+                                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Fill: =Color.Transparent
+                                    Font: =App.Theme.Font
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =35
+                                    HoverBorderColor: =App.Theme.Colors.Darker10
+                                    HoverFill: =Self.Fill
+                                    OnSelect: =Navigate('All Requests Screen')
+                                    PressedBorderColor: =App.Theme.Colors.Darker40
+                                    PressedColor: =Self.Color
+                                    PressedFill: =Self.Fill
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Size: =15
+                                    Text: =
+                                    Width: =100
+                                    ZIndex: =2
+
+                    Container36 As groupContainer.horizontalAutoLayoutContainer:
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        PaddingRight: =10
+                        ZIndex: =2
+
+                        Label16 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Submission Date"
+                            ZIndex: =1
+
+                        Label16_1 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Name"
+                            Width: =200
+                            ZIndex: =2
+
+                        Label16_4 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: ="Status"
+                            ZIndex: =5
+
+                        Label16_2 As label:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: =""
+                            ZIndex: =6
+
+                Container3 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    LayoutMinHeight: =0
+                    LayoutMinWidth: =0
+                    ZIndex: =4
+
+                    Gallery2_4 As gallery.galleryVertical:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DelayItemLoading: =true
+                        Height: =Parent.Height
+                        Items: =Filter('Tenant Onboarding List',Status.Value = "Pending")
+                        Layout: =Layout.Vertical
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateSize: =50
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Container42_4 As groupContainer.horizontalAutoLayoutContainer:
+                            DropShadow: =DropShadow.Light
+                            Height: =Parent.TemplateHeight
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =18
+                            PaddingRight: =10
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.TemplateWidth
+                            ZIndex: =1
+
+                            Label16_23 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =Text(ThisItem.'Submission Date',"dd-mm-yyyy")
+                                ZIndex: =1
+
+                            Label16_24 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.'Name of Prospective Tenant'
+                                Width: =200
+                                ZIndex: =2
+
+                            Label16_25 As label:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.Status.Value
+                                ZIndex: =3
+
+                            Container59_2 As groupContainer.manualLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height - 25
+                                LayoutMinHeight: =0
+                                LayoutMinWidth: =250
+                                Width: =150
+                                ZIndex: =4
+
+                                Label26_2 As label:
+                                    Align: =Align.Center
+                                    BorderColor: =App.Theme.Colors.Darker40
+                                    Color: =RGBA(85, 69, 191,1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Font: =App.Theme.Font
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    Size: =10
+                                    Text: ="See details"
+                                    Underline: =true
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                Button11_2 As button:
+                                    BorderColor: =App.Theme.Colors.Primary
+                                    BorderStyle: =BorderStyle.None
+                                    Color: =RGBA(0, 0, 0, 0)
+                                    DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Fill: =Color.Transparent
+                                    Font: =App.Theme.Font
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    HoverBorderColor: =App.Theme.Colors.Darker10
+                                    HoverFill: =RGBA(128, 128, 128, 0.1)
+                                    OnSelect: |-
+                                        =UpdateContext({loading:true});Set(record,ThisItem);Set(attachments,ThisItem.Attachments);UpdateContext({loading:false});Navigate('Details Screen',ScreenTransition.Fade);
+                                    PressedBorderColor: =App.Theme.Colors.Darker40
+                                    PressedColor: =Self.Color
+                                    PressedFill: =Self.Fill
+                                    Size: =15
+                                    Text: =
+                                    Width: =Parent.Width
+                                    ZIndex: =2
+
+                    Image1_3 As image:
+                        BorderColor: =App.Theme.Colors.Darker40
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height
+                        Image: ='No Item found'
+                        Visible: =Gallery2_4.AllItemsCount = 0
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+    LoadingImageHome As Loading:
+        Visible: |
+            =loading
+        ZIndex: =2
+
