@@ -69,7 +69,7 @@ Navigator As CanvasComponent:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Height: =Parent.Height
-                Image: ='legacy poise purple cropped'
+                Image: ='archwood logo'
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =Parent.Width - Parent.PaddingLeft - Parent.PaddingRight
