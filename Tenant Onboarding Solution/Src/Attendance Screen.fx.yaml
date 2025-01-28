@@ -592,6 +592,7 @@
             ItemHoverFill: =App.Theme.Colors.Lighter70
             Items: =
             MaxAttachments: =1
+            OnAddFile: =If(Not(EndsWith(First(att_UploadAttachment.Attachments).Name,".xlsx")),Notify("Only excel files are allowed to be uploaded",NotificationType.Error);Reset(att_UploadAttachment))
             PaddingBottom: =5
             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
             PaddingRight: =5
@@ -615,32 +616,17 @@
             Y: =att_UploadAttachment.Y + att_UploadAttachment.Height + 20
             ZIndex: =2
 
-            Label26_7 As label:
-                Align: =Align.Center
-                BorderColor: =App.Theme.Colors.Darker40
-                Color: =RGBA(255, 255, 255,1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Fill: =RGBA(85, 69, 191, 1)
-                Font: =App.Theme.Font
-                FontWeight: =FontWeight.Semibold
-                Height: =Parent.Height
-                Size: =10
-                Text: ="Submit"
-                Width: =Parent.Width
-                ZIndex: =9
-
             Button11_14 As button:
                 BorderColor: =App.Theme.Colors.Primary
                 BorderStyle: =BorderStyle.None
-                Color: =RGBA(0, 0, 0, 0)
                 DisabledBorderColor: =RGBA(244, 244, 244, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayMode: =If(IsEmpty(att_UploadAttachment.Attachments),DisplayMode.Disabled,DisplayMode.Edit)
-                Fill: =Color.Transparent
+                Fill: =RGBA(85, 69, 191, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Semibold
-                Height: =35
+                Height: =Parent.Height
                 HoverBorderColor: =App.Theme.Colors.Darker10
                 HoverFill: =Self.Fill
                 OnSelect: |
@@ -662,7 +648,7 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =15
-                Text: =
-                Width: =100
+                Text: ="Submit"
+                Width: =Parent.Width
                 ZIndex: =10
 
