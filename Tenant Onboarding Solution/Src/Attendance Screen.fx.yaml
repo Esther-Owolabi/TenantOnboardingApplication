@@ -592,7 +592,20 @@
             ItemHoverFill: =App.Theme.Colors.Lighter70
             Items: =
             MaxAttachments: =1
-            OnAddFile: =If(Not(EndsWith(First(att_UploadAttachment.Attachments).Name,".xlsx")),Notify("Only excel files are allowed to be uploaded",NotificationType.Error);Reset(att_UploadAttachment))
+            OnAddFile: |-
+                =If(
+                    Not(
+                        EndsWith(
+                            First(att_UploadAttachment.Attachments).Name,
+                            ".xlsx"
+                        )
+                    ),
+                    Notify(
+                        "Only excel files are allowed to be uploaded",
+                        NotificationType.Error
+                    );
+                    Reset(att_UploadAttachment)
+                )
             PaddingBottom: =5
             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
             PaddingRight: =5
