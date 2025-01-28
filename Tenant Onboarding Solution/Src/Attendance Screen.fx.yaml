@@ -636,6 +636,7 @@
                 DisabledBorderColor: =RGBA(244, 244, 244, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =If(IsEmpty(att_UploadAttachment.Attachments),DisplayMode.Disabled,DisplayMode.Edit)
                 Fill: =Color.Transparent
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Semibold
