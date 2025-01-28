@@ -642,7 +642,17 @@
                 Height: =35
                 HoverBorderColor: =App.Theme.Colors.Darker10
                 HoverFill: =Self.Fill
-                OnSelect: =Navigate('All Requests Screen')
+                OnSelect: |
+                    =UpdateContext({loading: true});
+                    UploadAttendance.Run(
+                        {
+                            file: {
+                                name: First(att_UploadAttachment.Attachments).Name,
+                                contentBytes: First(att_UploadAttachment.Attachments).Value
+                            }
+                        }
+                    );
+                    UpdateContext({loading: false});
                 PressedBorderColor: =App.Theme.Colors.Darker40
                 PressedColor: =Self.Color
                 PressedFill: =Self.Fill

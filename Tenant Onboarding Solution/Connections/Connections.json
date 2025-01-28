@@ -60,98 +60,19 @@
     "dependents": [],
     "id": "06614241-272d-4d64-80e8-0c9a4749ece6"
   },
-  "10642815-41c0-4272-9418-89a5182ec61c": {
-    "connectionRef": {
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1689/1.0.1689.3722/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
-    ],
-    "id": "10642815-41c0-4272-9418-89a5182ec61c"
-  },
-  "14f48360-4db6-4712-a0bf-8919cfe5b7a9": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "10642815-41c0-4272-9418-89a5182ec61c": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "2d53a4e8-17f8-4f77-9be9-29130dda6e1f": {
-          "value": "shared_sharepointonline"
-        },
-        "3f6c6473-1b66-4d50-8182-b6a01639e9be": {
-          "value": "shared_office365"
-        },
-        "7d841589-9447-4fe2-bdc5-cee3e21b2baf": {
-          "value": "shared_office365_1"
-        },
-        "workflowDisplayName": {
-          "value": "Send Mail"
-        },
-        "workflowEntityId": {
-          "value": "b91acead-36e8-ee11-904c-002248995f95"
-        },
-        "workflowName": {
-          "value": "b55738b3-c4bf-4d9d-249b-b0933b19b804"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_office365": {
-          "value": "3f6c6473-1b66-4d50-8182-b6a01639e9be"
-        },
-        "shared_office365_1": {
-          "value": "7d841589-9447-4fe2-bdc5-cee3e21b2baf"
-        },
-        "shared_onedriveforbusiness": {
-          "value": "10642815-41c0-4272-9418-89a5182ec61c"
-        },
-        "shared_sharepointonline": {
-          "value": "2d53a4e8-17f8-4f77-9be9-29130dda6e1f"
-        },
-        "workflowDisplayName": {
-          "value": "Send Mail"
-        },
-        "workflowEntityId": {
-          "value": "b91acead-36e8-ee11-904c-002248995f95"
-        },
-        "workflowName": {
-          "value": "b55738b3-c4bf-4d9d-249b-b0933b19b804"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "SendMail"
-    ],
-    "dependencies": {
-      "shared_office365": "3f6c6473-1b66-4d50-8182-b6a01639e9be",
-      "shared_office365_1": "7d841589-9447-4fe2-bdc5-cee3e21b2baf",
-      "shared_onedriveforbusiness": "10642815-41c0-4272-9418-89a5182ec61c",
-      "shared_sharepointonline": "2d53a4e8-17f8-4f77-9be9-29130dda6e1f"
-    },
-    "dependents": [],
-    "id": "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
-  },
-  "2d53a4e8-17f8-4f77-9be9-29130dda6e1f": {
+  "3cc00f65-d3e1-49ae-b5d2-3f7388e86786": {
     "connectionRef": {
       "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1723/1.0.1723.3986/sharepointonline/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
     "datasets": {},
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
+      "bf46e562-2bf4-48bb-94df-32e6c88b54e2"
     ],
-    "id": "2d53a4e8-17f8-4f77-9be9-29130dda6e1f"
+    "id": "3cc00f65-d3e1-49ae-b5d2-3f7388e86786"
   },
   "3f6c6473-1b66-4d50-8182-b6a01639e9be": {
     "connectionRef": {
@@ -164,23 +85,45 @@
       "Office365Outlook"
     ],
     "dependencies": {},
-    "dependents": [
-      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
-    ],
+    "dependents": [],
     "id": "3f6c6473-1b66-4d50-8182-b6a01639e9be"
   },
-  "7d841589-9447-4fe2-bdc5-cee3e21b2baf": {
+  "bf46e562-2bf4-48bb-94df-32e6c88b54e2": {
     "connectionRef": {
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1716/1.0.1716.3922/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+      "displayName": "Logic flows",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1725/1.0.1725.4004/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "Upload Attendance"
+        },
+        "workflowEntityId": {
+          "value": "5be0cfc1-6cdd-ef11-8eea-000d3a39efe5"
+        },
+        "workflowName": {
+          "value": "b1d8887a-a96f-0cbb-25fb-d4a03e557ee8"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "Upload Attendance"
+        },
+        "workflowEntityId": {
+          "value": "5be0cfc1-6cdd-ef11-8eea-000d3a39efe5"
+        },
+        "workflowName": {
+          "value": "b1d8887a-a96f-0cbb-25fb-d4a03e557ee8"
+        }
+      }
     },
     "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "14f48360-4db6-4712-a0bf-8919cfe5b7a9"
+    "dataSources": [
+      "UploadAttendance"
     ],
-    "id": "7d841589-9447-4fe2-bdc5-cee3e21b2baf"
+    "dependencies": {
+      "shared_sharepointonline": "3cc00f65-d3e1-49ae-b5d2-3f7388e86786"
+    },
+    "dependents": [],
+    "id": "bf46e562-2bf4-48bb-94df-32e6c88b54e2"
   }
 }

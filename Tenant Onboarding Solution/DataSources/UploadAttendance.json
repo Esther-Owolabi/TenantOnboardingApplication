@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "b1d8887a-a96f-0cbb-25fb-d4a03e557ee8",
+    "Name": "UploadAttendance",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "5be0cfc1-6cdd-ef11-8eea-000d3a39efe5"
+  }
+]

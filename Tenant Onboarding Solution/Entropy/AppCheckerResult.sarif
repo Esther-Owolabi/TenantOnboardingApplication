@@ -939,6 +939,250 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Details Screen'.'POP UP_4'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.'POP UP_4'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 154,
+                  "charOffset": 280,
+                  "snippet": {
+                    "text": "SendMail.Run(\n            record.'Name of Prospective Tenant',\n            \"REJECTED\",\n            record.'Email Address',\n            record.ID\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Details Screen",
+                "type": "'Details Screen'.'POP UP_4'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "SendMail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.'POP UP_4'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.'POP UP_4'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 434,
+                  "snippet": {
+                    "text": ".responsecode"
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Details Screen",
+                "type": "'Details Screen'.'POP UP_4'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Details Screen'.'POP UP_4'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Details Screen'.'POP UP_4'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 519,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Details Screen",
+                "type": "'Details Screen'.'POP UP_4'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Mail Screen'.'POP UP_1'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Mail Screen'.'POP UP_1'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 168,
+                  "charOffset": 92,
+                  "snippet": {
+                    "text": "SendMail.Run(\n        record.'Name of Prospective Tenant',\n        \"APPROVED\",\n        record.'Email Address',\n        record.ID,{text_2:RichTextEditor2.HtmlText}\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'.'POP UP_1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "SendMail"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Mail Screen'.'POP UP_1'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Mail Screen'.'POP UP_1'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 260,
+                  "snippet": {
+                    "text": ".responsecode"
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'.'POP UP_1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Mail Screen'.'POP UP_1'.YesAction"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Mail Screen'.'POP UP_1'.YesAction",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 292,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "YesAction",
+                "module": "Mail Screen",
+                "type": "'Mail Screen'.'POP UP_1'"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Form.Container4.AddMediaButton1.AccessibleLabel"
                 }
               ],
@@ -2946,6 +3190,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.result"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.result",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "result",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.legacy poise purple cropped"
                 }
               ],
@@ -2969,7 +3243,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 8
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -2998,7 +3272,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 9
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -3028,7 +3302,37 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 10
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Attendance Screen'.loading"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Attendance Screen'.loading",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "loading",
+                "module": "Attendance Screen",
+                "type": "'Attendance Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3058,7 +3362,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 10
+          "ruleIndex": 11
         }
       ],
       "tool": {
@@ -3192,6 +3496,23 @@
                 "level": "Low",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {
