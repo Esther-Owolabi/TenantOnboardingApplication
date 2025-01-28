@@ -36,7 +36,7 @@
       "Name": "NoficationBellOnSelect",
       "PropertyDataTypeKey": "Void",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "4",
+        "PropertyScopeRuleNamespaceKey": "32",
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
@@ -60,7 +60,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638735986240107816",
+  "LastModifiedTimestamp": "638736601099156371",
   "Name": "0c27134eceb94dd7831601c78ed5fcf0",
   "OverridableProperties": {},
   "TemplateOriginalName": "67be405e305b4acc93d836607f4e0614",

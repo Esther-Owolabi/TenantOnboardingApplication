@@ -101,3 +101,733 @@ Screen2 As screen:
             Y: =WeekdayGallery1_1.TemplateHeight / 2 - Self.Height / 2
             ZIndex: =1
 
+    Form1 As form.PowerApps_CoreControls_Form:
+        BorderColor: =App.Theme.Colors.Darker40
+        DataSource: ='Tenant Onboarding List'
+        UseFluentV9Cards: =true
+        X: =60
+        Y: =60
+        ZIndex: =3
+
+        Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Attachments
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'{Attachments}')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue11.Attachments
+            Width: =266
+            X: =1
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                Color: =App.Theme.Colors.Darker30
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                FocusedBorderThickness: =4
+                Font: =App.Theme.Font
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =App.Theme.Colors.Lighter70
+                IsInDataCard: =true
+                ItemColor: =App.Theme.Colors.PrimaryForeground
+                ItemFill: =App.Theme.Colors.Primary
+                ItemHoverColor: =RGBA(0, 0, 0, 1)
+                ItemHoverFill: =App.Theme.Colors.Lighter70
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedColor: =App.Theme.Colors.PrimaryForeground
+                PressedFill: =App.Theme.Colors.Darker30
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                ZIndex: =2
+
+            ErrorMessage11 As label:
+                AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue11.Y + DataCardValue11.Height
+                ZIndex: =3
+
+            StarVisible11 As label:
+                Align: =Align.Center
+                Color: =App.Theme.Colors.Darker30
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =App.Theme.Font
+                Height: =DataCardKey11.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey11.Y
+                ZIndex: =4
+
+        "'Name of Prospective Tenant_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NameofProspectiveTenant"
+            Default: =ThisItem.'Name of Prospective Tenant'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'NameofProspectiveTenant')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'NameofProspectiveTenant')
+            Required: =false
+            Update: =DataCardValue1.Value
+            Width: =266
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+            DataCardKey1 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue1 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 4
+                ZIndex: =2
+
+            ErrorMessage1 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+        "'Telephone Number_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="TelephoneNumber"
+            Default: =ThisItem.'Telephone Number'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'TelephoneNumber')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'TelephoneNumber')
+            Required: =false
+            Update: =DataCardValue2.Value
+            Width: =266
+            X: =1
+            Y: =0
+            ZIndex: =4
+
+            DataCardKey2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue2 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 4
+                ZIndex: =2
+
+            ErrorMessage2 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue2.Y + DataCardValue2.Height
+                ZIndex: =3
+
+            StarVisible2 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey2.Y
+                ZIndex: =4
+
+        "'Email Address_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmailAddress"
+            Default: =ThisItem.'Email Address'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'EmailAddress')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'EmailAddress')
+            Required: =false
+            Update: =DataCardValue3.Value
+            Width: =266
+            X: =2
+            Y: =0
+            ZIndex: =4
+
+            DataCardKey3 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue3 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 4
+                ZIndex: =2
+
+            ErrorMessage3 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible3 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        "'Date of Birth_DataCard1' As typedDataCard.fluentV9DateEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DateofBirth"
+            Default: =ThisItem.'Date of Birth'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'DateofBirth')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue4.SelectedDate
+            Width: =266
+            X: =0
+            Y: =1
+            ZIndex: =4
+
+            DataCardKey4 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue4 As 'Date picker'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                EndDate: =Date(Year(Today())+100, 12, 31)
+                Height: =32
+                Required: =Parent.Required
+                SelectedDate: =Parent.Default
+                StartDate: =Date(1900, 1, 1)
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 4
+                ZIndex: =2
+
+            ErrorMessage4 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible4 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        Occupation_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Occupation"
+            Default: =ThisItem.Occupation
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'Occupation')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'Occupation')
+            Required: =false
+            Update: =DataCardValue5.Value
+            Width: =266
+            X: =1
+            Y: =1
+            ZIndex: =4
+
+            DataCardKey5 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue5 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 4
+                ZIndex: =2
+
+            ErrorMessage5 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible5 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'Current Residential Address_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="CurrentResidentialAddress"
+            Default: =ThisItem.'Current Residential Address'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'CurrentResidentialAddress')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'CurrentResidentialAddress')
+            Required: =false
+            Update: =DataCardValue6.Value
+            Width: =266
+            X: =2
+            Y: =1
+            ZIndex: =4
+
+            DataCardKey6 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue6 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 4
+                ZIndex: =2
+
+            ErrorMessage6 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue6.Y + DataCardValue6.Height
+                ZIndex: =3
+
+            StarVisible6 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+        "'Marital Status_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="MaritalStatus"
+            Default: =ThisItem.'Marital Status'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'MaritalStatus')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'MaritalStatus')
+            Required: =false
+            Update: =DataCardValue7.Value
+            Width: =266
+            X: =0
+            Y: =2
+            ZIndex: =4
+
+            DataCardKey7 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue7 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 4
+                ZIndex: =2
+
+            ErrorMessage7 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue7.Y + DataCardValue7.Height
+                ZIndex: =3
+
+            StarVisible7 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey7.Y
+                ZIndex: =4
+
+        "'Number of Children_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NumberofChildren"
+            Default: =ThisItem.'Number of Children'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'NumberofChildren')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'NumberofChildren')
+            Required: =false
+            Update: =DataCardValue8.Value
+            Width: =266
+            X: =1
+            Y: =2
+            ZIndex: =4
+
+            DataCardKey8 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue8 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey8.Y + DataCardKey8.Height + 4
+                ZIndex: =2
+
+            ErrorMessage8 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible8 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey8.Y
+                ZIndex: =4
+
+        "'Do you have pets or Intend to have pets_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DoyouhavepetsorIntendtohavepets"
+            Default: =ThisItem.'Do you have pets or Intend to have pets'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'DoyouhavepetsorIntendtohavepets')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'DoyouhavepetsorIntendtohavepets')
+            Required: =false
+            Update: =DataCardValue9.Value
+            Width: =266
+            X: =2
+            Y: =2
+            ZIndex: =4
+
+            DataCardKey9 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue9 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 4
+                ZIndex: =2
+
+            ErrorMessage9 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue9.Y + DataCardValue9.Height
+                ZIndex: =3
+
+            StarVisible9 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey9.Y
+                ZIndex: =4
+
+        "'Reason for Leaving_DataCard1' As typedDataCard.fluentV9TextualEditCard":
+            BorderColor: =App.Theme.Colors.Darker40
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ReasonforLeaving"
+            Default: =ThisItem.'Reason for Leaving'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Tenant Onboarding List'],DataSourceInfo.DisplayName,'ReasonforLeaving')
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            MaxLength: =DataSourceInfo([@'Tenant Onboarding List'], DataSourceInfo.MaxLength, 'ReasonforLeaving')
+            Required: =false
+            Update: =DataCardValue10.Value
+            Width: =266
+            X: =0
+            Y: =3
+            ZIndex: =4
+
+            DataCardKey10 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue10 As 'Text input'":
+                AccessibleLabel: =Parent.DisplayName
+                DisplayMode: =Parent.DisplayMode
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                Required: =Parent.Required
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 4
+                ZIndex: =2
+
+            ErrorMessage10 As Text:
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: =Parent.Error
+                Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                Width: =Parent.Width - 48
+                Wrap: =true
+                X: =24
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible10 As Text:
+                Align: ='TextCanvas.Align'.Center
+                DisplayMode: =DisplayMode.Edit
+                Height: =30
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                X: =0
+                Y: =DataCardKey10.Y
+                ZIndex: =4
+

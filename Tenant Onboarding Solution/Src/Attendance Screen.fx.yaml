@@ -563,3 +563,95 @@
         Visible: =false
         ZIndex: =2
 
+    Container8 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 0, 0, 0.3)
+        Height: =Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =4
+
+        att_UploadAttachment As attachments:
+            BorderColor: =
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Font: =App.Theme.Font
+            Height: =267
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =App.Theme.Colors.Lighter70
+            IsInDataCard: =true
+            ItemColor: =App.Theme.Colors.PrimaryForeground
+            ItemFill: =App.Theme.Colors.Primary
+            ItemHoverColor: =RGBA(0, 0, 0, 1)
+            ItemHoverFill: =App.Theme.Colors.Lighter70
+            Items: =
+            MaxAttachments: =1
+            PaddingBottom: =5
+            PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+            PaddingRight: =5
+            PaddingTop: =5
+            PressedColor: =App.Theme.Colors.PrimaryForeground
+            PressedFill: =App.Theme.Colors.Darker30
+            Tooltip: ="Upload Attendance"
+            Width: =477
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =Parent.Height/2 - Self.Height/2
+            ZIndex: =1
+
+        Container59_14 As groupContainer.manualLayoutContainer:
+            Height: =40
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =120
+            X: =Parent.Width/2 - Self.Width/2
+            Y: =att_UploadAttachment.Y + att_UploadAttachment.Height + 20
+            ZIndex: =2
+
+            Label26_7 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255,1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(85, 69, 191, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =Parent.Height
+                Size: =10
+                Text: ="Submit"
+                Width: =Parent.Width
+                ZIndex: =9
+
+            Button11_14 As button:
+                BorderColor: =App.Theme.Colors.Primary
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =Color.Transparent
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Semibold
+                Height: =35
+                HoverBorderColor: =App.Theme.Colors.Darker10
+                HoverFill: =Self.Fill
+                OnSelect: =Navigate('All Requests Screen')
+                PressedBorderColor: =App.Theme.Colors.Darker40
+                PressedColor: =Self.Color
+                PressedFill: =Self.Fill
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: =
+                Width: =100
+                ZIndex: =10
+
