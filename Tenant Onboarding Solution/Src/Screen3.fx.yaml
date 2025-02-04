@@ -40,7 +40,7 @@ Screen3 As screen:
         Font: =App.Theme.Font
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        Items: =Distinct(Attendance, Year(Date))
+        Items: =Distinct('Attendance Record', Year(Date))
         PressedColor: =App.Theme.Colors.PrimaryForeground
         PressedFill: =App.Theme.Colors.Darker30
         SelectionColor: =App.Theme.Colors.PrimaryForeground

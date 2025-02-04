@@ -357,19 +357,6 @@
                         PaddingRight: =10
                         ZIndex: =3
 
-                        Label16_14 As label:
-                            Align: =Align.Center
-                            AlignInContainer: =AlignInContainer.Center
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(159, 159, 159, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Semibold
-                            Height: =Parent.Height
-                            Size: =9
-                            Text: =""
-                            ZIndex: =7
-
                         Label16_6 As label:
                             Align: =Align.Center
                             AlignInContainer: =AlignInContainer.Center
@@ -423,6 +410,19 @@
                             Text: ="Current Month Attendance"
                             ZIndex: =16
 
+                        Label16_14 As label:
+                            Align: =Align.Center
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(159, 159, 159, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =9
+                            Text: =
+                            ZIndex: =17
+
                 Container3_1 As groupContainer.manualLayoutContainer:
                     Fill: =RGBA(255, 255, 255, 1)
                     LayoutMinHeight: =0
@@ -433,7 +433,7 @@
                         BorderColor: =App.Theme.Colors.Darker40
                         DelayItemLoading: =true
                         Height: =Parent.Height
-                        Items: =Filter('Tenant Onboarding List',Status.Value = "Pending")
+                        Items: ='Employee Details'
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateSize: =50
@@ -455,19 +455,6 @@
                             Width: =Parent.TemplateWidth
                             ZIndex: =19
 
-                            Label16_26 As label:
-                                Align: =Align.Center
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: |
-                                    =RGBA(97, 93, 93, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Semibold
-                                Height: =Parent.Height
-                                Size: =9
-                                Text: =Text(ThisItem.'Submission Date',"dd-mm-yyyy")
-                                ZIndex: =1
-
                             Label16_27 As label:
                                 Align: =Align.Center
                                 BorderColor: =App.Theme.Colors.Darker40
@@ -478,9 +465,8 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.'Name of Prospective Tenant'
-                                Width: =200
-                                ZIndex: =2
+                                Text: =ThisItem.Title
+                                ZIndex: =1
 
                             Label16_28 As label:
                                 Align: =Align.Center
@@ -492,10 +478,24 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.Status.Value
-                                ZIndex: =3
+                                Text: =ThisItem.Name
+                                Width: =200
+                                ZIndex: =2
 
                             Label16_33 As label:
+                                Align: =Align.Center
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: |
+                                    =RGBA(97, 93, 93, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                Size: =9
+                                Text: =ThisItem.StartDate
+                                ZIndex: =3
+
+                            Label16_44 As label:
                                 Align: =Align.Center
                                 BorderColor: =App.Theme.Colors.Darker40
                                 Color: |

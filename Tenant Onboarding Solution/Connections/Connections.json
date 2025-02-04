@@ -13,16 +13,22 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "https://legacypoise.sharepoint.com/sites/ArchwoodNetworkLimited": {
+      "https://legacypoise.sharepoint.com/sites/ArchwoodNetworkLimited_owolabi_ArchwoodSharepointSite": {
+        "datasetOverride": {
+          "environmentVariableName": "owolabi_ArchwoodSharepointSite"
+        },
         "dataSources": {
-          "Attendance": {
-            "tableName": "d0724a6c-6d40-4783-88e2-f44bf79f469e"
+          "Attendance Record": {
+            "tableName": "d0724a6c-6d40-4783-88e2-f44bf79f469e",
+            "tableNameOverride": {
+              "environmentVariableName": "owolabi_AttendanceRecord"
+            }
           },
-          "Documents": {
-            "tableName": "6f0bd1d2-12b9-4523-862d-3005ebe969df"
-          },
-          "Employees": {
-            "tableName": "8cb6617c-23cc-49d7-8af8-6fec593fd245"
+          "Employee Details": {
+            "tableName": "8cb6617c-23cc-49d7-8af8-6fec593fd245",
+            "tableNameOverride": {
+              "environmentVariableName": "owolabi_EmployeeDetails"
+            }
           }
         }
       },
@@ -52,9 +58,8 @@
     "dataSources": [
       "Tenant Onboarding List",
       "Tenant Onboarding Documents",
-      "Attendance",
-      "Employees",
-      "Documents"
+      "Employee Details",
+      "Attendance Record"
     ],
     "dependencies": {},
     "dependents": [],
@@ -94,6 +99,9 @@
       "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/releases/v1.0.1725/1.0.1725.4004/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "3cc00f65-d3e1-49ae-b5d2-3f7388e86786": {
+          "value": "shared_sharepointonline"
+        },
         "workflowDisplayName": {
           "value": "Upload Attendance"
         },
@@ -105,6 +113,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "3cc00f65-d3e1-49ae-b5d2-3f7388e86786"
+        },
         "workflowDisplayName": {
           "value": "Upload Attendance"
         },

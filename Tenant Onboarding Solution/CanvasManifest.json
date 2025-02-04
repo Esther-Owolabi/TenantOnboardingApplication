@@ -78,7 +78,6 @@
       "onegrid": false,
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
-      "parallelcodegen": false,
       "pdffunction": false,
       "powerfxdecimal": false,
       "powerfxv1": false,
@@ -107,7 +106,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 31,
+    "BindingErrorCount": 33,
     "ConnectionString": "",
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
