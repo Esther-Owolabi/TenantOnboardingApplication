@@ -57,8 +57,6 @@ Navigator As CanvasComponent:
             Height: =50
             LayoutMinHeight: =100
             LayoutMinWidth: =0
-            PaddingLeft: =10
-            PaddingRight: =10
             PaddingTop: =0.00
             Width: =245.62
             X: =0.00

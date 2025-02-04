@@ -340,6 +340,7 @@
                                 BorderColor: =RGBA(170, 163, 217, 0.7)
                                 CalendarHeaderFill: =App.Theme.Colors.Primary
                                 Color: =RGBA(0, 0, 0, 1)
+                                DefaultDate: =
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -371,6 +372,7 @@
                                 BorderColor: =RGBA(170, 163, 217, 0.7)
                                 CalendarHeaderFill: =App.Theme.Colors.Primary
                                 Color: =RGBA(0, 0, 0, 1)
+                                DefaultDate: =
                                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                                 DisabledColor: =RGBA(166, 166, 166, 1)
                                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -465,7 +467,7 @@
                         BorderColor: =App.Theme.Colors.Darker40
                         DelayItemLoading: =true
                         Height: =Parent.Height
-                        Items: =Filter('Tenant Onboarding List',Status.Value = "Pending")
+                        Items: ='Attendance Record'
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplateSize: =50
@@ -496,7 +498,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =Text(ThisItem.'Submission Date',"dd-mm-yyyy")
+                                Text: =Text(ThisItem.'Date',"dd-mm-yyyy")
                                 ZIndex: =20
 
                             Label16_31 As label:
@@ -508,7 +510,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.'Name of Prospective Tenant'
+                                Text: =LookUp('Employee Details',Title = ThisItem.'Employee ID'.Value).Name
                                 Width: =200
                                 ZIndex: =21
 
@@ -521,7 +523,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.Status.Value
+                                Text: =LookUp('Employee Details',Title = ThisItem.'Employee ID'.Value).Department.Value
                                 ZIndex: =22
 
                             Label16_34 As label:
@@ -533,7 +535,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.Status.Value
+                                Text: =ThisItem.'Clock In'
                                 ZIndex: =24
 
                             Label16_35 As label:
@@ -545,7 +547,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.Status.Value
+                                Text: =ThisItem.'Clock Out'
                                 ZIndex: =25
 
                     Image1_5 As image:
@@ -563,7 +565,7 @@
         Visible: =false
         ZIndex: =2
 
-    Container8 As groupContainer.manualLayoutContainer:
+    Container_uploadAttendance As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(0, 0, 0, 0.3)
         Height: =Parent.Height
@@ -571,6 +573,7 @@
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
+        Visible: =false
         Width: =Parent.Width
         ZIndex: =4
 

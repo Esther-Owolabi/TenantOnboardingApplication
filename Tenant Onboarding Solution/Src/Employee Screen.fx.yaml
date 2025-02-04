@@ -505,7 +505,7 @@
                                 FontWeight: =FontWeight.Semibold
                                 Height: =Parent.Height
                                 Size: =9
-                                Text: =ThisItem.Status.Value
+                                Text: =CountRows(Filter('Attendance Record','Employee ID'.Value = ThisItem.Title,Text('Clock In',"MM-yyyy")= currentMonthYear))
                                 ZIndex: =4
 
                             Container59_4 As groupContainer.manualLayoutContainer:
