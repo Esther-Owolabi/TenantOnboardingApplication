@@ -130,7 +130,7 @@
                                 Height: =Parent.Height
                                 HoverBorderColor: =App.Theme.Colors.Darker10
                                 HoverFill: =Self.Fill
-                                OnSelect: =Navigate('All Requests Screen')
+                                OnSelect: =
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
@@ -166,7 +166,7 @@
                                 Height: =Parent.Height
                                 HoverBorderColor: =App.Theme.Colors.Darker10
                                 HoverFill: =Self.Fill
-                                OnSelect: =Navigate('All Requests Screen')
+                                OnSelect: =
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill

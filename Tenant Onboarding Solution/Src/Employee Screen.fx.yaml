@@ -270,7 +270,7 @@
                                 Height: =Parent.Height
                                 HoverBorderColor: =App.Theme.Colors.Darker10
                                 HoverFill: =Self.Fill
-                                OnSelect: =Navigate('All Requests Screen')
+                                OnSelect: =//Add new employee
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
@@ -320,7 +320,7 @@
                                 Height: =Parent.Height
                                 HoverBorderColor: =App.Theme.Colors.Darker10
                                 HoverFill: =Self.Fill
-                                OnSelect: =Navigate('All Requests Screen')
+                                OnSelect: =//Export Employees
                                 PressedBorderColor: =App.Theme.Colors.Darker40
                                 PressedColor: =Self.Color
                                 PressedFill: =Self.Fill
@@ -545,7 +545,7 @@
                                     HoverBorderColor: =App.Theme.Colors.Darker10
                                     HoverFill: =RGBA(128, 128, 128, 0.1)
                                     OnSelect: |-
-                                        =UpdateContext({loading:true});Set(record,ThisItem);Set(attachments,ThisItem.Attachments);UpdateContext({loading:false});Navigate('Details Screen',ScreenTransition.Fade);
+                                        =UpdateContext({loading:true});Set(recordEmployee,ThisItem);UpdateContext({loading:false});Navigate('Employee Details Screen',ScreenTransition.Fade);
                                     PressedBorderColor: =App.Theme.Colors.Darker40
                                     PressedColor: =Self.Color
                                     PressedFill: =Self.Fill
