@@ -15,19 +15,22 @@
     "datasets": {
       "https://legacypoise.sharepoint.com/sites/ArchwoodNetworkLimited_owolabi_ArchwoodSharepointSite": {
         "datasetOverride": {
-          "environmentVariableName": "owolabi_ArchwoodSharepointSite"
+          "environmentVariableName": "owolabi_ArchwoodSharepointSite",
+          "name": "https://legacypoise.sharepoint.com/sites/ArchwoodNetworkLimited"
         },
         "dataSources": {
           "Attendance Record": {
             "tableName": "d0724a6c-6d40-4783-88e2-f44bf79f469e",
             "tableNameOverride": {
-              "environmentVariableName": "owolabi_AttendanceRecord"
+              "environmentVariableName": "owolabi_AttendanceRecord",
+              "name": "d0724a6c-6d40-4783-88e2-f44bf79f469e"
             }
           },
           "Employee Details": {
             "tableName": "8cb6617c-23cc-49d7-8af8-6fec593fd245",
             "tableNameOverride": {
-              "environmentVariableName": "owolabi_EmployeeDetails"
+              "environmentVariableName": "owolabi_EmployeeDetails",
+              "name": "8cb6617c-23cc-49d7-8af8-6fec593fd245"
             }
           }
         }

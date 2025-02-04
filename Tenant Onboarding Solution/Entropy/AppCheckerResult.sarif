@@ -14,46 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Container59.Button11.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Container59.Button11.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "'All Requests Screen'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Container59.Button11"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "All Requests Screen"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Employee Screen'.Container13_1.Container17_2.Container32_2.Container3_1.Gallery2_5.Container42_5.Label16_44.Text"
                 }
               ],
@@ -87,7 +47,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -127,7 +87,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -167,7 +127,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -207,7 +167,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -247,7 +207,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -376,30 +336,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Form.Container4.AddMediaButton1.AccessibleLabel"
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Container59.Button11.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Form.Container4.AddMediaButton1.AccessibleLabel",
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Container59.Button11.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": "'All Requests Screen'"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Form",
-                "type": "Form.Container4.AddMediaButton1"
+                "member": "OnSelect",
+                "module": "Dashboard Screen",
+                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Container59.Button11"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "All Requests Screen"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -466,19 +436,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.AccessibleLabel"
+                  "fullyQualifiedName": "Form.Container4.AddMediaButton1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.AccessibleLabel",
+                  "fullyQualifiedName": "Form.Container4.AddMediaButton1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4"
+                "module": "Form",
+                "type": "Form.Container4.AddMediaButton1"
               }
             }
           ],
@@ -490,96 +460,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Dashboard Screen",
-                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2113,6 +1993,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard Screen",
+                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard Screen",
+                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container34.Container35.Container38.Icon5_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Dashboard Screen",
+                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Dashboard Screen",
+                "type": "'Dashboard Screen'.Container13.Container17.Container32.Container3.Gallery2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.result"
                 }
               ],
@@ -2264,23 +2264,6 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
                 "issue": {
@@ -2295,6 +2278,23 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
