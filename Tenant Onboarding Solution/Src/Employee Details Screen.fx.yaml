@@ -85,6 +85,76 @@
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =4
 
+                    Container38_5 As groupContainer.horizontalAutoLayoutContainer:
+                        Fill: =RGBA(255, 255, 255, 1)
+                        FillPortions: =1.5
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =40
+                        LayoutMinWidth: =0
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =18
+                        PaddingRight: =10
+                        ZIndex: =1
+
+                        Container59_9 As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height - 25
+                            LayoutMinHeight: =0
+                            LayoutMinWidth: =250
+                            Width: =25
+                            ZIndex: =1
+
+                            Icon2_2 As icon.ArrowLeft:
+                                BorderColor: =App.Theme.Colors.Darker40
+                                Color: =RGBA(85, 69, 191,1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Height
+                                Icon: =Icon.ArrowLeft
+                                Width: =Parent.Width
+                                ZIndex: =1
+
+                            Button11_9 As button:
+                                BorderColor: =App.Theme.Colors.Primary
+                                BorderStyle: =BorderStyle.None
+                                Color: =RGBA(0, 0, 0, 0)
+                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =Color.Transparent
+                                Font: =App.Theme.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =Parent.Height
+                                HoverBorderColor: =App.Theme.Colors.Darker10
+                                HoverFill: =Self.Fill
+                                OnSelect: =Back()
+                                PressedBorderColor: =App.Theme.Colors.Darker40
+                                PressedColor: =Self.Color
+                                PressedFill: =Self.Fill
+                                RadiusBottomLeft: =0
+                                RadiusBottomRight: =0
+                                RadiusTopLeft: =0
+                                RadiusTopRight: =0
+                                Size: =15
+                                Text: =
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                        Label15_5 As label:
+                            BorderColor: =App.Theme.Colors.Darker40
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FillPortions: =1
+                            Font: =App.Theme.Font
+                            FontWeight: =FontWeight.Bold
+                            LayoutMinWidth: =0
+                            Size: =15
+                            Text: =recordEmployee.Name
+                            Width: =Parent.Width
+                            ZIndex: =2
+
                     Container36_6 As groupContainer.horizontalAutoLayoutContainer:
                         Fill: =RGBA(255, 255, 255, 1)
                         LayoutGap: =10
@@ -93,7 +163,7 @@
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =18
                         PaddingRight: =10
-                        ZIndex: =5
+                        ZIndex: =2
 
                         Container59_12 As groupContainer.manualLayoutContainer:
                             AlignInContainer: =AlignInContainer.Center
@@ -194,76 +264,6 @@
                                 Width: =Parent.Width
                                 ZIndex: =11
 
-                    Container38_5 As groupContainer.horizontalAutoLayoutContainer:
-                        Fill: =RGBA(255, 255, 255, 1)
-                        FillPortions: =1.5
-                        LayoutAlignItems: =LayoutAlignItems.Center
-                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                        LayoutMinHeight: =40
-                        LayoutMinWidth: =0
-                        LayoutMode: =LayoutMode.Auto
-                        PaddingLeft: =18
-                        PaddingRight: =10
-                        ZIndex: =12
-
-                        Container59_9 As groupContainer.manualLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Center
-                            FillPortions: =0
-                            Height: =Parent.Height - 25
-                            LayoutMinHeight: =0
-                            LayoutMinWidth: =250
-                            Width: =25
-                            ZIndex: =1
-
-                            Icon2_2 As icon.ArrowLeft:
-                                BorderColor: =App.Theme.Colors.Darker40
-                                Color: =RGBA(85, 69, 191,1)
-                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                                DisabledColor: =RGBA(244, 244, 244, 1)
-                                Height: =Parent.Height
-                                Icon: =Icon.ArrowLeft
-                                Width: =Parent.Width
-                                ZIndex: =1
-
-                            Button11_9 As button:
-                                BorderColor: =App.Theme.Colors.Primary
-                                BorderStyle: =BorderStyle.None
-                                Color: =RGBA(0, 0, 0, 0)
-                                DisabledBorderColor: =RGBA(244, 244, 244, 1)
-                                DisabledColor: =RGBA(166, 166, 166, 1)
-                                DisabledFill: =RGBA(244, 244, 244, 1)
-                                Fill: =Color.Transparent
-                                Font: =App.Theme.Font
-                                FontWeight: =FontWeight.Semibold
-                                Height: =Parent.Height
-                                HoverBorderColor: =App.Theme.Colors.Darker10
-                                HoverFill: =Self.Fill
-                                OnSelect: =Back()
-                                PressedBorderColor: =App.Theme.Colors.Darker40
-                                PressedColor: =Self.Color
-                                PressedFill: =Self.Fill
-                                RadiusBottomLeft: =0
-                                RadiusBottomRight: =0
-                                RadiusTopLeft: =0
-                                RadiusTopRight: =0
-                                Size: =15
-                                Text: =
-                                Width: =Parent.Width
-                                ZIndex: =2
-
-                        Label15_5 As label:
-                            BorderColor: =App.Theme.Colors.Darker40
-                            Color: =RGBA(0, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            FillPortions: =1
-                            Font: =App.Theme.Font
-                            FontWeight: =FontWeight.Bold
-                            LayoutMinWidth: =0
-                            Size: =15
-                            Text: ="Ogunleye Olajumoke"
-                            Width: =Parent.Width
-                            ZIndex: =2
-
                     Container36_7 As groupContainer.horizontalAutoLayoutContainer:
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                         LayoutMinHeight: =0
@@ -271,7 +271,7 @@
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =18
                         PaddingRight: =10
-                        ZIndex: =21
+                        ZIndex: =3
 
                         Label16_38 As label:
                             Align: =Align.Center

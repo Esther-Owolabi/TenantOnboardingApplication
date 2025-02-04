@@ -2113,36 +2113,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.recordEmployee"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.recordEmployee",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "recordEmployee",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.result"
                 }
               ],
