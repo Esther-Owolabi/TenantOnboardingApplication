@@ -110,7 +110,7 @@
     "Name": "PowerApps_CoreControls_DatePickerCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Date picker",
-    "Version": "0.0.42"
+    "Version": "0.0.46"
   },
   "datepicker": {
     "CustomGroupControlTemplateName": "",
@@ -166,7 +166,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "form",
     "OverridableProperties": {},
-    "Version": "2.4.2"
+    "Version": "2.4.3"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -336,7 +336,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
-    "Version": "0.0.50"
+    "Version": "0.0.51"
   },
   "Text input": {
     "CustomGroupControlTemplateName": "",
@@ -351,7 +351,7 @@
     "Name": "PowerApps_CoreControls_TextInputCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text input",
-    "Version": "0.0.53"
+    "Version": "0.0.54"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
@@ -365,6 +365,6 @@
     "LastModifiedTimestamp": "0",
     "Name": "typedDataCard",
     "OverridableProperties": {},
-    "Version": "1.0.6"
+    "Version": "1.0.7"
   }
 }

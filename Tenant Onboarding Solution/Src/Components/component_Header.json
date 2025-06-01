@@ -1091,7 +1091,7 @@
       "NoficationBellOnSelect",
       "Tooltip"
     ],
-    "LastModifiedTimestamp": "638742742054651831",
+    "LastModifiedTimestamp": "638843990990143780",
     "Name": "component_Header",
     "Rules": [
       {
@@ -1173,7 +1173,7 @@
       "Name": "NotificationBellVisibility",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1182,7 +1182,7 @@
       "Name": "NotificationCircleVisibility",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 2,
@@ -1195,7 +1195,7 @@
         "PropertyScopeRulesKey": []
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Void\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Void\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1204,7 +1204,7 @@
       "Name": "Tooltip",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -1215,7 +1215,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638742742054651831",
+  "LastModifiedTimestamp": "638843990990143780",
   "Name": "67be405e305b4acc93d836607f4e0614",
   "OverridableProperties": {},
   "Version": "1.0"

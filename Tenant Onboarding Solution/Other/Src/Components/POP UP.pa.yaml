@@ -1,0 +1,175 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+ComponentDefinitions:
+  POP UP:
+    DefinitionType: CanvasComponent
+    CustomProperties:
+      ActionText:
+        PropertyKind: Input
+        DisplayName: Action Text
+        Description: A custom property
+        DataType: Text
+        Default: ="Text"
+      NoAction:
+        PropertyKind: Event
+        DisplayName: No Action
+        Description: Event to Occur on the No buton
+        ReturnType: Text
+        Default: ="Text"
+      YesAction:
+        PropertyKind: Event
+        DisplayName: Yes Action
+        Description: Event to occur on the Yes Button
+        ReturnType: None
+        Default: =
+    Properties:
+      Height: =App.Height
+      Width: =App.Width
+    Children:
+      - Container43:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            Fill: =RGBA(0, 0, 0, 0.3)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            Width: =Parent.Width
+          Children:
+            - Container45:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  AlignInContainer: =AlignInContainer.SetByContainer
+                  DropShadow: =DropShadow.None
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FillPortions: =0
+                  Height: =Parent.Height/2
+                  LayoutAlignItems: =LayoutAlignItems.Stretch
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutJustifyContent: =LayoutJustifyContent.Center
+                  PaddingBottom: =20
+                  PaddingLeft: =20
+                  PaddingRight: =20
+                  PaddingTop: =20
+                  RadiusBottomLeft: =20
+                  RadiusBottomRight: =20
+                  RadiusTopLeft: =20
+                  RadiusTopRight: =20
+                Children:
+                  - Container48_1:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =0.5
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                      Children:
+                        - Label21:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              AlignInContainer: =AlignInContainer.Stretch
+                              Font: =Font.Arial
+                              FontWeight: =FontWeight.Bold
+                              Text: ='POP UP'.ActionText
+                        - Rectangle9:
+                            Control: Rectangle@2.3.0
+                            Properties:
+                              AlignInContainer: =AlignInContainer.Stretch
+                              Fill: =RGBA(85, 69, 191,1)//RGBA(222,222,222,1)
+                              Height: =2
+                  - Container48:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =2
+                        LayoutAlignItems: =LayoutAlignItems.Stretch
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                      Children:
+                        - Image13:
+                            Control: Image@2.2.3
+                            Properties:
+                              FillPortions: =1
+                              Image: =quuestion_icon
+                              LayoutMinHeight: =0
+                              LayoutMinWidth: =0
+                        - Label22:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              AutoHeight: =true
+                              Color: =RGBA(179, 179, 179, 1)
+                              FontWeight: =FontWeight.Bold
+                              LayoutMinHeight: =
+                              LayoutMinWidth: =0
+                              Size: =9
+                              Text: ="Are you sure you want to " & 'POP UP'.ActionText
+                  - Container49:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        DropShadow: =DropShadow.None
+                        FillPortions: =1.5
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Horizontal
+                        LayoutGap: =30
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                      Children:
+                        - no_btn:
+                            Control: Classic/Button@2.2.0
+                            Properties:
+                              BorderColor: =RGBA(85, 69, 191,1)
+                              Color: =RGBA(85, 69, 191,1)
+                              Fill: =Color.White
+                              FocusedBorderThickness: =2
+                              HoverBorderColor: =RGBA(85, 69, 191,1)
+                              HoverColor: =Self.Color
+                              HoverFill: =ColorFade(Self.Fill, -20%)
+                              OnSelect: ='POP UP'.NoAction()
+                              PressedBorderColor: =RGBA(85, 69, 191,1)
+                              PressedFill: =Self.Fill
+                              Text: ="No"
+                        - yes_btn:
+                            Control: Classic/Button@2.2.0
+                            Properties:
+                              BorderColor: =RGBA(85, 69, 191,1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =RGBA(85, 69, 191,1)
+                              FocusedBorderThickness: =2
+                              HoverBorderColor: =RGBA(85, 69, 191,1)
+                              HoverColor: =RGBA(255, 255, 255, 1)
+                              HoverFill: =ColorFade(Self.Fill,20%)
+                              OnSelect: ='POP UP'.YesAction()
+                              PressedFill: =Self.Fill
+                              RadiusBottomLeft: =6
+                              RadiusBottomRight: =6
+                              RadiusTopLeft: =6
+                              RadiusTopRight: =6
+                              Text: ="Yes"

@@ -5,14 +5,15 @@
       "DataflowAnalysisEnabled": true,
       "DataflowAnalysisFlagStateToggledByUser": true
     },
-    "DocVersion": "1.345",
+    "DocVersion": "1.346",
     "MinVersionToLoad": "1.331",
-    "MSAppStructureVersion": "2.0"
+    "MSAppStructureVersion": "2.4.0"
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
     "AppDescription": "",
     "AppPreviewFlagsMap": {
+      "adaptivepaging": false,
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
       "appinsightserrortracing": false,
@@ -32,7 +33,6 @@
       "delayloadscreens": true,
       "disablebehaviorreturntypecheck": false,
       "disablecdsfileandlargeimage": false,
-      "disabledeferloadingunusedscreenswithstartscreen": false,
       "disablefallbacktopayamlv2": false,
       "disableloadcomponentdefinitionsondemand": false,
       "disableruntimepolicies": false,
@@ -49,6 +49,7 @@
       "enableeditinmcs": true,
       "enableexcelonlinebusinessv2connector": true,
       "enableideaspanel": true,
+      "enableideaspanelbyexample": false,
       "enablelegacybarcodescanner": false,
       "enablelegacydatatable": false,
       "enableonstart": false,
@@ -77,6 +78,7 @@
       "offlineprofilegenerationemitscolumns": false,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
+      "optimizestartscreenpublishedappload": false,
       "packagemodernruntime": false,
       "pdffunction": false,
       "powerfxdecimal": false,
@@ -106,7 +108,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 9,
+    "BindingErrorCount": 7,
     "ConnectionString": "",
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,

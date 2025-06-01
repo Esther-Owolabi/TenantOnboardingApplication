@@ -1,0 +1,953 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Details Screen:
+    Children:
+      - LoadingImageHome_1:
+          Control: CanvasComponent
+          ComponentName: Loading
+          Properties:
+            Height: =App.Height
+            Visible: =showLoading
+            Width: =App.Width
+      - Container13_6:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: |
+              =RGBA(248, 248, 248, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Horizontal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+          Children:
+            - Navigator_5:
+                Control: CanvasComponent
+                ComponentName: Navigator
+                Properties:
+                  Height: =Parent.Height * 90/100
+                  LogOutScreen: =
+                  MenuItem: |-
+                    =Table(
+                        {
+                            MenuID: 1,
+                            MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                      <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                    </svg>",
+                            MenuName: "Home",
+                            PageNavigation: 'Details Screen'
+                        },
+                        {
+                            MenuID: 2,
+                            MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                      <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                    </svg>",
+                            MenuName: "Requests",
+                            PageNavigation: 'All Requests Screen'
+                        }
+                    )
+                  OnSelect: ="Text"
+                  Width: =150
+                  currentItem: =1
+            - Container17_6:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Height: =Parent.Height
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - Container32_6:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        DropShadow: =DropShadow.None
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutGap: =5
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        PaddingLeft: =20
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Width: =Parent.Width
+                      Children:
+                        - Container38_7:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Fill: =RGBA(255, 255, 255, 1)
+                              FillPortions: =0
+                              Height: =70
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                              LayoutMinHeight: =0
+                              LayoutMinWidth: =0
+                              PaddingLeft: =18
+                              PaddingRight: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - Container59_3:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: ManualLayout
+                                  Properties:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    DropShadow: =DropShadow.None
+                                    FillPortions: =0
+                                    Height: =Parent.Height - 25
+                                    LayoutMinHeight: =0
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                    Width: =25
+                                  Children:
+                                    - Icon2_1:
+                                        Control: Classic/Icon@2.5.0
+                                        Properties:
+                                          Height: =Parent.Height
+                                          Icon: =Icon.ArrowLeft
+                                          Width: =Parent.Width
+                                    - Button11_3:
+                                        Control: Classic/Button@2.2.0
+                                        Properties:
+                                          BorderStyle: =BorderStyle.None
+                                          Color: =RGBA(0, 0, 0, 0)
+                                          Fill: =Color.Transparent
+                                          Height: =Parent.Height
+                                          HoverColor: =Self.Color
+                                          HoverFill: =Self.Fill
+                                          OnSelect: =Back()
+                                          PressedFill: =Self.Fill
+                                          RadiusBottomLeft: =0
+                                          RadiusBottomRight: =0
+                                          RadiusTopLeft: =0
+                                          RadiusTopRight: =0
+                                          Text: =
+                                          Width: =Parent.Width
+                              - Label15_7:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    LayoutMinWidth: =0
+                                    Text: =record.'Name of Prospective Tenant'
+                                    Width: =Parent.Width
+                              - Button5:
+                                  Control: Classic/Button@2.2.0
+                                  Properties:
+                                    BorderColor: =RGBA(85, 69, 191,1)
+                                    Color: =RGBA(85, 69, 191,1)
+                                    Fill: =RGBA(255,255,255,1)
+                                    FocusedBorderThickness: =2
+                                    HoverBorderColor: =Self.BorderColor
+                                    HoverColor: =Self.Color
+                                    HoverFill: =RGBA(170, 163, 217, 0.2)
+                                    OnSelect: =UpdateContext({showImage:true})
+                                    PressedBorderColor: =Self.BorderColor
+                                    PressedFill: =RGBA(170, 163, 217, 0.4)
+                                    Size: =11
+                                    Text: ="View Attached Documents"
+                        - Container38_8:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Fill: =RGBA(255, 255, 255, 1)
+                              FillPortions: =0
+                              Height: =40
+                              LayoutAlignItems: =LayoutAlignItems.Center
+                              LayoutDirection: =LayoutDirection.Horizontal
+                              LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                              LayoutMinHeight: =0
+                              LayoutMinWidth: =0
+                              PaddingLeft: =18
+                              PaddingRight: =20
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - Label15_8:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    LayoutMinWidth: =0
+                                    Text: ="Status:"
+                                    Width: =70
+                              - Label15_10:
+                                  Control: Label@2.5.1
+                                  Properties:
+                                    Color: =Switch(Self.Text, "Pending",RGBA(201,5,5,1),"Approved",RGBA(1,167,37,1),"Rejected",RGBA(201,5,5,1))
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Semibold
+                                    LayoutMinWidth: =0
+                                    Text: =record.Status.Value
+                                    Width: =Parent.Width
+                        - Canvas1_1:
+                            Control: FluidGrid@2.3.0
+                            Properties:
+                              BorderThickness: =0
+                              Fill: =RGBA(255, 255, 255, 1)
+                              Height: =Parent.Height - Self.Y
+                              Width: =Parent.Width
+                              Y: =
+                            Children:
+                              - DataCard1_1:
+                                  Control: DataCard@1.0.2
+                                  Properties:
+                                    Height: =Parent.Height - 100
+                                    Width: =Parent.Width
+                                    X: =0
+                                    Y: =0
+                                  Children:
+                                    - name_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Name"
+                                          X: =10
+                                          Y: =10
+                                    - name_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Name of Prospective Tenant'
+                                          Width: =Parent.Width/3 - 10
+                                          X: =10
+                                          Y: =name_label.Y + name_label.Height
+                                    - dob_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Date of Birth"
+                                          X: =name_value.X + name_value.Width + 10
+                                          Y: =name_label.Y
+                                    - dob_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =Text(record.'Date of Birth',"dd-mm-yyyy")
+                                          Width: =Parent.Width/3 - 20
+                                          X: =name_value.X + name_value.Width + 10
+                                          Y: =dob_label.Y + dob_label.Height
+                                    - religion_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Religion"
+                                          X: =name_label.X
+                                          Y: =name_value.Y + name_value.Height + 10
+                                    - religion_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.Religion
+                                          Width: =Parent.Width/4 - 20
+                                          X: =religion_label.X
+                                          Y: =religion_label.Y + religion_label.Height
+                                    - nationality_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Nationality"
+                                          X: =religion_value.X + religion_value.Width + 10
+                                          Y: =name_value.Y + name_value.Height + 10
+                                    - nationality_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.Nationality
+                                          Width: =Parent.Width/4 - 10
+                                          X: =nationality_label.X
+                                          Y: =nationality_label.Y + nationality_label.Height
+                                    - stateOfOrigin_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="State of Origin"
+                                          X: =nationality_value.X + nationality_value.Width + 10
+                                          Y: =name_value.Y + name_value.Height + 10
+                                    - stateOfOrigin_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'State of Origin'
+                                          Width: =Parent.Width/4 - 10
+                                          X: =stateOfOrigin_label.X
+                                          Y: =stateOfOrigin_label.Y + stateOfOrigin_label.Height
+                                    - lga_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="LGA"
+                                          X: =stateOfOrigin_value.X + stateOfOrigin_value.Width + 10
+                                          Y: =name_value.Y + name_value.Height + 10
+                                    - lga_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.LGA
+                                          Width: =Parent.Width/4 - 10
+                                          X: =lga_label.X
+                                          Y: =lga_label.Y + lga_label.Height
+                                    - sex_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Sex"
+                                          X: =dob_value.X + dob_value.Width + 10
+                                          Y: =name_label.Y
+                                    - sex_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.Sex
+                                          Width: =Parent.Width/3 - 20
+                                          X: =sex_label.X
+                                          Y: =sex_label.Y + sex_label.Height
+                                    - email_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Email"
+                                          X: =name_label.X
+                                          Y: =religion_value.Y + religion_value.Height + 10
+                                    - email_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Email Address'
+                                          Width: =Parent.Width/4 - 20
+                                          X: =email_label.X
+                                          Y: =email_label.Y + email_label.Height
+                                    - phoneNumber_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Phone Number"
+                                          X: =email_value.X + email_value.Width + 10
+                                          Y: =religion_value.Y + religion_value.Height + 10
+                                    - phoneNumber_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Telephone Number'
+                                          Width: =Parent.Width/4 - 10
+                                          X: =phoneNumber_label.X
+                                          Y: =phoneNumber_label.Y + phoneNumber_label.Height
+                                    - marital_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Marital Status"
+                                          X: =phoneNumber_value.X + phoneNumber_value.Width + 10
+                                          Y: =religion_value.Y + religion_value.Height + 10
+                                    - marital_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Marital Status'
+                                          Width: =Parent.Width/4 - 10
+                                          X: =marital_label.X
+                                          Y: =marital_label.Y + marital_label.Height
+                                    - wifeCount_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Number of Wives"
+                                          X: =marital_value.X + marital_value.Width + 10
+                                          Y: =religion_value.Y + religion_value.Height + 10
+                                    - wifeCount_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Number of Wives'
+                                          Width: =Parent.Width/4 - 10
+                                          X: =wifeCount_label.X
+                                          Y: =wifeCount_label.Y + wifeCount_label.Height
+                                    - occupation_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Occupation"
+                                          X: =name_label.X
+                                          Y: =email_value.Y + email_value.Height + 10
+                                    - occupation_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.Occupation
+                                          Width: =Parent.Width/4 - 20
+                                          X: =occupation_label.X
+                                          Y: =occupation_label.Y + occupation_label.Height
+                                    - company_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Company Name and Address"
+                                          Width: =200
+                                          X: =occupation_value.X + occupation_value.Width + 10
+                                          Y: =email_value.Y + email_value.Height + 10
+                                    - company_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AutoHeight: =true
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Company Name and Address'
+                                          Width: '=Parent.Width/2 '
+                                          X: =company_label.X
+                                          Y: =company_label.Y + company_label.Height
+                                    - spouseName_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Name of Spouse"
+                                          Visible: =spouseName_value.Visible
+                                          X: =name_label.X
+                                          Y: =If(company_value.Height > occupation_value.Height,company_value.Y + company_value.Height + 10,occupation_value.Y + occupation_value.Height + 10)
+                                    - spouseName_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Name of Spouse'
+                                          Visible: =!IsBlank(Self.Text)
+                                          Width: =Parent.Width/4 - 20
+                                          X: =spouseName_label.X
+                                          Y: =spouseName_label.Y + spouseName_label.Height
+                                    - spouseDetails_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Spouse Occupation/ Office Name and Address"
+                                          Visible: =spouseDetails_value.Visible
+                                          Width: =300
+                                          X: =spouseName_value.X + spouseName_value.Width + 10
+                                          Y: =spouseName_label.Y //+ company_value.Height + 10//company_value.Y + company_value.Height + 10
+                                    - spouseDetails_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AutoHeight: =true
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Name of Spouse'
+                                          Visible: =!IsBlank(Self.Text)
+                                          Width: =Parent.Width/2
+                                          X: =spouseDetails_label.X
+                                          Y: =spouseDetails_label.Y + spouseDetails_label.Height
+                                    - noOfChildren_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Number of Children"
+                                          Visible: =noOfChildren_value.Visible
+                                          X: =spouseDetails_value.X + spouseDetails_value.Width + 10
+                                          Y: '=spouseName_label.Y '
+                                    - noOfChildren_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Number of Children'
+                                          Visible: =!IsBlank(Self.Text)
+                                          Width: =Parent.Width/4 - 20
+                                          X: =noOfChildren_label.X
+                                          Y: =noOfChildren_label.Y + noOfChildren_label.Height
+                                    - currentResidentialAddress_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Current Residential Address"
+                                          Width: =200
+                                          X: =name_label.X
+                                          Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                                    - currentResidentialAddress_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AutoHeight: =true
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Current Residential Address'
+                                          Width: =Parent.Width/2 - 20
+                                          X: =currentResidentialAddress_label.X
+                                          Y: =currentResidentialAddress_label.Y + currentResidentialAddress_label.Height
+                                    - reasonForLeaving_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Reason for Leaving"
+                                          Width: =200
+                                          X: =currentResidentialAddress_value.X + currentResidentialAddress_value.Width + 10
+                                          Y: =If(spouseDetails_value.Height > spouseName_value.Height,spouseDetails_value.Y + spouseDetails_value.Height + 10,spouseName_value.Y + spouseName_value.Height + 10)
+                                    - reasonForLeaving_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AutoHeight: =true
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Reason for Leaving'
+                                          Width: =Parent.Width/2 - 10
+                                          X: =reasonForLeaving_label.X
+                                          Y: =reasonForLeaving_label.Y + reasonForLeaving_label.Height
+                                    - petStatus_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Do you have pets or Intend to have one?"
+                                          Width: =280
+                                          X: =name_label.X
+                                          Y: =If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
+                                    - petStatus_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Do you have pets or Intend to have pets'
+                                          Width: =Parent.Width/3 - 20
+                                          X: =petStatus_label.X
+                                          Y: =petStatus_label.Y + petStatus_label.Height
+                                    - petTypes_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="If yes, what type?"
+                                          Width: =280
+                                          X: =petStatus_value.X + petStatus_value.Width + 10
+                                          Y: =petStatus_label.Y//If(currentResidentialAddress_value.Height > reasonForLeaving_value.Height,currentResidentialAddress_value.Y + currentResidentialAddress_value.Height + 10,reasonForLeaving_value.Y + reasonForLeaving_value.Height + 10)
+                                    - petTypes_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Pet Types'
+                                          Width: =Parent.Width/3 - 20
+                                          X: =petTypes_label.X
+                                          Y: =petTypes_label.Y + petTypes_label.Height
+                                    - noOfCars_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: ="Number of cars"
+                                          Width: =280
+                                          X: =name_label.X
+                                          Y: =petStatus_value.Y + petStatus_value.Height + 10
+                                    - noOfCars_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Number of Cars'
+                                          Width: =Parent.Width/3 - 20
+                                          X: =noOfCars_label.X
+                                          Y: =noOfCars_label.Y + noOfCars_label.Height
+                                    - noOfDependents_label:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 0.5)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =10
+                                          Text: |-
+                                            ="How many dependants do you intend to accommodate (If married, asides spouse & Children): "
+                                          Width: =Parent.Width/2
+                                          X: =noOfCars_value.X + noOfCars_value.Width + 10
+                                          Y: =petStatus_value.Y + petStatus_value.Height + 10
+                                    - noOfDependents_value:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          Color: =RGBA(4, 4, 4, 1)
+                                          DisplayMode: =DisplayMode.View
+                                          Fill: =RGBA(159, 159, 159, 0.1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =30
+                                          Size: =11
+                                          Text: =record.'Number of Cars'
+                                          Width: =Parent.Width/2
+                                          X: =noOfDependents_label.X
+                                          Y: =noOfDependents_label.Y + noOfDependents_label.Height
+                                    - Container7:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: ManualLayout
+                                        Properties:
+                                          Height: =70
+                                          Visible: =If(Label15_10.Text = "Pending",true,false)
+                                          Width: =Parent.Width
+                                          Y: =noOfCars_value.Y + noOfCars_value.Height + 10
+                                        Children:
+                                          - reject_button:
+                                              Control: Classic/Button@2.2.0
+                                              Properties:
+                                                BorderColor: =RGBA(85, 69, 191,1)
+                                                Color: =RGBA(85, 69, 191,1)
+                                                Fill: =RGBA(255,255,255,1)
+                                                FocusedBorderThickness: =2
+                                                HoverBorderColor: =Self.BorderColor
+                                                HoverColor: =Self.Color
+                                                HoverFill: =RGBA(170, 163, 217, 0.2)
+                                                OnSelect: =UpdateContext({action:"REJECT"});UpdateContext({showPopUp:true});
+                                                PressedBorderColor: =Self.BorderColor
+                                                PressedFill: =RGBA(170, 163, 217, 0.4)
+                                                Size: =11
+                                                Text: ="Reject"
+                                                X: =Parent.Width/2 - Self.Width -  Self.Width/2
+                                                Y: =Parent.Height/2 - Self.Height/2
+                                          - approve_button:
+                                              Control: Classic/Button@2.2.0
+                                              Properties:
+                                                BorderColor: =RGBA(85, 69, 191,1)
+                                                Color: =RGBA(255, 255, 255, 1)
+                                                Fill: =RGBA(85, 69, 191,1)
+                                                FocusedBorderThickness: =2
+                                                HoverBorderColor: =RGBA(85, 69, 191,1)
+                                                HoverColor: =RGBA(255, 255, 255, 1)
+                                                HoverFill: =ColorFade(Self.Fill,20%)
+                                                OnSelect: =UpdateContext({action:"APPROVE"});UpdateContext({showPopUp:true});
+                                                PressedFill: =Self.Fill
+                                                RadiusBottomLeft: =6
+                                                RadiusBottomRight: =6
+                                                RadiusTopLeft: =6
+                                                RadiusTopRight: =6
+                                                Text: ="Approve"
+                                                X: =reject_button.X + reject_button.Width + 20
+                                                Y: =Parent.Height/2 - Self.Height/2
+      - Container1:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Fill: =RGBA(0, 0, 0, 0.7)
+            Height: =Parent.Height
+            Visible: =showImage
+            Width: =Parent.Width
+          Children:
+            - Icon3:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  Color: =RGBA(255,255,255,1)
+                  Height: =30
+                  Icon: =Icon.Cancel
+                  OnSelect: =UpdateContext({showImage:false})
+                  Width: =30
+                  X: =Parent.Width - Self.Width - 20
+                  Y: =20
+            - Container6:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =Self.Width
+                  Width: =Parent.Width * 30%
+                  X: =Parent.Width / 2 - Self.Width/2
+                  Y: =Parent.Height/2 - Self.Height/2
+                Children:
+                  - Gallery1:
+                      Control: Gallery@2.15.0
+                      Variant: Horizontal
+                      Properties:
+                        Height: =409.8
+                        Items: =attachments
+                        ShowNavigation: =true
+                        ShowScrollbar: =false
+                        TemplatePadding: =0
+                        TemplateSize: =Parent.Width//If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+                        Width: =Parent.Width
+                      Children:
+                        - Container5_1:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              Fill: =RGBA(255, 255, 255, 1)
+                              Height: =Parent.TemplateHeight
+                              Width: =Parent.TemplateWidth
+                            Children:
+                              - Image10_2:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    DisplayMode: =DisplayMode.View
+                                    Height: =Parent.Height * 90%
+                                    Image: |-
+                                      =With(
+                                          {
+                                              fileExtension: Last(
+                                                  ForAll(Split(
+                                                      ThisItem.DisplayName,
+                                                      "."
+                                                  ), {Result: ThisRecord.Value})
+                                              ).Result
+                                          },
+                                          If(
+                                              fileExtension in [
+                                                  "xlsx",
+                                                  "xls",
+                                                  "csv"
+                                              ],
+                                             "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M2048 475v1445q0 27-10 50t-27 40-41 28-50 10H640q-27 0-50-10t-40-27-28-41-10-50v-256H115q-24 0-44-9t-37-25-25-36-9-45V627q0-24 9-44t25-37 36-25 45-9h397V128q0-27 10-50t27-40 41-28 50-10h933q26 0 49 9t42 28l347 347q18 18 27 41t10 50zm-384-256v165h165l-165-165zM261 1424h189q2-4 12-23t25-45 29-55 29-53 23-41 10-17q27 59 60 118t65 116h187l-209-339 205-333H707q-31 57-60 114t-63 112q-29-57-57-113t-57-113H279l199 335-217 337zm379 496h1280V512h-256q-27 0-50-10t-40-27-28-41-10-50V128H640v384h397q24 0 44 9t37 25 25 36 9 45v922q0 24-9 44t-25 37-36 25-45 9H640v256zm640-1024V768h512v128h-512zm0 256v-128h512v128h-512zm0 256v-128h512v128h-512z' fill='Purple'></path></svg>"),
+                                              If(
+                                                  fileExtension in [
+                                                      "png",
+                                                      "jpg",
+                                                      "jpeg",
+                                                      "gif"
+                                                  ],
+                                                  ThisItem.Value,
+                                                  If(
+                                                      "appres://" in ThisItem.AbsoluteUri,
+                                                       "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M1115 0l549 549v91h-640V0h91zm37 512h293l-293-293v293zm384 384V768h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128H768zm-256 0v-128h128v128H512zm-256 0v-128h128v128H256zm0-1024V768h128v128H256zm0-256V512h128v128H256zm0-256V256h128v128H256zm0-256V0h128v128H256zm256 0V0h128v128H512zm256 0V0h128v128H768zM256 1152v-128h128v128H256zm0 256v-128h128v128H256zm0 256v-128h128v128H256z' fill='Purple'></path></svg>"),
+                                                      If(
+                                                          fileExtension in [
+                                                              "pdf",
+                                                              "pptx",
+                                                              "docx",
+                                                              "ppt",
+                                                              "doc"
+                                                          ] && IsBlank(Acceleration.X),
+                                                          "https://thepoweraddicts.sharepoint.com/_layouts/15/getpreview.ashx?path=" & (ThisItem.AbsoluteUri) & "&resolution=6",
+                                                          If(
+                                                              fileExtension in "svg" && IsBlank(Acceleration.X),
+                                                              ThisItem.Value,
+                                                              "data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'><path d='M1115 0l549 549v91h-640V0h91zm37 512h293l-293-293v293zm384 384V768h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm0 256v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128h-128zm-256 0v-128h128v128H768zm-256 0v-128h128v128H512zm-256 0v-128h128v128H256zm0-1024V768h128v128H256zm0-256V512h128v128H256zm0-256V256h128v128H256zm0-256V0h128v128H256zm256 0V0h128v128H512zm256 0V0h128v128H768zM256 1152v-128h128v128H256zm0 256v-128h128v128H256zm0 256v-128h128v128H256z' fill='Purple'></path></svg>")
+                                                          )
+                                                      )
+                                                  )
+                                              )
+                                          )
+                                      )
+                                    OnSelect: =
+                                    RadiusBottomLeft: =8
+                                    RadiusBottomRight: =8
+                                    RadiusTopLeft: =8
+                                    RadiusTopRight: =8
+                                    Width: =Parent.Width
+                              - TextCanvas1_1:
+                                  Control: Text@0.0.51
+                                  Properties:
+                                    Align: ='TextCanvas.Align'.Center
+                                    Height: =Parent.Height - Image10_2.Height
+                                    Text: =First(Split(ThisItem.DisplayName,".")).Value
+                                    Weight: ='TextCanvas.Weight'.Bold
+                                    Width: =Parent.Width
+                                    Y: =Parent.Height- Self.Height
+                              - Icon1_1:
+                                  Control: Classic/Icon@2.5.0
+                                  Properties:
+                                    Color: =RGBA(255,255,255,1)//RGBA(102, 51, 153, 1)
+                                    Fill: =RGBA(0, 0, 0, 1)
+                                    Height: =40
+                                    Icon: =Icon.Download
+                                    OnSelect: =Download(ThisItem.AbsoluteUri)
+                                    PaddingBottom: =3
+                                    PaddingTop: =3
+                                    Width: =40
+                                    X: =Parent.Width - Self.Width - 5
+                                    Y: =5
+      - POP UP_4:
+          Control: CanvasComponent
+          ComponentName: POP UP
+          Properties:
+            ActionText: =action
+            Height: =App.Height
+            NoAction: =UpdateContext({showPopUp:false})
+            Visible: =showPopUp
+            Width: =App.Width
+            YesAction: |
+              =Switch(
+                  action,
+                  "APPROVE",
+                  UpdateContext({showPopUp: false});
+                  Navigate(
+                      'Mail Screen',
+                      ScreenTransition.CoverRight
+                  ),
+                  "REJECT",
+                  UpdateContext({showPopUp: false});
+                  UpdateContext({showLoading: true});
+                  Set(
+                      result,
+                      SendMail.Run(
+                          record.'Name of Prospective Tenant',
+                          "REJECTED",
+                          record.'Email Address',
+                          record.ID
+                      ).responsecode
+                  );
+                  UpdateContext({showLoading: false});
+                  If(
+                      result = "00",
+                      Notify("Request has been rejected successfully and notification has been sent");
+                      Set(record,Blank());
+                      Navigate(
+                          'Dashboard Screen',
+                          ScreenTransition.CoverRight
+                      ),
+                      Notify("There was a problem rejecting this request. Please try again.")
+                  )
+              );

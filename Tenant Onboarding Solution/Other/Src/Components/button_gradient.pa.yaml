@@ -1,0 +1,94 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+ComponentDefinitions:
+  button_gradient:
+    DefinitionType: CanvasComponent
+    AccessAppScope: true
+    CustomProperties:
+      ButtonHeight:
+        PropertyKind: Input
+        DisplayName: Button Height
+        Description: Height of button
+        DataType: Number
+        Default: =40
+      ButtonLabel:
+        PropertyKind: Input
+        DisplayName: Button Label
+        Description: Text to be displayed on the button
+        DataType: Text
+        Default: ="Login"
+      ButtonWidth:
+        PropertyKind: Input
+        DisplayName: ButtonWidth
+        Description: Width of the Button
+        DataType: Number
+        Default: =160
+    Properties:
+      Height: =Self.ButtonHeight
+      Width: =Self.ButtonWidth
+    Children:
+      - Container3_2:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =Parent.Height
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =143.95
+            X: =0.00
+          Children:
+            - Image1_1:
+                Control: Image@2.2.3
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Height: =Parent.Height
+                  Image: |-
+                    ="data:image/svg+xml,"& EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 16 16'>
+                      <defs>
+                        <linearGradient id='grad1' x1='0%' y1='20%' x2='100%' y2='80%'>
+                          <stop offset='70%' style='stop-color:rgb(17,65,133);stop-opacity:1' />
+                          <stop offset='90%' style='stop-color:rgb(254,99,9);stop-opacity:1'/>
+                        </linearGradient>
+                      </defs>
+                      <rect width='100%' height='100%' fill='url(#grad1)'/>  
+                    </svg>") //51.92,92.65
+                  ImagePosition: =ImagePosition.Fill
+                  PaddingRight: =0.00
+                  PaddingTop: =0.00
+                  Width: =143.95
+                  X: =0.00
+            - Button2:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderStyle: =BorderStyle.None
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  Font: =Font.'Open Sans'
+                  Height: =Parent.Height
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(Self.Fill, -20%)
+                  PaddingRight: =4.50
+                  PaddingTop: =4.50
+                  PressedBorderColor: =Self.Fill
+                  PressedFill: =Self.Fill
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Size: =9.00
+                  Text: =button_gradient.ButtonLabel
+                  Width: =143.95
+                  X: =0.00

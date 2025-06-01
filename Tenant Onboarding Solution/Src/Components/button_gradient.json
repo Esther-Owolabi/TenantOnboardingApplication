@@ -18,7 +18,7 @@
       "Name": "ButtonLabel",
       "PropertyDataTypeKey": "String",
       "Tooltip": "Text to be displayed on the button",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -27,7 +27,7 @@
       "Name": "ButtonWidth",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "Width of the Button",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -36,7 +36,7 @@
       "Name": "ButtonHeight",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "Height of button",
-      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.346\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -47,7 +47,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638742742054772025",
+  "LastModifiedTimestamp": "638843990990124505",
   "Name": "3122945a36fc4b11b72756b4461a7146",
   "OverridableProperties": {},
   "TemplateOriginalName": "8cdf732514b245169e3c4dbe23a420b5",

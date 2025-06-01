@@ -1,0 +1,390 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Dashboard Screen:
+    Properties:
+      OnVisible: =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents')
+    Children:
+      - Container13:
+          Control: GroupContainer@1.3.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: |
+              =RGBA(248, 248, 248, 1)
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Horizontal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+          Children:
+            - Navigator_1:
+                Control: CanvasComponent
+                ComponentName: Navigator
+                Properties:
+                  Height: =Parent.Height * 90/100
+                  LogOutScreen: =
+                  MenuItem: |-
+                    =Table(
+                        {
+                            MenuID: 1,
+                            MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-grid-3x3-gap' viewBox='0 0 16 16'>
+                      <path d='M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z'/>
+                    </svg>",
+                            MenuName: "Dashboard",
+                            PageNavigation: 'Dashboard Screen'
+                        },
+                        {
+                            MenuID: 2,
+                            MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-people' viewBox='0 0 16 16'>
+                      <path d='M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4'/>
+                    </svg>",
+                            MenuName: "Employees",
+                            PageNavigation: 'Employee Screen'
+                        },
+                        {
+                            MenuID: 3,
+                            MenuIcon: "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-clipboard' viewBox='0 0 16 16'>
+                      <path d='M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z'/>
+                      <path d='M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z'/>
+                    </svg>",
+                            MenuName: "Attendance",
+                            PageNavigation: 'Attendance Screen'
+                        }
+                    )
+                  OnSelect: ="Text"
+                  Width: =150
+                  currentItem: =1
+            - Container17:
+                Control: GroupContainer@1.3.0
+                Variant: AutoLayout
+                Properties:
+                  DropShadow: =DropShadow.None
+                  Height: =Parent.Height
+                  LayoutDirection: =LayoutDirection.Vertical
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                Children:
+                  - component_Header_2:
+                      Control: CanvasComponent
+                      ComponentName: component_Header
+                      Properties:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Height: =60
+                        LayoutMinWidth: =0
+                        NoficationBellOnSelect: =
+                        NotificationBellVisibility: =true
+                        NotificationCircleVisibility: =true
+                        Tooltip: ="You have some pending requests awaiting approval "
+                        Width: =
+                  - Container32:
+                      Control: GroupContainer@1.3.0
+                      Variant: AutoLayout
+                      Properties:
+                        DropShadow: =DropShadow.None
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =0
+                        LayoutMinWidth: =0
+                        PaddingBottom: =20
+                        PaddingLeft: =20
+                        PaddingRight: =25
+                        PaddingTop: =20
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Width: =Parent.Width
+                      Children:
+                        - Container34:
+                            Control: GroupContainer@1.3.0
+                            Variant: AutoLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              FillPortions: =0
+                              Height: =100
+                              LayoutDirection: =LayoutDirection.Vertical
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - Container35:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    DropShadow: =DropShadow.None
+                                    Fill: =RGBA(255, 255, 255, 1)
+                                    FillPortions: =1.5
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutMinHeight: =0
+                                    LayoutMinWidth: =0
+                                    PaddingLeft: =18
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                  Children:
+                                    - Container38:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          DropShadow: =DropShadow.None
+                                          Height: =Parent.Height
+                                          LayoutAlignItems: =LayoutAlignItems.Center
+                                          LayoutDirection: =LayoutDirection.Horizontal
+                                          LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                          LayoutMinHeight: =0
+                                          LayoutMinWidth: =0
+                                          PaddingRight: =10
+                                          RadiusBottomLeft: =0
+                                          RadiusBottomRight: =0
+                                          RadiusTopLeft: =0
+                                          RadiusTopRight: =0
+                                        Children:
+                                          - Label15:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                FillPortions: =1
+                                                FontWeight: =FontWeight.Bold
+                                                LayoutMinWidth: =0
+                                                Text: ="Dashboard"
+                                                Width: =Parent.Width
+                                          - Icon5_4:
+                                              Control: Classic/Icon@2.5.0
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Center
+                                                Color: =RGBA(170, 163, 217, 1)//RGBA(214,221,224,1)
+                                                Height: =30
+                                                Icon: =Icon.Reload
+                                                OnSelect: |+
+                                                  =Refresh('Tenant Onboarding List');Refresh('Tenant Onboarding Documents');
+
+                                                Tooltip: ="Refresh Requests"
+                                                Width: =Self.Height
+                                                X: =
+                                                Y: =
+                                          - Container59:
+                                              Control: GroupContainer@1.3.0
+                                              Variant: ManualLayout
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Center
+                                                DropShadow: =DropShadow.None
+                                                FillPortions: =0
+                                                Height: =Parent.Height - 25
+                                                LayoutMinHeight: =0
+                                                RadiusBottomLeft: =0
+                                                RadiusBottomRight: =0
+                                                RadiusTopLeft: =0
+                                                RadiusTopRight: =0
+                                                Width: =100
+                                              Children:
+                                                - Label26:
+                                                    Control: Label@2.5.1
+                                                    Properties:
+                                                      Align: =Align.Center
+                                                      Color: =RGBA(85, 69, 191,1)
+                                                      FontWeight: =FontWeight.Semibold
+                                                      Height: =Parent.Height
+                                                      Size: =10
+                                                      Text: ="View All"
+                                                      Underline: =true
+                                                      Width: =Parent.Width
+                                                - Button11:
+                                                    Control: Classic/Button@2.2.0
+                                                    Properties:
+                                                      BorderStyle: =BorderStyle.None
+                                                      Color: =RGBA(0, 0, 0, 0)
+                                                      Fill: =Color.Transparent
+                                                      Height: =35
+                                                      HoverColor: =Self.Color
+                                                      HoverFill: =Self.Fill
+                                                      OnSelect: =Navigate('All Requests Screen')
+                                                      PressedFill: =Self.Fill
+                                                      RadiusBottomLeft: =0
+                                                      RadiusBottomRight: =0
+                                                      RadiusTopLeft: =0
+                                                      RadiusTopRight: =0
+                                                      Text: =
+                                                      Width: =100
+                              - Container36:
+                                  Control: GroupContainer@1.3.0
+                                  Variant: AutoLayout
+                                  Properties:
+                                    DropShadow: =DropShadow.None
+                                    LayoutDirection: =LayoutDirection.Horizontal
+                                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                    LayoutMinHeight: =0
+                                    LayoutMinWidth: =0
+                                    PaddingLeft: =18
+                                    PaddingRight: =10
+                                    RadiusBottomLeft: =0
+                                    RadiusBottomRight: =0
+                                    RadiusTopLeft: =0
+                                    RadiusTopRight: =0
+                                  Children:
+                                    - Label16:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.Center
+                                          Color: =RGBA(159, 159, 159, 1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =Parent.Height
+                                          Size: =9
+                                          Text: ="Submission Date"
+                                    - Label16_1:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.Center
+                                          Color: =RGBA(159, 159, 159, 1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =Parent.Height
+                                          Size: =9
+                                          Text: ="Name"
+                                          Width: =200
+                                    - Label16_4:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.Center
+                                          Color: =RGBA(159, 159, 159, 1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =Parent.Height
+                                          Size: =9
+                                          Text: ="Status"
+                                    - Label16_2:
+                                        Control: Label@2.5.1
+                                        Properties:
+                                          AlignInContainer: =AlignInContainer.Center
+                                          Color: =RGBA(159, 159, 159, 1)
+                                          FontWeight: =FontWeight.Semibold
+                                          Height: =Parent.Height
+                                          Size: =9
+                                          Text: =""
+                        - Container3:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              DropShadow: =DropShadow.None
+                              Fill: =RGBA(255, 255, 255, 1)
+                              LayoutMinHeight: =0
+                              LayoutMinWidth: =0
+                              RadiusBottomLeft: =0
+                              RadiusBottomRight: =0
+                              RadiusTopLeft: =0
+                              RadiusTopRight: =0
+                            Children:
+                              - Gallery2_4:
+                                  Control: Gallery@2.15.0
+                                  Variant: Vertical
+                                  Properties:
+                                    Height: =Parent.Height
+                                    Items: =Filter('Tenant Onboarding List',Status.Value = "Pending")
+                                    TemplateSize: =50
+                                    Width: =Parent.Width
+                                  Children:
+                                    - Container42_4:
+                                        Control: GroupContainer@1.3.0
+                                        Variant: AutoLayout
+                                        Properties:
+                                          Height: =Parent.TemplateHeight
+                                          LayoutAlignItems: =LayoutAlignItems.Center
+                                          LayoutDirection: =LayoutDirection.Horizontal
+                                          LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                          PaddingLeft: =18
+                                          PaddingRight: =10
+                                          Width: =Parent.TemplateWidth
+                                        Children:
+                                          - Label16_23:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Color: |
+                                                  =RGBA(97, 93, 93, 1)
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =Parent.Height
+                                                Size: =9
+                                                Text: =Text(ThisItem.'Submission Date',"dd-mm-yyyy")
+                                          - Label16_24:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Color: |
+                                                  =RGBA(97, 93, 93, 1)
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =Parent.Height
+                                                Size: =9
+                                                Text: =ThisItem.'Name of Prospective Tenant'
+                                                Width: =200
+                                          - Label16_25:
+                                              Control: Label@2.5.1
+                                              Properties:
+                                                Color: |
+                                                  =RGBA(97, 93, 93, 1)
+                                                FontWeight: =FontWeight.Semibold
+                                                Height: =Parent.Height
+                                                Size: =9
+                                                Text: =ThisItem.Status.Value
+                                          - Container59_2:
+                                              Control: GroupContainer@1.3.0
+                                              Variant: ManualLayout
+                                              Properties:
+                                                AlignInContainer: =AlignInContainer.Center
+                                                DropShadow: =DropShadow.None
+                                                FillPortions: =0
+                                                Height: =Parent.Height - 25
+                                                LayoutMinHeight: =0
+                                                RadiusBottomLeft: =0
+                                                RadiusBottomRight: =0
+                                                RadiusTopLeft: =0
+                                                RadiusTopRight: =0
+                                                Width: =150
+                                              Children:
+                                                - Label26_2:
+                                                    Control: Label@2.5.1
+                                                    Properties:
+                                                      Align: =Align.Center
+                                                      Color: =RGBA(85, 69, 191,1)
+                                                      FontWeight: =FontWeight.Semibold
+                                                      Height: =Parent.Height
+                                                      Size: =10
+                                                      Text: ="See details"
+                                                      Underline: =true
+                                                      Width: =Parent.Width
+                                                - Button11_2:
+                                                    Control: Classic/Button@2.2.0
+                                                    Properties:
+                                                      BorderStyle: =BorderStyle.None
+                                                      Color: =RGBA(0, 0, 0, 0)
+                                                      Fill: =Color.Transparent
+                                                      Height: =Parent.Height
+                                                      HoverColor: =Self.Color
+                                                      HoverFill: =RGBA(128, 128, 128, 0.1)
+                                                      OnSelect: =UpdateContext({loading:true});Set(record,ThisItem);Set(attachments,ThisItem.Attachments);UpdateContext({loading:false});Navigate('Details Screen',ScreenTransition.Fade);
+                                                      PressedFill: =Self.Fill
+                                                      Text: =
+                                                      Width: =Parent.Width
+                              - Image1_3:
+                                  Control: Image@2.2.3
+                                  Properties:
+                                    Fill: =RGBA(255, 255, 255, 1)
+                                    Height: =Parent.Height
+                                    Image: ='No Item found'
+                                    Visible: =Gallery2_4.AllItemsCount = 0
+                                    Width: =Parent.Width
+      - LoadingImageHome:
+          Control: CanvasComponent
+          ComponentName: Loading
+          Properties:
+            Height: =App.Height
+            Visible: |
+              =loading
+            Width: =App.Width
